@@ -1,0 +1,58 @@
+{
+    "abstract": "The present study aimed to investigate the effects of protopanaxadiol and protopanaxatriol ginsenosides on aconitine induced cardiomyocyte injury and their regulatory mechanisms. The effects of ginsenosides on aconitine-induced cardiomyocyte damage were initially evaluated using H9c2 cells, and the molecular mechanisms were elucidated via molecular docking and western blotting. The changes in enzyme content, reactive oxygen species (ROS), calcium (Ca2+) concentration and apoptosis were determined. Furthermore, an aconitine-induced cardiac injury rat model was established, the cardiac injury and serum physiological and biochemical indexes were measured, and the effects of ginsenoside were observed. The results showed that ginsenoside Rb1 significantly increased aconitine-induced cell viability, and its binding conformation with AKT protein was the most significant. In vitro and in vivo, Rb1 protects cardiomyocytes from aconitine-induced injury by regulating oxidative stress levels and maintaining Ca2+ concentration homeostasis. Moreover, Rb1 activated the PI3K/AKT pathway, down-regulated Cleaved caspase-3 and Bax, and up-regulated Bcl-2 expression. In conclusion, Rb1 protected H9c2 cells from aconitine-induced injury by maintaining Ca2+ homeostasis and activating the PI3K/AKT pathway to induce a cascade response of downstream proteins, thereby protecting cardiomyocytes from damage. These results suggested that ginsenoside Rb1 may be a potential cardiac protective drug.",
+    "authors": [
+        {
+            "affiliation": "State-local Joint Engineering Research Center of Ginseng Breeding and Application (Jilin), Jilin Agricultural University, Changchun 130118, China School of Pharmaceutical Sciences, Jilin University, Changchun 130021, China.",
+            "firstname": "Yan",
+            "initials": "Y",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Haohao",
+            "initials": "H",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Shengbo",
+            "initials": "S",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Yu",
+            "initials": "Y",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Yingping",
+            "initials": "Y",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Pingya",
+            "initials": "P",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Jinping",
+            "initials": "J",
+            "lastname": "Liu"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Wolters Kluwer Health, Inc. All rights reserved.",
+    "doi": "10.1097/FJC.0000000000001119",
+    "journal": "Journal of cardiovascular pharmacology",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34369901",
+    "results": null,
+    "title": "Protopanaxadiol and protopanaxatriol ginsenosides can protect against aconitine-induced injury in H9c2 cells by maintaining calcium homeostasis and activating the AKT pathway.",
+    "xml": "<Element 'PubmedArticle' at 0x109368b30>"
+}

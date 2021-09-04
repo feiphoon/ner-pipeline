@@ -1,0 +1,74 @@
+{
+    "abstract": "A new compound named koninginin W (1) and four known polyketides (2-5) were isolated from endophytic fungus Trichoderma koningiopsis YIM PH30002 of Panax notoginseng. The structures of 1 - 5, including absolute configuration of 1, were elucidated on the detailed analysis of the HR-ESI-MS, 1D and 2D NMR, and X-ray crystallographic data. Koninginin W (1) presented weak antibacterial activity against Escherichia coli, Bacillus subtilis and Salmonella typhimurium.",
+    "authors": [
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.\nYunnan Institute of Microbiology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Yong-Liang",
+            "initials": "YL",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Bin-Yuan",
+            "initials": "BY",
+            "lastname": "Hu"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Meng-An",
+            "initials": "MA",
+            "lastname": "Qian"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Zi-Hang",
+            "initials": "ZH",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.\nYunnan Institute of Microbiology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Jing-Mei",
+            "initials": "JM",
+            "lastname": "Zou"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.\nYunnan Institute of Microbiology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Xu-Yan",
+            "initials": "XY",
+            "lastname": "Sang"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.\nYunnan Institute of Microbiology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Lei",
+            "initials": "L",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Xiao-Dong",
+            "initials": "XD",
+            "lastname": "Luo"
+        },
+        {
+            "affiliation": "Key Laboratory of Medicinal Chemistry for Natural Resource, Ministry of Education, Yunnan Provincial Center for Research and Development of Natural Products, School of Chemical Science and Technology, Yunnan University, Kunming, 650091, P. R. China.\nYunnan Institute of Microbiology, Yunnan University, Kunming, 650091, P. R. China.",
+            "firstname": "Li-Xing",
+            "initials": "LX",
+            "lastname": "Zhao"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021 Wiley-VHCA AG, Zurich, Switzerland.",
+    "doi": "10.1002/cbdv.202100460",
+    "journal": "Chemistry & biodiversity",
+    "keywords": [
+        "Trichoderma koningiopsis",
+        "antibacterial activity",
+        "polyketide"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34369658",
+    "results": null,
+    "title": "Koninginin W, a New Polyketide from the Endophytic Fungus Trichoderma koningiopsis YIM PH30002.",
+    "xml": "<Element 'PubmedArticle' at 0x109379360>"
+}

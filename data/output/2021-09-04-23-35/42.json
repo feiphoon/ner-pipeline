@@ -1,0 +1,64 @@
+{
+    "abstract": "Based on the bibliometric method, the toxicity of aconite is analyzed and evaluated.\nStudies on the toxicity of aconite were retrieved from CNKI, CQVIP, Chinese Biomedical Literature Service System, and PubMed, ranging from January 1985 to November 2020. All those studies were formed into the Database of Literature of Toxicity of Aconite (DLTA). Studies on the toxicity of aconite were retrieved from CNKI, CQVIP, SinoMed, and PubMed, respectively. Collecting relevant information in DLTA, we analyzed the hotspots, factors and mechanism of aconite toxicity, and attenuation methods.\nA total of 445 studies on the toxicity of aconite have been collected. \"Compatibility attenuation\" and \"Processing attenuation\" have been the hotspots of aconite toxicity in recent years. Many studies support that the main toxic reactions of aconite are heart damage, liver toxicity, nephrotoxicity, and neurotoxicity. The toxic effect of aconite is related to the effect on the central nervous system. Exciting the vagus nerve reduces the autonomy of the sinus node and damages myocardial cells. The decoction time, dosage, and administration of aconite are the main factors of the toxicity of aconite. There are few studies about the effect of the origin of aconite and the specifications of the medicinal materials on toxicity. Therefore, it is impossible to analyze its relevance. At present, the commonly used methods to reduce the toxicity of aconite mainly include three methods: drug compatibility, processing, and decoction. The most common compatibility with aconite medicines includes licorice, dried ginger, ginseng, and ephedra. Black sliced aconite, steamed slices, and fried slices are less toxic than other processed products. Aconite decoction for more than 60 minutes can basically reach the safe range, and more than 2 hours of decoction may cause the loss of active ingredients.\nThe research on the mechanisms of aconite dosage-efficacy-toxicity, compatibility, processing, liver toxicity, and nephrotoxicity is still not comprehensive and in-depth. Researchers should perfect toxicity studies of aconite, remove the constraints that affect its clinical application, and promote the clinical use of aconite safely and reasonably.",
+    "authors": [
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Diyao",
+            "initials": "D",
+            "lastname": "Wu"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Tielong",
+            "initials": "T",
+            "lastname": "Xu"
+        },
+        {
+            "affiliation": "College of Pharmacy, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Zhendong",
+            "initials": "Z",
+            "lastname": "Huang"
+        },
+        {
+            "affiliation": "College of Pharmacy, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Yaling",
+            "initials": "Y",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Hongfu",
+            "initials": "H",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Qian",
+            "initials": "Q",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "College of Pharmacy, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Lihua",
+            "initials": "L",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Jiangxi University of Traditional Chinese Medicine, Nanchang, Jiangxi 330004, China.",
+            "firstname": "Meiying",
+            "initials": "M",
+            "lastname": "Ao"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Diyao Wu et al.",
+    "doi": "10.1155/2021/5514281",
+    "journal": "Evidence-based complementary and alternative medicine : eCAM",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-17",
+    "pubmed_id": "34394380\n32893595\n26805467\n20353487\n29376270\n31872701\n25898581\n30243825\n31011359",
+    "results": null,
+    "title": "Systematic Evaluation of Toxicity of Aconite Based on Bibliometric Method.",
+    "xml": "<Element 'PubmedArticle' at 0x109207360>"
+}

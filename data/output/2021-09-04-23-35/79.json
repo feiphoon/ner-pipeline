@@ -1,0 +1,76 @@
+{
+    "abstract": "Ginsenoside F2 (GF2) is a protopanaxdiol saponin from ",
+    "authors": [
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.\nCollege of Food Science and Pharmacology, Xinjiang Agricultural University, Urumqi 830052, China.",
+            "firstname": "Jing",
+            "initials": "J",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.",
+            "firstname": "Ji",
+            "initials": "J",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.",
+            "firstname": "Jiayi",
+            "initials": "J",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.",
+            "firstname": "Yiqiu",
+            "initials": "Y",
+            "lastname": "Guan"
+        },
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.",
+            "firstname": "Ting",
+            "initials": "T",
+            "lastname": "Shen"
+        },
+        {
+            "affiliation": "Natural Products Research Center, Chengdu Institute of Biology, Chinese Academy of Sciences, Chengdu 610041, China.\nChengdu PhytoElite Bio-Technology Company Limited, Chengdu 610213, China.",
+            "firstname": "Fu",
+            "initials": "F",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Department of General Practice, The Affiliated Huaian NO. 1 People's Hospital of Nanjing Medical University, Huai'an 223300, China.",
+            "firstname": "Xueqin",
+            "initials": "X",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "College of Food Science and Pharmacology, Xinjiang Agricultural University, Urumqi 830052, China.",
+            "firstname": "Xiaojun",
+            "initials": "X",
+            "lastname": "Yang"
+        },
+        {
+            "affiliation": "School of Life Sciences, Huaiyin Normal University, Huai'an 223300, China.\nCollege of Food Science and Pharmacology, Xinjiang Agricultural University, Urumqi 830052, China.",
+            "firstname": "Weicheng",
+            "initials": "W",
+            "lastname": "Hu"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.1021/acs.jafc.1c03420",
+    "journal": "Journal of agricultural and food chemistry",
+    "keywords": [
+        "3T3-L1 preadipocytes",
+        "AMPK",
+        "anti-obesity",
+        "ginsenoside F2",
+        "high-fat diet"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-04",
+    "pubmed_id": "34342980",
+    "results": null,
+    "title": "Ginsenoside F2 Suppresses Adipogenesis in 3T3-L1 Cells and Obesity in Mice ",
+    "xml": "<Element 'PubmedArticle' at 0x1094942c0>"
+}
