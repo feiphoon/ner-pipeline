@@ -39,7 +39,8 @@ def fetch_details(id: str) -> dict:
 
 
 query = "ginseng"
-query_results = search(query, 1)
+num_queries = 100
+query_results = search(query, num_queries)
 _filepath = Path(f"{output_path}/query.txt")
 
 with _filepath.open("w", encoding="utf-8") as f:
