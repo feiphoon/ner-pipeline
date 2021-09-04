@@ -1,0 +1,82 @@
+{
+    "abstract": "To explore the neuroprotective effect of SPJ on natural ageing of rat.\nSprague-Dawley (SD) rats 18-month-old were divided into ageing control, ageing treated with SPJ 10 or 30\u2009mg/kg (\nSPJ attenuated ageing-induced cognitive impairment as indicated by elevated number of times crossing the target platform (from 1.63 to 3.5) and longer time spent in the target platform quadrant (from 1.33 to 1.98). Meanwhile, SPJ improved the morphology of microglia and synapse, and activated M2 microglia polarisation including increased hippocampus levels of CD206 (from 0.98 to 1.47) and YM-1 (from 0.67 to 1.1), and enhanced autophagy-related proteins LC3B (from 0.48 to 0.82), Beclin1 (from 0.32 to 0.51), Atg5 (from 0.22 to 0.89) whereas decreased p62 level (from 0.71 to 0.45) of ageing rats. \nSPJ improved cognitive deficits of ageing rats through attenuating microglial inflammation and enhancing microglial autophagy, which could be used to treat neurodegenerative disorders.",
+    "authors": [
+        {
+            "affiliation": "Academy of Nutrition and Health, Hubei Province Key Laboratory of Occupational Hazard Identification and Control, Wuhan University of Science and Technology, Wuhan, China.\nDepartment of Pharmacy, College of Medicine, Wuhan University of Science and Technology, Wuhan, China.",
+            "firstname": "Xue-Jiao",
+            "initials": "XJ",
+            "lastname": "Pi"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Qing-Qing",
+            "initials": "QQ",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Jin-Xin",
+            "initials": "JX",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Xu-Lan",
+            "initials": "XL",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Ding",
+            "initials": "D",
+            "lastname": "Yuan"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Shan-Shan",
+            "initials": "SS",
+            "lastname": "Hu"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Yu-Min",
+            "initials": "YM",
+            "lastname": "He"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Chang-Cheng",
+            "initials": "CC",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "College of Medical Science, Three Gorges University, Yichang, China.",
+            "firstname": "Zhi-Yong",
+            "initials": "ZY",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "Academy of Nutrition and Health, Hubei Province Key Laboratory of Occupational Hazard Identification and Control, Wuhan University of Science and Technology, Wuhan, China.\nDepartment of Pharmacy, College of Medicine, Wuhan University of Science and Technology, Wuhan, China.",
+            "firstname": "Ting",
+            "initials": "T",
+            "lastname": "Wang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.1080/13880209.2021.1961824",
+    "journal": "Pharmaceutical biology",
+    "keywords": [
+        "M1-like phenotype",
+        "M2-like phenotype",
+        "Neuroinflamamtion",
+        "cognitive function",
+        "microglia"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-18",
+    "pubmed_id": "34403300\n29552860\n26683708\n33381004\n24046730\n30617086\n31840608\n20403453\n28469641\n27474951\n20548099\n30523761\n22024597\n24713688\n34122048\n25272846\n25892055\n27342766\n23636330\n29196462\n25385337\n28746310\n25396246\n31580243\n22647316\n23872599\n30515090\n24273538\n34214643\n17180163\n25879284\n29239335\n34239415\n30989956\n30966861\n27694913\n29915584\n26121197\n28226226\n32003282\n26827945\n28407242\n27470181\n27667710\n31926553\n28256519\n15572589\n21723251\n34118939\n29593815",
+    "results": "SPJ attenuated ageing-induced cognitive impairment as indicated by elevated number of times crossing the target platform (from 1.63 to 3.5) and longer time spent in the target platform quadrant (from 1.33 to 1.98). Meanwhile, SPJ improved the morphology of microglia and synapse, and activated M2 microglia polarisation including increased hippocampus levels of CD206 (from 0.98 to 1.47) and YM-1 (from 0.67 to 1.1), and enhanced autophagy-related proteins LC3B (from 0.48 to 0.82), Beclin1 (from 0.32 to 0.51), Atg5 (from 0.22 to 0.89) whereas decreased p62 level (from 0.71 to 0.45) of ageing rats. ",
+    "title": "Saponins from ",
+    "xml": "<Element 'PubmedArticle' at 0x106b6ee50>"
+}

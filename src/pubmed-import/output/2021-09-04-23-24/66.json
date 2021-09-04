@@ -1,0 +1,64 @@
+{
+    "abstract": "The liver is sensitive to aging because the risk of hepatopathy, including fatty liver, hepatitis, fibrosis, cirrhosis, and hepatocellular carcinoma, increases dramatically with age. Long non-coding RNAs (lncRNAs) are >200 nucleotides long and affect many pathological and physiological processes. A potential link was recently discovered between lncRNAs and liver aging; however, comprehensive and systematic research on this topic is still limited. In this study, the mouse liver genome-wide lncRNA profiles of 8-month-old SAMP8 and SAMR1 models were explored through deep RNA sequencing. A total of 605,801,688 clean reads were generated. Among the 2,182 identified lncRNAs, 28 were differentially expressed between SAMP8 and SAMR1 mice. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) surveys showed that these substantially dysregulated lncRNAs participated in liver aging from different aspects, such as lipid catabolic (GO: 0016042) and metabolic pathways. Further assessment was conducted on lncRNAs that are most likely to be involved in liver aging and related diseases, such as LNC_000027, LNC_000204E, NSMUST00000144661.1, and ENSMUST00000181906.1 acted on Ces1g. This study provided the first comprehensive dissection of lncRNA landscape in SAMP8 mouse liver. These lncRNAs could be exploited as potential targets for the molecular-based diagnosis and therapy of age-related liver diseases.",
+    "authors": [
+        {
+            "affiliation": "International Cooperation Laboratory of Molecular Medicine, Academy of Chinese Medical Sciences, Zhejiang Chinese Medical University, Hangzhou, China.",
+            "firstname": "Shuai",
+            "initials": "S",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "Zhuhai Branch of State Key Laboratory of Earth Surface Processes and Resource Ecology, Advanced Institute of Natural Sciences, Beijing Normal University at Zhuhai, Zhuhai, China.\nEngineering Research Center of Natural Medicine, Ministry of Education, Faculty of Geographical Science, Beijing Normal University, Beijing, China.\nBeijing Key Laboratory of Traditional Chinese Medicine Protection and Utilization, Faculty of Geographical Science, Beijing Normal University, Beijing, China.",
+            "firstname": "Juanjuan",
+            "initials": "J",
+            "lastname": "Duan"
+        },
+        {
+            "affiliation": "International Cooperation Laboratory of Molecular Medicine, Academy of Chinese Medical Sciences, Zhejiang Chinese Medical University, Hangzhou, China.",
+            "firstname": "Yu",
+            "initials": "Y",
+            "lastname": "Du"
+        },
+        {
+            "affiliation": "Key Laboratory of Vector Biology and Pathogen Control of Zhejiang, School of Medicine, Huzhou University, Huzhou Central Hospital, Huzhou, China.",
+            "firstname": "Jinlu",
+            "initials": "J",
+            "lastname": "Xie"
+        },
+        {
+            "affiliation": "Zhuhai Branch of State Key Laboratory of Earth Surface Processes and Resource Ecology, Advanced Institute of Natural Sciences, Beijing Normal University at Zhuhai, Zhuhai, China.\nEngineering Research Center of Natural Medicine, Ministry of Education, Faculty of Geographical Science, Beijing Normal University, Beijing, China.\nBeijing Key Laboratory of Traditional Chinese Medicine Protection and Utilization, Faculty of Geographical Science, Beijing Normal University, Beijing, China.",
+            "firstname": "Haijing",
+            "initials": "H",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "International Cooperation Laboratory of Molecular Medicine, Academy of Chinese Medical Sciences, Zhejiang Chinese Medical University, Hangzhou, China.",
+            "firstname": "Changyu",
+            "initials": "C",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Zhuhai Branch of State Key Laboratory of Earth Surface Processes and Resource Ecology, Advanced Institute of Natural Sciences, Beijing Normal University at Zhuhai, Zhuhai, China.\nEngineering Research Center of Natural Medicine, Ministry of Education, Faculty of Geographical Science, Beijing Normal University, Beijing, China.\nBeijing Key Laboratory of Traditional Chinese Medicine Protection and Utilization, Faculty of Geographical Science, Beijing Normal University, Beijing, China.\nNational and Local United Engineering Research Center for Panax Notoginseng Resources Protection and Utilization Technology, Kunming, China.",
+            "firstname": "Wensheng",
+            "initials": "W",
+            "lastname": "Zhang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Zhang, Duan, Du, Xie, Zhang, Li and Zhang.",
+    "doi": "10.3389/fcell.2021.698442",
+    "journal": "Frontiers in cell and developmental biology",
+    "keywords": [
+        "RNA sequencing",
+        "liver aging",
+        "long non-coding RNA",
+        "senescence-accelerated mouse prone 8",
+        "senescence-accelerated mouse resistant 1"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34368149\n22447919\n31570250\n27483026\n31534622\n30006135\n20436464\n27442719\n22081020\n24379563\n26136768\n19188922\n28855630\n16024819\n21763780\n31729473\n15375757\n21685081\n26822553\n17688688\n30946050\n28843809\n21559242\n22955988\n28815544\n20947618\n22751103\n25850346\n24729935\n32819176\n20516177\n17631615\n25574121\n26541291\n26708147\n29636120\n29289645\n28160600\n29945552\n21765801\n24598864\n23892401\n23132386\n32461717\n31942494\n30555477\n23618408\n30968034\n26976727\n29729191\n32298666\n27105505\n26512910\n29036354\n33353982\n7311623\n27396306\n26785828\n31799678",
+    "results": null,
+    "title": "Long Non-coding RNA Signatures Associated With Liver Aging in Senescence-Accelerated Mouse Prone 8 Model.",
+    "xml": "<Element 'PubmedArticle' at 0x106d61f40>"
+}

@@ -1,0 +1,57 @@
+{
+    "abstract": "The present study was undertaken to explore the structure characteristics, immune regulation, and anti-cancer abilities of polysaccharides in radix ginseng Rubra (RGR). For this purpose, RGR polysaccharides (RGRP) were purified through DEAE and S-300 chromatography. Monosaccharide composition, methylation, and GC-MS analyses, as well as field emission scanning electron microscope (FESEM), atomic force microscope (AFM), Fourier-transformed infrared resonance (FT-IR), and nuclear magnetic resonance (NMR) spectra, were used to establish the structure of RGRP-1b. Our results revealed that RGRP-1a and RGRP-1b possess different molecular weights (21.3\u202fkDa and 10.2\u202fkDa, respectively). RGRP-1a was found to be composed of glucose, while RGRP-1b was composed of glucose, galactose, and arabinose. The main chain structure of RGRP-1b was composed of 1,4-\u03b1-Glcp, with a 1,4,6-\u03b1-Glcp branch unit. Its side chains were branched at the O-4 position of 1,4,6-\u03b1-Glcp, namely 1)-\u03b2-Galp-(4\u202f\u2192\u202f1)-\u03b1-Araf-(5\u202f\u2192\u202f\u03b1-Araf and 1)-\u03b2-Galp-(6\u202f\u2192\u202f\u03b1-Glcp. The changes in the nitric oxide (NO) levels and cytotoxicity revealed that macrophages probably get activated by RGRP-1b. The expressions of IL-6, IL-12, and TNF-\u03b1 were found to be upregulated after treatment with RGRP-1b. RGRP-1b thus possesses the potential to arrest the growth of Huh7 through immunoregulation. Our cumulative findings indicate that RGRP-1b obtained from radix ginseng Rubra can function as a strong immune modulator.",
+    "authors": [
+        {
+            "affiliation": "Department of Clinical Laboratory, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China.",
+            "firstname": "Xuyu",
+            "initials": "X",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "Department of Gastroenterology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China.",
+            "firstname": "Zijing",
+            "initials": "Z",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": "Department of Clinical Laboratory, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China.",
+            "firstname": "Cheng",
+            "initials": "C",
+            "lastname": "Zhong"
+        },
+        {
+            "affiliation": "Department of Clinical Laboratory, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China.",
+            "firstname": "Youwei",
+            "initials": "Y",
+            "lastname": "Pu"
+        },
+        {
+            "affiliation": "Department of Clinical Laboratory, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China.",
+            "firstname": "Zhongwei",
+            "initials": "Z",
+            "lastname": "Yang"
+        },
+        {
+            "affiliation": "Department of Clinical Laboratory, The Second Affiliated Hospital of Chongqing Medical University, Chongqing 400010, China. Electronic address: yixibao@cqmu.edu.cn.",
+            "firstname": "Yixi",
+            "initials": "Y",
+            "lastname": "Bao"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2018. Published by Elsevier B.V.",
+    "doi": "10.1016/j.ijbiomac.2021.08.176",
+    "journal": "International journal of biological macromolecules",
+    "keywords": [
+        "Immunomodulatory",
+        "Polysaccharide",
+        "Radix ginseng Rubra",
+        "Structure features"
+    ],
+    "methods": null,
+    "publication_date": "2021-09-04",
+    "pubmed_id": "34478797",
+    "results": null,
+    "title": "Structure characteristics and immunomodulatory activities of a polysaccharide RGRP-1b from radix ginseng Rubra.",
+    "xml": "<Element 'PubmedArticle' at 0x105d08d10>"
+}

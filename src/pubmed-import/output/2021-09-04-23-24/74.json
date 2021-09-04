@@ -1,0 +1,64 @@
+{
+    "abstract": "Ginsenoside Rh2(\nThree glycoside hydrolases (BglBX10, Abf22-3, and BglSk) were cloned in \nThe designed bioconversion pathways show that Abf22-3 and BglBX10 were responsible for the conversion of Rb1, Rc and Rd\u00a0\u2192\u00a0Rg3(\nOur pilot data demonstrate that BglSk is a suitable enzyme for the gram unit production of ginsenoside Rh2(",
+    "authors": [
+        {
+            "affiliation": "Department of Biotechnology, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.\nAceEMzyme Co., Ltd, Room 403, Academic Industry Cooperation, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.",
+            "firstname": "Muhammad Zubair",
+            "initials": "MZ",
+            "lastname": "Siddiqi"
+        },
+        {
+            "affiliation": "Department of Biotechnology, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.\nMajor in Integrated Chemical and Environmental Technology, Graduate School of Chemical Engineering, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.",
+            "firstname": "Hipolito Amaral",
+            "initials": "HA",
+            "lastname": "Ximenes"
+        },
+        {
+            "affiliation": "Major in Integrated Chemical and Environmental Technology, Graduate School of Chemical Engineering, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.",
+            "firstname": "Bong-Kyu",
+            "initials": "BK",
+            "lastname": "Song"
+        },
+        {
+            "affiliation": "National Institute of Biological Resources (NIBR), Incheon, Seo-gu, Gyeongseo-dong, Hankyong-ro 42, Republic of Korea.",
+            "firstname": "Hye Yoon",
+            "initials": "HY",
+            "lastname": "Park"
+        },
+        {
+            "affiliation": "Institute of Biotechnology, Chungnam National University, 99 Daehak-ro, Eoeun-dong, Yuseong-gu, Daejeon, Republic of Korea.",
+            "firstname": "Woong Hee",
+            "initials": "WH",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Health Administration, Joongbu University, Chungcheongnam-do, Geumsan-gun, Chubu-myeon, Daehak-ro, 201, Republic of Korea.",
+            "firstname": "Hyosang",
+            "initials": "H",
+            "lastname": "Han"
+        },
+        {
+            "affiliation": "Department of Biotechnology, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.\nMajor in Integrated Chemical and Environmental Technology, Graduate School of Chemical Engineering, Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do 17579, Republic of Korea.",
+            "firstname": "Wan-Taek",
+            "initials": "WT",
+            "lastname": "Im"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021 Published by Elsevier B.V. on behalf of King Saud University.",
+    "doi": "10.1016/j.sjbs.2021.04.079",
+    "journal": "Saudi journal of biological sciences",
+    "keywords": [
+        "Bioconversion",
+        "Ginsenosides",
+        "Gram unit production of Rh2(S)",
+        "Rg3(S) production",
+        "\u03b2-glucosidases"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-07",
+    "pubmed_id": "34354454\n29387726\n30652026\n18772102\n23125868\n24643957\n24475050\n22505819\n27163230\n22805964\n32059542\n25764149\n10200336\n26502836\n30239266\n22403544\n31192083\n31137483\n28478658\n29021696\n502857\n23717073\n22007558\n10571242\n23790926\n29983607\n19601793\n28672855\n23125221",
+    "results": null,
+    "title": "Enhanced production of ginsenoside Rh2(",
+    "xml": "<Element 'PubmedArticle' at 0x106e0cf90>"
+}

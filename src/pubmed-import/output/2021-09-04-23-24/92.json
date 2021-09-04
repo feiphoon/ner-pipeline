@@ -1,0 +1,46 @@
+{
+    "abstract": "A method using UPLC-HRMS has been developed for a rapid, simultaneous qualitative and quantitative analysis of twenty-five ginsenosides. Chromatographic separation was achieved on a C",
+    "authors": [
+        {
+            "affiliation": "National Demonstration Center for Experimental Biology Education, Northeast Normal University, Changchun 130024, China.\nSchool of Life Sciences, Northeast Normal University, Changchun 130024, China.",
+            "firstname": "Xiujuan",
+            "initials": "X",
+            "lastname": "Jia"
+        },
+        {
+            "affiliation": "School of Life Sciences, Northeast Normal University, Changchun 130024, China.",
+            "firstname": "Chenxing",
+            "initials": "C",
+            "lastname": "Hu"
+        },
+        {
+            "affiliation": "School of Life Sciences, Northeast Normal University, Changchun 130024, China.",
+            "firstname": "Xuepeng",
+            "initials": "X",
+            "lastname": "Zhu"
+        },
+        {
+            "affiliation": "School of Life Sciences, Northeast Normal University, Changchun 130024, China.",
+            "firstname": "Ye",
+            "initials": "Y",
+            "lastname": "Yuan"
+        },
+        {
+            "affiliation": "School of Life Sciences, Northeast Normal University, Changchun 130024, China.",
+            "firstname": "Yifa",
+            "initials": "Y",
+            "lastname": "Zhou"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Xiujuan Jia et al.",
+    "doi": "10.1155/2021/9986793",
+    "journal": "International journal of analytical chemistry",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-07-27",
+    "pubmed_id": "34306088\n24867296\n22414002\n25618711\n15556492\n25108743\n10571242\n30445785\n29719461\n22592088\n10497929\n33456471\n26222904\n23158292\n28977419\n18772102\n24235860\n24813934\n24484594\n22047761\n22310552\n29207539",
+    "results": null,
+    "title": "Simultaneous Determination of 25 Ginsenosides by UPLC-HRMS via Quantitative Analysis of Multicomponents by Single Marker.",
+    "xml": "<Element 'PubmedArticle' at 0x106f109f0>"
+}

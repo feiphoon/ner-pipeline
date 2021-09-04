@@ -1,0 +1,58 @@
+{
+    "abstract": "Bone defects are commonly found in the elderly and athletic population due to systemic diseases such as osteoporosis and trauma. Bone scaffolds have since been developed to enhance bone regeneration by acting as a biological extracellular scaffold for cells. The main advantage of a bone scaffold lies in its ability to provide various degrees of structural support and growth factors for cellular activities. Therefore, we designed a 3D porous scaffold that can not only provide sufficient mechanical properties but also carry drugs and promote cell viability. Ginsenoside Rb1 (GR) is an extract from panax ginseng, which has been used for bone regeneration and repair since ancient Chinese history. In this study, we fabricated scaffolds using various concentrations of GR with mesoporous calcium silicate/calcium sulfate (MSCS) and investigated the scaffold's physical and chemical characteristic properties. PrestoBlue, F-actin staining, and ELISA were used to demonstrate the effect of the GR-contained MSCS scaffold on cell proliferation, morphology, and expression of the specific osteogenic-related protein of human dental pulp stem cells (hDPSCs). According to our data, hDPSCs cultivated in GR-contained MSCS scaffold had preferable abilities of proliferation and higher expression of the osteogenic-related protein and could effectively inhibit inflammation. Finally, in vivo performance was assessed using histological results that revealed the GR-contained MSCS scaffolds were able to further achieve more effective hard tissue regeneration than has been the case in the past. Taken together, this study demonstrated that a GR-containing MSCS 3D scaffold could be used as a potential alternative for future bone tissue engineering studies and has good potential for clinical use.",
+    "authors": [
+        {
+            "affiliation": "Graduate Institute of Clinical Dentistry, School of Dentistry, National Taiwan University, Taipei 10617, Taiwan.",
+            "firstname": "Cheng-Yu",
+            "initials": "CY",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "School of Dentistry, China Medical University, Taichung City 406040, Taiwan.\nx-Dimension Center for Medical Research and Translation, China Medical University Hospital, Taichung 404332, Taiwan.\nDepartment of Bioinformatics and Medical Engineering, Asia University, Taichung City 41354, Taiwan.",
+            "firstname": "Ming-You",
+            "initials": "MY",
+            "lastname": "Shie"
+        },
+        {
+            "affiliation": "x-Dimension Center for Medical Research and Translation, China Medical University Hospital, Taichung 404332, Taiwan.\nSchool of Medicine, China Medical University, Taichung 406040, Taiwan.",
+            "firstname": "Alvin Kai-Xing",
+            "initials": "AK",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Graduate Institute of Dental Science and Oral Health Industries, China Medical University, Taichung 406040, Taiwan.",
+            "firstname": "Yun-Ting",
+            "initials": "YT",
+            "lastname": "Chou"
+        },
+        {
+            "affiliation": "School of Dentistry, China Medical University, Taichung City 406040, Taiwan.",
+            "firstname": "Chun",
+            "initials": "C",
+            "lastname": "Chiang"
+        },
+        {
+            "affiliation": "Graduate Institute of Clinical Dentistry, School of Dentistry, National Taiwan University, Taipei 10617, Taiwan.\nDepartment of Dentistry, National Taiwan University Hospital, Taipei 100229, Taiwan.\nSchool of Dentistry, College of Dental Medicine, Kaohsiung Medical University, Kaohsiung 807378, Taiwan.",
+            "firstname": "Chun-Pin",
+            "initials": "CP",
+            "lastname": "Lin"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.3390/biomedicines9080907",
+    "journal": "Biomedicines",
+    "keywords": [
+        "3D printing",
+        "calcium sulfate",
+        "ginsenoside Rb1",
+        "inflammation",
+        "mesoporous calcium silicate"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-28",
+    "pubmed_id": "34440111\n12406373\n33321663\n21345382\n32731179\n30773833\n33641921\n32391072\n33831571\n33671187\n30409449\n26249577\n33321670\n33923505\n31543273\n27141994\n33164317\n31500067\n30021937\n29282550\n33965102\n32038244\n32806300\n33579436\n30812998\n31500024\n26543022\n30813102\n31835840\n33321669\n33572786\n33320641\n28183667\n32610580\n33192126\n32279738\n32204116\n18083642\n34201589\n32219170",
+    "results": null,
+    "title": "3D-Printed Ginsenoside Rb1-Loaded Mesoporous Calcium Silicate/Calcium Sulfate Scaffolds for Inflammation Inhibition and Bone Regeneration.",
+    "xml": "<Element 'PubmedArticle' at 0x106a83d60>"
+}

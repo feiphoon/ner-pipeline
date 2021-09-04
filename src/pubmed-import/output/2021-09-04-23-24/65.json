@@ -1,0 +1,46 @@
+{
+    "abstract": "Ginsenoside Re (G\u2011Re) is a panaxatriol saponin and one of the pharmacologically active natural constituents of ginseng (",
+    "authors": [
+        {
+            "affiliation": "Department of Molecular Biology, College of Natural Sciences, Pusan National University, Busan 46241, Republic of Korea.",
+            "firstname": "Iskander",
+            "initials": "I",
+            "lastname": "Madhi"
+        },
+        {
+            "affiliation": "Korea Nanobiotechnology Center, Pusan National University, Busan 46241, Republic of Korea.",
+            "firstname": "Ji-Hee",
+            "initials": "JH",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Department of Molecular Biology, College of Natural Sciences, Pusan National University, Busan 46241, Republic of Korea.",
+            "firstname": "Ji Eun",
+            "initials": "JE",
+            "lastname": "Shin"
+        },
+        {
+            "affiliation": "Department of Molecular Biology, College of Natural Sciences, Pusan National University, Busan 46241, Republic of Korea.",
+            "firstname": "Younghee",
+            "initials": "Y",
+            "lastname": "Kim"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.3892/mmr.2021.12337",
+    "journal": "Molecular medicine reports",
+    "keywords": [
+        "Ca2+/calmodulin\u2011dependent protein kinase",
+        "ginsenoside Re",
+        "microglia",
+        "neuroinflammation",
+        "neurotoxicity"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34368872\n32611761\n3135367\n30526621\n22766494\n30962497\n27161858\n19943344\n22566609\n12799020\n7631343\n23717138\n2346520\n25451612\n21092323\n27748921\n26713080\n14741691\n28811745\n30576920\n19903519\n31013638\n18759972\n31906464\n29849495\n30250185\n30258234\n28656226\n27080948\n22849695\n31599782\n8423058\n17180163\n26608817\n1381982\n16497296\n16387690\n28197184\n21971952\n32348225\n27267059\n26733801\n27074714\n23102375\n22277195\n29104890\n17027742\n20537195\n28440493\n17237348\n11042352\n19926287\n15846472\n24352680\n31001075\n1383325\n30464573\n23545455\n16197805\n17659841",
+    "results": null,
+    "title": "Ginsenoside Re exhibits neuroprotective effects by inhibiting neuroinflammation via CAMK/MAPK/NF\u2011\u03baB signaling in microglia.",
+    "xml": "<Element 'PubmedArticle' at 0x106d4de00>"
+}

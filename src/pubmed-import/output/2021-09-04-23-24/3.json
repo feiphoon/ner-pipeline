@@ -1,0 +1,75 @@
+{
+    "abstract": "Diabetic peripheral neuropathy (DPN) is the most common complication of diabetes. At present, there is no comprehensive summary of the clinical trials related to DPN. In this article, we summarized the basic characteristics of the interventional clinical trials pertaining to DPN to determine the current status of research in this field and the existing issues.\nWe searched the World Health Organization International Clinical Trial Registration Platform (ICTRP), PubMed and Web of Science for clinical trials from 2005 to April 2021 and extracted 149 registered and 459 published clinical trials on DPN. We summarized the characteristics of the clinical trials, including the source registration, recruitment status, stage, age group, allocation method, intervention, end point classification, funding source, and treatment.\nAfter excluding noninterventional and nontreatment trials, 149 registered clinical trials out of 292 records from 12 registration centers and 459 published articles were included in this study. Among the registered trials, 43% had been completed, and 34.4% had been published in peer-reviewed journals. Among these trials, more than half used random allocation and blinded placebo-controlled methodologies. A total of 40.3% of the trials were multicenter studies, 63.8% of the treatments were drug therapies, and the endpoint classifications of 49% were efficacy and safety. Of the 459 published interventional clinical trials on DPN, 69.7% of the trials used drug treatments; more than half were randomized, double-blind, placebo-controlled clinical trials; 94.1% had positive outcomes; 46.4% had a target size of 50; and 22.9% were multicenter.\nThis paper systematically summarizes the current status of interventional trials on DPN registered in the ICTRP and published clinical trials and provides a reference for the development of high-quality intervention strategies for DPN in the future.",
+    "authors": [
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Mengmeng",
+            "initials": "M",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "Research Center of Traditional Chinese Medicine, The First Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.\nCollege of Acupuncture and Tuina, Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Zepeng",
+            "initials": "Z",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "Department of Endocrinology, The First Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Jia",
+            "initials": "J",
+            "lastname": "Mi"
+        },
+        {
+            "affiliation": "Department of Endocrinology, The First Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Guoqiang",
+            "initials": "G",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Lulu",
+            "initials": "L",
+            "lastname": "Tian"
+        },
+        {
+            "affiliation": "College of Traditional Chinese Medicine, Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Yunyun",
+            "initials": "Y",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "Research Center of Traditional Chinese Medicine, The First Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.\nAcupuncture and Massage Center, The Third Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Xiaomin",
+            "initials": "X",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Jilin Ginseng Academy, Key Laboratory of Active Substances and Biological Mechanisms of Ginseng Efficacy, Ministry of Education, Jilin Provincial Key Laboratory of Bio-Macromolecules of Chinese Medicine, Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Xiangyan",
+            "initials": "X",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Department of Endocrinology, The First Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, Jilin, People's Republic of China.",
+            "firstname": "Xiuge",
+            "initials": "X",
+            "lastname": "Wang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021 Wang et al.",
+    "doi": "10.2147/JPR.S320364",
+    "journal": "Journal of pain research",
+    "keywords": [
+        "ICTRP",
+        "clinical characteristics",
+        "clinical interventional trials",
+        "diabetic peripheral neuropathy"
+    ],
+    "methods": null,
+    "publication_date": "2021-09-03",
+    "pubmed_id": "34471381\n25594611\n19160345\n24746878\n32067247\n33114210\n33494154\n30486889\n32106163\n31318414\n23374622\n22271716\n20067907\n24124947\n31624024\n32633792\n25205950\n29709457\n19485723\n28720112\n30154143\n20375760\n31904855\n31518657\n27999003\n24803311\n26281902\n27746370\n21695760\n31065863\n29546050\n31941531\n27822619\n33781993\n33374137\n32809209\n30256929\n9881234\n28627217",
+    "results": null,
+    "title": "Interventional Clinical Trials on Diabetic Peripheral Neuropathy: A Retrospective Analysis.",
+    "xml": "<Element 'PubmedArticle' at 0x1068f7f90>"
+}

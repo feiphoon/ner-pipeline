@@ -1,0 +1,46 @@
+{
+    "abstract": "Panax notoginseng saponins (PNS) are commonly used in the treatment of cardiovascular diseases. Whether PNS can protect myocardial ischemia-reperfusion injury by regulating FOXO3a/HIF-1\u03b1 cell signaling pathway remains unclear. The purpose of this study is to investigate the protective effect of PNS on H9c2 cardiomyocytes through FOXO3a/HIF-1\u03b1 cell signaling pathway. Establishment of hypoxia-reoxygenation model of H9c2 cells, after PNS, HIF-1\u03b1 inhibitor 2-methoxyestradiol (2ME2), and PI3K/Akt pathway inhibitor LY294002 intervention, the cell viability, autophagy, and cell apoptosis were determined. Cell proliferation, LDH and MDA were used to evaluate the degree of cell injury. The level of ROS was detected with fluorescence microscope. The apoptosis rate was detected by flow cytometry. The expression of autophagy related proteins and apoptosis related proteins were detected by western blot assay.PNS could reduce H9c2 hypoxia reoxygenation injury by promoting autophagy and inhibiting apoptosis through HIF-1\u03b1/FOXO3a cell signaling pathway. Furthermore, the protective effects of PNS were abolished by HIF-1\u03b1 inhibitor 2ME2 and PI3K/Akt inhibitor LY294002.PNS could reduce H9c2 hypoxia-reoxygenation injury by promoting autophagy and inhibiting apoptosis through HIF-1\u03b1/FOXO3a cell signaling pathway.",
+    "authors": [
+        {
+            "affiliation": "Department of Pharmacy, Affiliated Hospital of Shaoxing University, Shaoxing 312000, PR China Department of research, Affiliated Hospital of Shaoxing University, Shaoxing 312000, PR China Department of Cardiovascular medicine, Affiliated Hospital of Shaoxing University, Shaoxing 312000, PR China.",
+            "firstname": "Xin-Wen",
+            "initials": "XW",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Meng-Kai",
+            "initials": "MK",
+            "lastname": "Lu"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Hui-Ting",
+            "initials": "HT",
+            "lastname": "Zhong"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Jing-Jing",
+            "initials": "JJ",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": null,
+            "firstname": "Yong-Ping",
+            "initials": "YP",
+            "lastname": "Fu"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Wolters Kluwer Health, Inc. All rights reserved.",
+    "doi": "10.1097/FJC.0000000000001120",
+    "journal": "Journal of cardiovascular pharmacology",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-07",
+    "pubmed_id": "34354001",
+    "results": null,
+    "title": "Panax notoginseng saponins protect H9c2 cells from hypoxia-reoxygenation injury through FOXO3a/HIF-1\u03b1 cell signaling pathway.",
+    "xml": "<Element 'PubmedArticle' at 0x106e21900>"
+}

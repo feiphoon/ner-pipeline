@@ -1,0 +1,51 @@
+{
+    "abstract": "Cartilage is a resilient and smooth connective tissue that is found throughout the body. Among the three major types of cartilage, namely hyaline cartilage, elastic cartilage, and fibrocartilage, hyaline cartilage is the most widespread type of cartilage predominantly located in the joint surfaces (articular cartilage, AC). It remains a huge challenge for orthopedic surgeons to deal with AC damage since it has limited capacity for self-repair. Xiphoid cartilage (XC) is a vestigial cartilage located in the distal end of the sternum. XC-derived chondrocytes exhibit strong chondrogenic differentiation capacity. Thus, XC could become a potential donor site of chondrocytes for cartilage repair and regeneration. However, the underlying gene expression patterns between AC and XC are still largely unknown. In the present study, we used state-of-the-art RNA-seq technology combined with validation method to investigate the gene expression patterns between AC and XC, and identified a series of differentially expressed genes (DEGs) involved in chondrocyte commitment and differentiation including growth factors, transcription factors, and extracellular matrices. We demonstrated that the majority of significantly up-regulated DEGs (XC vs. AC) in XC were involved in regulating cartilage regeneration and repair, whereas the majority of significantly up-regulated DEGs (XC vs. AC) in AC were involved in regulating chondrocyte differentiation and maturation. This study has increased our knowledge of transcriptional networks in hyaline cartilage and elastic cartilage. It also supports the use of XC-derived chondrocytes as a potential cell resource for cartilage regeneration and repair.",
+    "authors": [
+        {
+            "affiliation": "Jilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, 130117, China.",
+            "firstname": "Baojin",
+            "initials": "B",
+            "lastname": "Yao"
+        },
+        {
+            "affiliation": "Jilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, 130117, China.",
+            "firstname": "Zhenwei",
+            "initials": "Z",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "Innovation Practice Center, Changchun University of Chinese Medicine, Changchun, 130117, China.",
+            "firstname": "Mei",
+            "initials": "M",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "The Affiliated Hospital of Changchun University of Chinese Medicine, Changchun, 130117, China. leng_xiangyang@163.com.",
+            "firstname": "Xiangyang",
+            "initials": "X",
+            "lastname": "Leng"
+        },
+        {
+            "affiliation": "Jilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, 130117, China. zhaodaqing1963@163.com.",
+            "firstname": "Daqing",
+            "initials": "D",
+            "lastname": "Zhao"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021. The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature.",
+    "doi": "10.1007/s10528-021-10127-x\n10.1016/j.biomaterials.2018.10.028\n10.1016/j.ydbio.2007.12.001\n10.1186/gb-2010-11-10-r106\n10.1371/journal.pgen.1002866\n10.1242/dev.083881\n10.1074/jbc.M112.444810\n10.1242/dev.126.19.4317\n10.1038/s41598-019-40575-w\n10.1530/JME-14-0093\n10.1016/j.jbiomech.2013.11.048\n10.1007/s00441-017-2613-0\n10.22203/eCM.v021a10\n10.2353/ajpath.2010.090450\n10.1093/bfgp/elu035\n10.1177/1947603515604022\n10.1007/s11999-011-1857-3\n10.1002/jcp.26036\n10.1002/bit.26042\n10.1089/ten.tea.2012.0618\n10.1016/j.bone.2003.12.023\n10.1016/j.gene.2009.08.015\n10.1186/1471-2199-7-30\n10.1002/jcp.25771\n10.1016/j.jor.2017.05.001\n10.1038/nmeth.3317\n10.1111/j.1365-2443.2008.01209.x\n10.1002/art.30335\n10.1369/jhc.7A7223.2007\n10.1016/j.colsurfb.2011.12.011\n10.1074/jbc.M117.818930\n10.1016/S0014-5793(04)00243-1\n10.1002/bdrc.20048\n10.1186/s13075-014-0453-9\n10.1155/2013/284873\n10.1016/j.matbio.2008.04.003\n10.1002/jbmr.3171\n10.1177/1947603513477652\n10.1016/j.jneumeth.2018.11.021\n10.1002/art.33490\n10.1002/jcp.21483\n10.1007/s00018-019-03445-2\n10.5966/sctm.2014-0070\n10.1177/002215540205000807\n10.1016/j.bbrc.2012.01.064\n10.1016/j.joca.2003.12.002\n10.1111/j.1440-169X.2009.01126.x\n10.1038/nprot.2008.73\n10.1073/pnas.052716199\n10.1016/j.bbrc.2019.01.042\n10.1177/1941738109350438\n10.1002/dvdy.21137\n10.1242/jcs.048926\n10.1016/j.matbio.2007.07.004\n10.1002/jcb.26083\n10.1016/j.ydbio.2010.07.028\n10.1038/nbt.1621\n10.1242/dev.155598\n10.1007/s00586-010-1598-0\n10.1007/s002230001152\n10.1242/dev.043281\n10.1002/jbmr.5\n10.1359/jbmr.2002.17.10.1851\n10.1074/mcp.M111.014159\n10.1136/annrheumdis-2015-208406\n10.1002/jcp.21110\n10.1016/j.cell.2014.11.042\n10.1016/j.ydbio.2009.01.012\n10.1093/nar/gkr483\n10.3109/03008207.2015.1026965\n10.1016/j.bbadis.2012.01.006\n10.1186/ar3441\n10.1359/JBMR.050319\n10.1101/gad.1174704\n10.1186/gb-2010-11-2-r14\n10.1242/dev.01053\n10.1038/387151a0\n10.1186/ar4025\n10.3390/md17100586\n10.1007/s11033-020-05646-6\n10.1007/s00018-019-03137-x",
+    "journal": "Biochemical genetics",
+    "keywords": [
+        "Articular cartilage",
+        "Gene expression pattern",
+        "Transcriptional networks",
+        "Xiphoid cartilage"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-20",
+    "pubmed_id": "34410558\n30391802\n18191120\n20979621\n22876201\n23095889\n19937731\n23530037\n10477299\n30862915\n24982242\n24406099\n28413859\n21305475\n20035055\n26958317\n31701148\n21403984\n28574571\n24959581\n27345768\n23962090\n15050893\n19735703\n16984628\n28063220\n28559648\n25751142\n18782222\n21391200\n17827167\n22245318\n29146595\n15063719\n16187326\n25296561\n24069595\n18558481\n28520221\n26069669\n30476491\n22131019\n18446812\n31915836\n25205841\n26535340\n12133908\n22290230\n19712269\n18546601\n11917104\n30654942\n23015907\n17436279\n19755491\n17707622\n28425567\n20692252\n20436464\n28974642\n20953637\n11136537\n19906842\n20200966\n26903440\n17492773\n25594183\n19389374\n3125809\n25803621\n22266138\n21835001\n16007336\n15107406\n20132535\n15073147\n9144284\n22971952\n32661874\n31089746",
+    "results": null,
+    "title": "Comparison of Gene Expression Patterns in Articular Cartilage and Xiphoid Cartilage.",
+    "xml": "<Element 'PubmedArticle' at 0x106b1fb80>"
+}

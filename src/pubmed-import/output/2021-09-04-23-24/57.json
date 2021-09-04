@@ -1,0 +1,89 @@
+{
+    "abstract": "Anti-inflammatory approaches are emerging as a new strategy for the treatment of depressive disorders. Ginsenoside Rb1 (GRb1), a major component of Panax ginseng, can inhibit inflammatory cascade and alleviate depressive-like behaviors. Microglia can promote or inhibit adult hippocampal neurogenesis according to their functional phenotypes. Here, we examine whether GRb1 may exert antidepressant effects by promoting a pro-neurogenic phenotype of microglia and thereby increasing neurogenesis.\nThe antidepressant effects of GRb1 or the licensed antidepressant imipramine (IMI) were assessed in chronic mild stress (CMS)-exposed male mice. The depressive-like behaviors of mice were evaluated by sucrose preference test, forced swimming test (FST), and tail suspension test (TST). The microglial phenotypes were identified by pro- and anti-inflammatory cytokine expression and morphological properties, analyzed by RT-qPCR, western blotting, and immunofluorescence staining. The effect of GRb1-treated microglia on adult hippocampal neurogenesis in vivo and in vitro was detected using immunofluorescence staining.\nBehavioral assessment indicated that GRb1 or IMI treatment alleviated depressive-like behaviors in CMS-exposed mice. Immunofluorescence examination demonstrated that GRb1 induced a pro-neurogenic phenotype of microglia via activating PPAR\u03b3 in vivo and in vitro, which were effectively reversed by the PPAR\u03b3 inhibitor GW9662. In addition, GRb1-treated microglia increased the proliferation and differentiation of neural precursor cells.\nThese findings demonstrated that GRb1 alleviated depressive-like behaviors of CMS-exposed male mice mainly through PPAR\u03b3-mediated microglial activation and improvement of adult hippocampus neurogenesis.",
+    "authors": [
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Lijuan",
+            "initials": "L",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Minmin",
+            "initials": "M",
+            "lastname": "Tang"
+        },
+        {
+            "affiliation": "State Key Laboratory of Southwestern Chinese Medicine Resources, School of Pharmacy, Chengdu University of Traditional Chinese Medicine, Chengdu, 611137, China.",
+            "firstname": "Xiaofang",
+            "initials": "X",
+            "lastname": "Xie"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Qiuying",
+            "initials": "Q",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Nan",
+            "initials": "N",
+            "lastname": "Hu"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Hui",
+            "initials": "H",
+            "lastname": "He"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Gangcai",
+            "initials": "G",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China.",
+            "firstname": "Shiqi",
+            "initials": "S",
+            "lastname": "Huang"
+        },
+        {
+            "affiliation": "State Key Laboratory of Southwestern Chinese Medicine Resources, School of Pharmacy, Chengdu University of Traditional Chinese Medicine, Chengdu, 611137, China.",
+            "firstname": "Cheng",
+            "initials": "C",
+            "lastname": "Peng"
+        },
+        {
+            "affiliation": "School of Medicine, University of Electronic Science and Technology of China, Chengdu, 610054, China. yingxiao@uestc.edu.cn.",
+            "firstname": "Ying",
+            "initials": "Y",
+            "lastname": "Xiao"
+        },
+        {
+            "affiliation": "School of Life Science and Technology, Mental Health Center of Chengdu, University of Electronic Science and Technology of China, Chengdu, 610054, China. youzili@uestc.edu.cn.",
+            "firstname": "Zili",
+            "initials": "Z",
+            "lastname": "You"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021. The Author(s).",
+    "doi": "10.1186/s12974-021-02185-0",
+    "journal": "Journal of neuroinflammation",
+    "keywords": [
+        "Antidepressant",
+        "Ginsenoside Rb1",
+        "Major depressive disorder",
+        "Microglia",
+        "Neurogenesis",
+        "Pro-neurogenic phenotype"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-11",
+    "pubmed_id": "34372875\n25391942\n33731342\n15522247\n21414307\n15056502\n19951752\n27424655\n28736034\n18155466\n28412215\n27060612\n25833129\n29180961\n29802841\n29939190\n29649924\n32791172\n33437154\n26404714\n30659984\n28524175\n32342254\n33761343\n33578182\n28752027\n30940771\n27716270\n33293948\n27146513\n29988104\n30459555\n22893262\n23055003\n33712981\n31816825\n28213267\n31572200\n26442697\n25867960\n21184481\n26778970\n31078757\n15271582\n21424694\n18662748\n31569393\n32761843\n25504813\n33496183\n21767575\n29343269\n33386422\n29429452\n31169200\n30103769\n12895687\n22836247\n29524300\n25206809\n12814860\n33359924",
+    "results": "Behavioral assessment indicated that GRb1 or IMI treatment alleviated depressive-like behaviors in CMS-exposed mice. Immunofluorescence examination demonstrated that GRb1 induced a pro-neurogenic phenotype of microglia via activating PPAR\u03b3 in vivo and in vitro, which were effectively reversed by the PPAR\u03b3 inhibitor GW9662. In addition, GRb1-treated microglia increased the proliferation and differentiation of neural precursor cells.",
+    "title": "Ginsenoside Rb1 induces a pro-neurogenic microglial phenotype via PPAR\u03b3 activation in male mice exposed to chronic mild stress.",
+    "xml": "<Element 'PubmedArticle' at 0x106ce73b0>"
+}

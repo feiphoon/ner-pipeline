@@ -1,0 +1,70 @@
+{
+    "abstract": "The leakage of blood-brain barrier (BBB) is main pathophysiological change in acute stage of ischemic stroke, which not only deteriorates neurological function, but also increases the risk of hemorrhagic transformation after thrombolysis.\nThis article investigates the efficacy of Notoginsenoside R1, an active ingredient of Panax notoginseng, on BBB permeability and explores related mechanisms after acute ischemic stroke.\nIn vivo, male Sprague-Dawley rats (260-280\u00a0g) were selected and randomly divided into 6 groups: sham group, model group, low, middle and high doses of Notoginsenoside R1 groups and positive drug Dl-3-n-Butylphthalide group. Except for sham group, rats were performed with permanent middle cerebral artery occlusion model in each group. Twelve hours later, rats were evaluated for Bederson neurological function, and BBB integrity by Evans blue leak imaging; Triphenyltetrazolium chloride staining was used to detect the volume of cerebral infarction. Frozen sections of rats' brain tissue were prepared for detection of MMPs activity in situ zymography. Peripheral tissue of cerebral infarction was collected and tested the expression of MMP2, 9 and tight junction proteins (zo1, claudin5, occludin) by western blot. In vitro, transwell endothelial barrier model was established by bEnd.3 cells. Oxygen glucose deprivation (OGD) was chosen to simulate the hypoxic environment. Suitable OGD stimulation time as well as Notoginsenoside R1 and Dl-3-n-Butylphthalide optimal dose concentrations were determined through transwell leakage and CCK8 assay. Furthermore, endothelial subcellular component proteins were extracted. The change of zo1, claudin5, occludin and caveolin1 was detected by western blot.\nNotoginsenoside R1 treatment significantly reduced BBB leakage and cerebral infarction volume, weakened neurological deficits in post-stroke rats. Moreover, it inhibited the activity of MMPs in infarcted cortex and striatum, down-regulated MMP2, 9 and up-regulated zo1 and claudin5 expressions in penumbra. In vitro, Notoginsenoside R1 treatment decreased OGD-induced endothelial barrier permeability, restored expressions of zo1, claudin5 on cellular membrane and cytoplasm, as well as mediated membrane redistribution of occludin and caveolin1 from actin cytoskeletal fraction.\nNotoginsenoside R1 treatment attenuates BBB permeability, cerebral infarction volume and neurological impairments in rats with acute cerebral ischemia. The mechanisms might be related to intervening degradation and redistribution of zo1, caludin5 and occludin by caveolin1/ MMP2/9 pathway. More effects and mechanisms of Notoginsenoside R1 on rehabilitation of stroke are worthy to be explored in the future.",
+    "authors": [
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China.",
+            "firstname": "Bowen",
+            "initials": "B",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China.",
+            "firstname": "Yiyang",
+            "initials": "Y",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China.",
+            "firstname": "Yan",
+            "initials": "Y",
+            "lastname": "Han"
+        },
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China.",
+            "firstname": "Shengpeng",
+            "initials": "S",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing 210009, China.",
+            "firstname": "Hua",
+            "initials": "H",
+            "lastname": "Yang"
+        },
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China. Electronic address: Yonghuazhao@um.edu.mo.",
+            "firstname": "Yonghua",
+            "initials": "Y",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing 210009, China.",
+            "firstname": "Ping",
+            "initials": "P",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "State Key Laboratory of Quality Research in Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macao SAR 999078, China. Electronic address: YTWang@um.edu.mo.",
+            "firstname": "Yitao",
+            "initials": "Y",
+            "lastname": "Wang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021. Published by Elsevier GmbH.",
+    "doi": "10.1016/j.phymed.2021.153660",
+    "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+    "keywords": [
+        "Acute ischemic stroke",
+        "Blood-brain barrier",
+        "Caveolin1/MMP2/9 pathway",
+        "Notoginsenoside R1",
+        "Tight junctions"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-05",
+    "pubmed_id": "34344565",
+    "results": "Notoginsenoside R1 treatment significantly reduced BBB leakage and cerebral infarction volume, weakened neurological deficits in post-stroke rats. Moreover, it inhibited the activity of MMPs in infarcted cortex and striatum, down-regulated MMP2, 9 and up-regulated zo1 and claudin5 expressions in penumbra. In vitro, Notoginsenoside R1 treatment decreased OGD-induced endothelial barrier permeability, restored expressions of zo1, claudin5 on cellular membrane and cytoplasm, as well as mediated membrane redistribution of occludin and caveolin1 from actin cytoskeletal fraction.",
+    "title": "Notoginsenoside R1 intervenes degradation and redistribution of tight junctions to ameliorate blood-brain barrier permeability by Caveolin-1/MMP2/9 pathway after acute ischemic stroke.",
+    "xml": "<Element 'PubmedArticle' at 0x106e58270>"
+}
