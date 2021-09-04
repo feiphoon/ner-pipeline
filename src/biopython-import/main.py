@@ -20,11 +20,7 @@ output_path.mkdir(parents=True, exist_ok=True)
 
 def search(query: str, max_documents: int = 100) -> list:
     handle = Entrez.esearch(
-        db="pubmed",
-        sort="relevance",
-        retmax=max_documents,
-        retmode="xml",
-        term=query
+        db="pubmed", sort="relevance", retmax=max_documents, retmode="xml", term=query
     )
     return Entrez.read(handle)
 
@@ -40,6 +36,7 @@ def fetch_details(id: str) -> dict:
     return records
     # abstracts = [pubmed_article["MedlineCitation"]["Article"]["Abstract"]["AbstractText"][0] for pubmed_article in records["PubmedArticle"] if "Abstract" in pubmed_article["MedlineCitation"]["Article"].keys()]
     # return abstracts
+
 
 query = "ginseng"
 query_results = search(query, 1)
