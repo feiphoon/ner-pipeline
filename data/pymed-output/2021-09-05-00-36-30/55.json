@@ -1,0 +1,94 @@
+{
+    "abstract": "The Asian ginseng root (Panax ginseng C.A. Meyer) is a very commonly used herbal medicine worldwide. Ginseng fruit, including the berry (or pulp) and seed, is also valuable for several health conditions including immunostimulation and cancer chemoprevention. In this study, the anticancer and anti-proliferative effects of the extracts of ginseng berry and seed were evaluated. The ginsenosides in the ginseng berry concentrate (GBC) and ginseng seed extract (GSE) were analyzed. We then evaluated their anti-colorectal cancer potentials, including antiproliferation, cell cycle arrest, and apoptotic induction. Further investigation consisted of the berry's adaptive immune responses, such as the actions on the differentiation of T helper cells Treg, Th1, and Th17. The major constituents in GBC were ginsenosides Re and Rd, which can be compared to those in the root. The GBC significantly inhibited colon cancer cell growth, and its anti-proliferative effect involved mechanisms including G2/M cell cycle arrest via upregulation of cyclin A and induction of apoptosis via regulation of apoptotic related gene expressions. GBC also downregulated the expressions of pro-inflammatory cytokine genes. For the adaptive immune responses, GBC did not influence Th1 and Treg cell differentiation but significantly inhibited Th17 cell differentiation and thus regulated the balance of Th17/Treg for adaptive immunity. Although no ginsenoside was detected in the GSE, interestingly, it obviously enhanced colon cancer cell proliferation with the underlined details to be determined. Our results suggested that GBC is a promising dietary supplement for cancer chemoprevention and immunomodulation.",
+    "authors": [
+        {
+            "affiliation": "Central Laboratory, No. 1 Affiliated Hospital of Yunnan University of Traditional Chinese Medicine, Kunming, China.\nTang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "C-Z",
+            "initials": "CZ",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "Central Laboratory, No. 1 Affiliated Hospital of Yunnan University of Traditional Chinese Medicine, Kunming, China.\nTang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "C",
+            "initials": "C",
+            "lastname": "Wan"
+        },
+        {
+            "affiliation": "Tang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "Y",
+            "initials": "Y",
+            "lastname": "Luo"
+        },
+        {
+            "affiliation": "School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, Jiangsu, China.",
+            "firstname": "C-F",
+            "initials": "CF",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "School of Chemistry and Chemical Engineering, Chongqing University, Chongqing, China.",
+            "firstname": "Q-H",
+            "initials": "QH",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "School of Pharmacy, Nanjing Medical University, Nanjing, Jiangsu, China.",
+            "firstname": "L",
+            "initials": "L",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "Health Care Research Institute Research and Development Center, AmorePacific Corporetion, Yongin, Republic of Korea.",
+            "firstname": "C W",
+            "initials": "CW",
+            "lastname": "Park"
+        },
+        {
+            "affiliation": "Health Care Research Institute Research and Development Center, AmorePacific Corporetion, Yongin, Republic of Korea.",
+            "firstname": "S H",
+            "initials": "SH",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Tang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "Z",
+            "initials": "Z",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": "Tang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "M",
+            "initials": "M",
+            "lastname": "Lager"
+        },
+        {
+            "affiliation": "Tang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA.",
+            "firstname": "M",
+            "initials": "M",
+            "lastname": "Xu"
+        },
+        {
+            "affiliation": "Program in Cellular and Molecular Medicine, Boston Children's Hospital and Department of Pediatrics, Harvard Medical School, Boston, MA, USA.",
+            "firstname": "L",
+            "initials": "L",
+            "lastname": "Hou"
+        },
+        {
+            "affiliation": "Tang Center for Herbal Medicine Research, and Department of Anesthesia & Critical Care, University of Chicago, Chicago, IL, USA. CYuan@dacc.uchicago.edu.\nCommittee on Clinical Pharmacology and Pharmacogenomics, University of Chicago, Chicago, IL, USA.",
+            "firstname": "C-S",
+            "initials": "CS",
+            "lastname": "Yuan"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.26402/jpp.2021.2.08",
+    "journal": "Journal of physiology and pharmacology : an official journal of the Polish Physiological Society",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-11",
+    "pubmed_id": "34374659\n32238926\n17182823\n25875151\n2683079\n33184028\n23597198\n31795742\n15791456\n25161295\n32633239\n32148410\n11905620\n27443884\n23917251\n25044150\n28974887\n29723847\n31548399\n31495181\n21396670\n23717100\n31645124\n26388189\n19731589\n23254461\n30466610\n31091972\n10571242\n28830208\n31645122\n9698120\n19724877\n29980145\n23344496\n28892002\n22893200\n19407967\n29290521\n19252321\n25535472\n30149368\n12031973\n32133645\n27398134\n29207539\n32148397\n31323789",
+    "results": null,
+    "title": "Ginseng berry concentrate prevents colon cancer via cell cycle, apoptosis regulation, and inflammation-linked Th17 cell differentiation.",
+    "xml": "<Element 'PubmedArticle' at 0x106abccc0>"
+}

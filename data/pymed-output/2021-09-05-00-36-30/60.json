@@ -1,0 +1,40 @@
+{
+    "abstract": "The management of neuropsychiatric disorders relies heavily on pharmacotherapy. The use of herbal products as complimentary medicine, often concomitantly, is common among patients taking prescription neuropsychiatric drugs. Herb-drug interaction, a clinical consequence of this practice, may jeopardize the success of pharmacotherapy in neuropsychiatry. Besides the well-known ability of phytochemicals to inhibit and/or induce drug-metabolizing enzymes and transport proteins, several phytoconstituents are capable of exerting pharmacological effects on the central nervous system. The consequent pharmacokinetic and pharmacodynamic interactions with orthodox medications often result in deleterious clinical consequences. This study reviewed the relevant literature and identified 13 commonly used herbal products - celery, echinacea, ginkgo, ginseng, hydroxycut, kava, kratom, moringa, piperine, rhodiola, St John's wort, terminalia/commiphora ayurvedic mixture and valerian - which have shown clinically relevant interactions with prescription drugs used in the management of neuropsychiatric disorders. The clinical focus is aimed to provide easily accessible information that will be of interest to clinicians, researchers, and the drug-consuming public.",
+    "authors": [
+        {
+            "affiliation": "School of Pharmacy,, College of Pharmacy and Health Sciences, Campbell University, Buies Creek, NC, 27501, United States.",
+            "firstname": "Tram T",
+            "initials": "TT",
+            "lastname": "Le"
+        },
+        {
+            "affiliation": "School of Pharmacy,, College of Pharmacy and Health Sciences, Campbell University, Buies Creek, NC, 27501, United States.",
+            "firstname": "Sarah R",
+            "initials": "SR",
+            "lastname": "McGrath"
+        },
+        {
+            "affiliation": "Department of Pharmaceutical Sciences, College of Pharmacy and Health Sciences, Campbell University, Buies Creek, NC, 27501, United States.",
+            "firstname": "Pius S",
+            "initials": "PS",
+            "lastname": "Fasinu"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright\u00a9 Bentham Science Publishers; For any queries, please email at epub@benthamscience.net.",
+    "doi": "10.2174/1570159X19666210809100357",
+    "journal": "Current neuropharmacology",
+    "keywords": [
+        "St John's wort",
+        "complimentary medicine",
+        "herb-drug interaction",
+        "neuropsychiatry",
+        "pharmacotherapy"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34370637",
+    "results": null,
+    "title": "Herb-drug interactions in neuropsychiatric pharmacotherapy - a review of clinically relevant findings.",
+    "xml": "<Element 'PubmedArticle' at 0x106b1b8b0>"
+}

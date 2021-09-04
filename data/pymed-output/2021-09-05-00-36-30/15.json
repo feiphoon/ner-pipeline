@@ -1,0 +1,89 @@
+{
+    "abstract": "Prolonged skin exposure to ultraviolet radiation can lead to development of several acute and chronic diseases, with UVA exposure considered a primary cause of dermal photodamage. We prepared a wild ginseng adventitious root extract (ARE) that could alleviate UVA irradiation-induced NIH-3T3 cell viability decline. After employing a series of purification methods to isolate main active components of ARE, adventitious root protein mixture (ARP) was identified then tested for protective effects against UVA irradiation-induced NIH-3T3 cell damage. The results showed that ARP treatment significantly reduced UVA-induced cell viability decline and confirmed that the active constituent of ARP was the protein, since proteolytic hydrolysis and heat treatment each eliminated ARP protective activity. Moreover, ARP treatment markedly inhibited UVA-induced apoptosis, cell cycle arrest and DNA fragmentation, while also significantly reversing UVA effects (elevated Bax levels, reduced Bcl-2 expression) by reducing Bax levels and increasing Bcl-2 expression. Mechanistically, ARP promoted Akt phosphorylation regardless of UVA exposure, thus confirming ARP resistance to inactivation by UVA light. Notably, in the presence of Akt inhibitor SC0227, ARP could no longer counteract UVA-induced cell viability decline and DNA fragmentation. Additionally, our results demonstrated that ARP treatment protected UVA-irradiated NIH-3T3 cells by preventing UVA-induced reduction of collagen-I expression. Taken together, these results suggest that ARP treatment of NIH-3T3 cells effectively mitigated UVA-induced cell viability decline by activating intracellular Akt to reduce UVA-induced DNA damage, leading to reduced rates of apoptosis and cell cycle arrest after UVA exposure and restoring collagen expression to normal levels.",
+    "authors": [
+        {
+            "affiliation": "Research Centre of Traditional Chinese Medicine, First Affiliated Hospital to Changchun University of Chinese Medicine, Changchun, Jilin, China.\nJilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, Jilin, China.",
+            "firstname": "Xiaohao",
+            "initials": "X",
+            "lastname": "Xu"
+        },
+        {
+            "affiliation": "Research Centre of Traditional Chinese Medicine, First Affiliated Hospital to Changchun University of Chinese Medicine, Changchun, Jilin, China.",
+            "firstname": "Guang",
+            "initials": "G",
+            "lastname": "Sun"
+        },
+        {
+            "affiliation": "Jilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, Jilin, China.",
+            "firstname": "Jianzeng",
+            "initials": "J",
+            "lastname": "Liu"
+        },
+        {
+            "affiliation": "Jilin Technology Innovation Centre for Chinese Medicine Biotechnology, College of Biology and Chemistry, Beihua University, Jilin, Jilin, China.",
+            "firstname": "Jingyuan",
+            "initials": "J",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "Jilin Technology Innovation Centre for Chinese Medicine Biotechnology, College of Biology and Chemistry, Beihua University, Jilin, Jilin, China.",
+            "firstname": "Jing",
+            "initials": "J",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Jilin Technology Innovation Centre for Chinese Medicine Biotechnology, College of Biology and Chemistry, Beihua University, Jilin, Jilin, China.",
+            "firstname": "Zhuo",
+            "initials": "Z",
+            "lastname": "Sun"
+        },
+        {
+            "affiliation": "Tonghua Herbal Biotechnology Co., Ltd, Tonghua, Jilin, China.",
+            "firstname": "Xiangzhu",
+            "initials": "X",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Tonghua Herbal Biotechnology Co., Ltd, Tonghua, Jilin, China.",
+            "firstname": "Hong",
+            "initials": "H",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "Jilin Ginseng Academy, Changchun University of Chinese Medicine, Changchun, Jilin, China.",
+            "firstname": "Daqing",
+            "initials": "D",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "Research Centre of Traditional Chinese Medicine, First Affiliated Hospital to Changchun University of Chinese Medicine, Changchun, Jilin, China.\nJilin Technology Innovation Centre for Chinese Medicine Biotechnology, College of Biology and Chemistry, Beihua University, Jilin, Jilin, China.",
+            "firstname": "Rui",
+            "initials": "R",
+            "lastname": "Jiang"
+        },
+        {
+            "affiliation": "Research Centre of Traditional Chinese Medicine, First Affiliated Hospital to Changchun University of Chinese Medicine, Changchun, Jilin, China.",
+            "firstname": "Liwei",
+            "initials": "L",
+            "lastname": "Sun"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021 The Wound Healing Society.",
+    "doi": "10.1111/wrr.12962",
+    "journal": "Wound repair and regeneration : official publication of the Wound Healing Society [and] the European Tissue Repair Society",
+    "keywords": [
+        "Akt",
+        "DNA fragmentation",
+        "collagen",
+        "ginseng tissue culture",
+        "photodamage",
+        "wild ginseng adventitious roots protein"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-28",
+    "pubmed_id": "34448508",
+    "results": null,
+    "title": "Akt activation-dependent protective effect of wild ginseng adventitious root protein against UVA-induced NIH-3T3 cell damage.",
+    "xml": "<Element 'PubmedArticle' at 0x104789590>"
+}

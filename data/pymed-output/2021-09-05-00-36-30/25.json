@@ -1,0 +1,58 @@
+{
+    "abstract": "PNS were identified from the Traditional Chinese Medicine System Pharmacology (TCMSP) database, and their possible targets were predicted using the PharmMapper database. IS-related targets were identified from the GeneCards database, OMIM database, and DisGeNET database. A herb-compound-target-disease network was constructed using Cytoscape, and protein-protein interaction (PPI) networks were established with STRING. GO enrichment and KEGG pathway analysis were performed using DAVID. The binding of the compounds and key targets was validated by molecular docking studies using AutoDock Vina. The neuroprotective effect of TFCJ was substantiated in terms of oxidative stress (superoxide dismutase, glutathione peroxidase, catalase, and malondialdehyde) and the levels of IGF1/PI3K/Akt pathway proteins.\nA total of 375 PNS targets and 5111 IS-related targets were identified. Among these targets, 241 were common to PNS, and IS network analysis showed that MAPK1, AKT1, PIK3R1, SRC, MAPK8, EGFR, IGF1, HRAS, RHOA, and HSP90AA1 are key targets of PNS against IS. Furthermore, GO and KEGG enrichment analysis indicated that PNS probably exert therapeutic effects against IS by regulating many pathways, such as the Ras, oestrogen, FoxO, prolactin, Rap1, PI3K-Akt, insulin, PPAR, and thyroid hormone signalling pathways. Molecular docking studies further corroborated the experimental results.The network pharmacology results were further verified by molecular docking and in vivo experiments.\nThe ameliorative effects of PNS against IS were predicted to be associated with the regulation of the IGF1-PI3K-Akt signalling pathway. Ginsenoside Re and ginsenoside Rb1 may play an important role in the treatment of IS.",
+    "authors": [
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Cong",
+            "initials": "C",
+            "lastname": "Wang"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Hao",
+            "initials": "H",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Shi-Tang",
+            "initials": "ST",
+            "lastname": "Ma"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Bin-Bin",
+            "initials": "BB",
+            "lastname": "Mao"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Yu",
+            "initials": "Y",
+            "lastname": "Chen"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Hao-Nan",
+            "initials": "HN",
+            "lastname": "Xu"
+        },
+        {
+            "affiliation": "College of Life and Health Sciences, Anhui Science and Technology University, Fengyang 233100, China.",
+            "firstname": "Hao",
+            "initials": "H",
+            "lastname": "Yu"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021 Cong Wang et al.",
+    "doi": "10.1155/2021/5582782",
+    "journal": "Evidence-based complementary and alternative medicine : eCAM",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-27",
+    "pubmed_id": "34434246\n30090509\n32858949\n27038532\n27794042\n31723205\n25871671\n31847241\n28472422\n27283328\n32477073\n29983615\n33007730\n24086601\n31540164\n19131956\n27516546\n30152137\n26136889\n32379706\n32676033\n18936753\n26081140\n24356882\n31412658\n30763928\n29896950\n29501622\n23818926\n33069325\n30365030\n30232231\n30545139\n32218735\n14597658\n31293373\n19499576\n32949698\n30373188\n16339467\n29128308\n33095440\n28513565\n30153855\n28883427\n26927079\n30476243\n28878388\n31680165\n33082908\n30884850\n30502652\n30135474\n25665731\n32042827\n24556859\n28645007\n27713258\n24735618\n30429874\n26892460\n32372953\n26879404\n32241873\n31354855",
+    "results": null,
+    "title": "A Network Pharmacology Approach for Exploring the Mechanisms of ",
+    "xml": "<Element 'PubmedArticle' at 0x1068adae0>"
+}

@@ -1,3 +1,4 @@
+biopython==1.79
 black==21.8b0
 flake8==3.9.2
 invoke==1.6.0

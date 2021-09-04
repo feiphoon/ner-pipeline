@@ -1,0 +1,76 @@
+{
+    "abstract": "Since the signal transducer and activator of transcription 3 (STAT3)/programmed death-ligand 1 (PD-L1) signaling plays an important role in tumor-immune microenvironments, in the present study, the role of STAT3/PD-L1 signaling in the apoptotic mechanism of an active ginseng saponin metabolite compound K (CK) was investigated in human prostate cancer cells. Here, CK exerted significant cytotoxicity without hurting RWPE1 normal prostate epithelial cells, increased sub-G1 and cleavage of Poly ADP-ribose polymerase (PARP) and attenuated the expression of pro-PARP and Pro-cysteine aspartyl-specific protease3 (pro-caspase-3) in LANCap, PC-3 and DU145 cells. Further, CK attenuated the expression of p-STAT3 and PD-L1 in DU145 cells along with disrupted the binding of STAT3 to PD-L1. Furthermore, CK effectively abrogated the expression of p-STAT3 and PD-L1 in interferon-gamma (INF-\u03b3)-stimulated DU145cells. Additionally, CK suppressed the expression of vascular endothelial growth factor (VEGF), transforming growth factor-\u03b2 (TGF-\u03b2), interleukin 6 (IL-6) and interleukin 10 (IL-10) as immune escape-related genes in DU145 cells. Likewise, as STAT3 targets genes, the expression of CyclinD1, c-Myc and B-cell lymphoma-extra-large (Bcl-xL) was attenuated in CK-treated DU145 cells. Notably, CK upregulated the expression of microRNA193a-5p (miR193a-5p) in DU145 cells. Consistently, miR193a-5p mimic suppressed p-STAT3, PD-L1 and pro-PARP, while miR193a-5p inhibitor reversed the ability of CK to attenuate the expression of p-STAT3, PD-L1 and pro-PARP in DU145 cells. Taken together, these findings support evidence that CK induces apoptosis via the activation of miR193a-5p and inhibition of PD-L1 and STAT3 signaling in prostate cancer cells.",
+    "authors": [
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Jae-Hee",
+            "initials": "JH",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Herbal Crop Research, National Institute of Horticultural and Herbal Science, Rural Development Administration (RDA), Eumseong 27709, Korea.",
+            "firstname": "Dae-Young",
+            "initials": "DY",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Hyo-Jung",
+            "initials": "HJ",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Eunji",
+            "initials": "E",
+            "lastname": "Im"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Deok-Yong",
+            "initials": "DY",
+            "lastname": "Sim"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Ji-Eon",
+            "initials": "JE",
+            "lastname": "Park"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Woon-Yi",
+            "initials": "WY",
+            "lastname": "Park"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Bum-Sang",
+            "initials": "BS",
+            "lastname": "Shim"
+        },
+        {
+            "affiliation": "Department of Korean Pathology, College of Korean Medicine, Kyung Hee University, Seoul 02447, Korea.",
+            "firstname": "Sung-Hoon",
+            "initials": "SH",
+            "lastname": "Kim"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.3390/cells10082151",
+    "journal": "Cells",
+    "keywords": [
+        "PD-L1",
+        "STAT3",
+        "apoptosis",
+        "compound K",
+        "prostate cancer"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-28",
+    "pubmed_id": "34440920\n31480382\n20517723\n10080544\n32972405\n33289118\n28978186\n31289572\n32864132\n27974689\n25342631\n31830168\n29654697\n25818339\n31938049\n20522957\n28605599\n31488176\n29562194\n27207108\n32632098\n19851315\n32161124\n31730010\n33301862\n33133685\n31586551\n30698054\n31507611\n31599406\n18227858\n22212432\n26681673\n31437792\n30126124\n26748421\n29222039\n31581535\n31185279\n26695359\n31717443\n29435162\n32403193\n30646912\n31511071",
+    "results": null,
+    "title": "Inhibition of STAT3/PD-L1 and Activation of miR193a-5p Are Critically Involved in Apoptotic Effect of Compound K in Prostate Cancer Cells.",
+    "xml": "<Element 'PubmedArticle' at 0x1068664f0>"
+}

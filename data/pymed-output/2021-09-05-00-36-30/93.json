@@ -1,0 +1,38 @@
+{
+    "abstract": "Breast cancer is the second most common cancer in women worldwide. Developing drugs increase the radiosensitivity effect of tumoral tissue, while protecting normal tissues has gained much attention. Ginsenoside Rg3, one of the active components of ginseng, has been shown to possess various pharmacological effects and antiproliferation activity on cancer cell lines. In this study, we assessed the anti-cancer effect of co-treatment with ginsenoside 20(S)-Rg3 and curcumin on MDA-MB-231 breast cancer cells with and without radiotherapy.\nMTT assay was applied using different concentrations of ginsenoside 20(S)-Rg3 (0, 10, 80, 150 \u00b5mol/l) and curcumin (0, 10, 30, 50, 90 \u00b5g/mL). The inhibitory effect of co-treatment with these herbal drugs with and without 4 Gy radiotherapy on the MDA-MB-231 cell line was examined. Flow cytometry was applied to measure the effect of co-treatment of the drugs on radiation-induced apoptosis. The data were analyzed using ANOVA and Kruskal-Wallis tests. P values<0.05 were considered statistically significant.\nThe results of the MTT assay showed that ginsenoside 20(S)-Rg3 and curcumin had an inhibitory effect on the MDA-MB-231 cell line in a concentration-dependent manner. Ginsenoside 20(S)-Rg3 and curcumin inhibited tumor cell development and proliferation at concentrations of 80 \u00b5mol/L and 30 \u03bcg/mL, respectively, with 50% cell viability (P=0.018, P=0.01, respectively) at 48 hour incubation time.\nGinsenoside 20(S)-Rg3 and curcumin inhibited MDA-MB-231 cell growth in a dose- and time-dependent manner and increased the radiosensitivity of cancer cells. These herbal drugs can be considered as a radiosensitizer in radiotherapy.",
+    "authors": [
+        {
+            "affiliation": "Department of Radiotherapy, School of Medicine, Health Information Management Research Center, Tehran University of Medical Sciences, Tehran, Iran.",
+            "firstname": "Vahid",
+            "initials": "V",
+            "lastname": "Changizi"
+        },
+        {
+            "affiliation": "Department of Radiobiology, School of Paramedical Sciences, Tehran University of Medical Sciences, Tehran, Iran.",
+            "firstname": "Vahideh",
+            "initials": "V",
+            "lastname": "Gharekhani"
+        },
+        {
+            "affiliation": "Department of Molecular Medicine, School of Advanced Technologies in Medicine, Tehran University of Medical Sciences, Tehran, Iran.",
+            "firstname": "Elaheh",
+            "initials": "E",
+            "lastname": "Motavaseli"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright: \u00a9 Iranian Journal of Medical Sciences.",
+    "doi": "10.30476/ijms.2020.83977.1334",
+    "journal": "Iranian journal of medical sciences",
+    "keywords": [
+        " Curcumin",
+        " Ginsenoside Rg3",
+        " Radiotherapy"
+    ],
+    "methods": null,
+    "publication_date": "2021-07-27",
+    "pubmed_id": "34305241\n30655875\n25559415\n27930973\n28077837\n26511312\n19035277\n28413320\n25672851\n18620580\n27984132\n24252332\n25451013\n18676142\n25826489\n27446225\n27367289\n26217691\n30678106\n26309394\n25337544\n25337569\n22922739",
+    "results": null,
+    "title": "Co-treatment with Ginsenoside 20(S)-Rg3 and Curcumin increases Radiosensitivity of MDA-MB-231 Cancer Cell Line.",
+    "xml": "<Element 'PubmedArticle' at 0x106d0ef90>"
+}
