@@ -9,7 +9,7 @@ from pathlib import Path
 from pymed import PubMed
 
 
-output_run = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}"
+output_run = f"{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}"
 output_path = Path(f"data/pymed-output/{output_run}")
 output_path.mkdir(parents=True, exist_ok=True)
 
