@@ -7,7 +7,7 @@ from pymed import PubMed
 
 
 output_run = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}"
-output_path = Path(f"output/{output_run}")
+output_path = Path(f"data/output/{output_run}")
 output_path.mkdir(parents=True, exist_ok=True)
 
 pubmed = PubMed(tool="MyTool", email="my@email.address")
