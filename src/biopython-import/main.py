@@ -17,7 +17,8 @@ output_run = f"{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}"
 output_path = Path(f"data/biopython-output/{output_run}")
 output_path.mkdir(parents=True, exist_ok=True)
 
-def search(query: str, max_documents: int=100) -> dict:
+
+def search(query: str, max_documents: int = 100) -> list:
     handle = Entrez.esearch(
         db="pubmed",
         sort="relevance",
@@ -27,7 +28,8 @@ def search(query: str, max_documents: int=100) -> dict:
     )
     return Entrez.read(handle)
 
-def fetch_details(id):
+
+def fetch_details(id: str) -> dict:
     handle = Entrez.efetch(
         db="pubmed",
         id=id,
