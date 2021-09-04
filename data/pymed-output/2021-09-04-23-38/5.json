@@ -1,0 +1,58 @@
+{
+    "abstract": "In this study, the colonization, diversity and relative abundance of arbuscular mycorrhizal fungi(AMF) in the roots of Panax quinquefolius in different habitats of Shandong province were analyzed by staining-microscopy and high-throughput sequencing. The data were analyzed by bioinformatics tools and statistical software. The results showed that the roots of P. quinquefolius in different habitats were colonized by AMF with different rates and intensities. The AMF in roots of P. quinquefolius belong to three genera, three families, three orders, one class and one phylum. At the level of order, the AMF mainly included Paraglomerales(52.48%), Glomerales(25.60%) and Archaeosporales(3.08%). At the level of family, the AMF were dominated by Paraglomeraceae(52.48%), Glomeraceae(18.94%) and Claroideoglomeraceae(3.05%). At the level of genus, Paraglomus(51.46%), Glomus(20.01%) and Claroideoglomus(3.52%) accounted for a large proportion, of which Paraglomus and Glomus were dominant. Cluster analysis showed that the AMF in roots of P. quinquefolius with close geographical locations could be clustered together. In this study, the diversity and dominant germplasm resources of AMF in roots of P. quinquefolius cultivated in the main producing areas were identified, which provi-ded basic data for revealing the quality formation mechanism of P. quinquefolius medicinal materials from the perspective of environment.",
+    "authors": [
+        {
+            "affiliation": "School of Biological Science and Technology, University of Ji'nan Ji'nan 250022, China School of Pharmacy, Shandong University of Traditional Chinese Medicine Ji'nan 250355, China.",
+            "firstname": "Zhi-Fang",
+            "initials": "ZF",
+            "lastname": "Ran"
+        },
+        {
+            "affiliation": "School of Biological Science and Technology, University of Ji'nan Ji'nan 250022, China School of Pharmacy, Shandong University of Traditional Chinese Medicine Ji'nan 250355, China.",
+            "firstname": "Xiao-Tong",
+            "initials": "XT",
+            "lastname": "Yang"
+        },
+        {
+            "affiliation": "School of Biological Science and Technology, University of Ji'nan Ji'nan 250022, China School of Pharmacy, Shandong University of Traditional Chinese Medicine Ji'nan 250355, China.",
+            "firstname": "Rui",
+            "initials": "R",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "School of Biological Science and Technology, University of Ji'nan Ji'nan 250022, China.",
+            "firstname": "Jie",
+            "initials": "J",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "School of Pharmacy, Shandong University of Traditional Chinese Medicine Ji'nan 250355, China.",
+            "firstname": "Yong-Qing",
+            "initials": "YQ",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Lan-Ping",
+            "initials": "LP",
+            "lastname": "Guo"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.19540/j.cnki.cjcmm.20210523.107",
+    "journal": "Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica",
+    "keywords": [
+        "Panax quinquefolius",
+        "arbuscular mycorrhizal fungi",
+        "colonization",
+        "diversity",
+        "high-throughput sequencing"
+    ],
+    "methods": null,
+    "publication_date": "2021-09-02",
+    "pubmed_id": "34467720",
+    "results": null,
+    "title": "[Diversity of arbuscular mycorrhizal fungi of Panax quinquefolius cultivated in Shandong province].",
+    "xml": "<Element 'PubmedArticle' at 0x10c0bb590>"
+}

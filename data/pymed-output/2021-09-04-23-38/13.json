@@ -1,0 +1,88 @@
+{
+    "abstract": "Cold tumor microenvironment (TME) marked with low effector T-cell infiltration leads to weak response to immune checkpoint inhibitor (ICI) treatment. Thus, switching cold to hot TME is critical to improve potent ICI therapy. Previously, we reported a extracellular vesicles (EVs)-like ginseng-derived nanoparticles (GDNPs) which were isolated from Panax ginseng C.A. Mey, and can alter M2 polarization to delay the hot tumor B16F10 progression. However, cold tumor is more common and challenging in real world. Here, we explored a combinatorial strategy with both GDNPs and PD-1 (programmed death-1) mAb, which exhibited the ability to alter cold TME and subsequently induce a durable systemic anti-tumor immunity in multiple murine tumor models. GDNPs enhanced PD-1 mAb anti-tumor efficacy in activating tumor infiltrated T lymphocytes. Our results demonstrated that GDNPs could reprogram tumor-associated macrophages (TAMs) to increase CCL5 and CXCL9 secretion for recruiting CD8+ T cells into the tumor bed, which have the synergism to PD-1 mAb therapy with no detected systemic toxicity. In situ activation of TAMs by GDNPs may broadly serve as a facile platform to modulate the suppressive cold-TME and optimize the PD-1 mAb immunotherapy in future clinical application.",
+    "authors": [
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Xuan",
+            "initials": "X",
+            "lastname": "Han"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Qin",
+            "initials": "Q",
+            "lastname": "Wei"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Yan",
+            "initials": "Y",
+            "lastname": "Lv"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Ling",
+            "initials": "L",
+            "lastname": "Weng"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Haoying",
+            "initials": "H",
+            "lastname": "Huang"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Qingyun",
+            "initials": "Q",
+            "lastname": "Wei"
+        },
+        {
+            "affiliation": "College of Pharmacy, Nanjing University of Chinese Medicine, 138 Xianlin Rd, Nanjing, Jiangsu 210023, China.",
+            "firstname": "Mengyuan",
+            "initials": "M",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Yujie",
+            "initials": "Y",
+            "lastname": "Mao"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Di",
+            "initials": "D",
+            "lastname": "Hua"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China.",
+            "firstname": "Xueting",
+            "initials": "X",
+            "lastname": "Cai"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China. Electronic address: mcao1979@yahoo.com.",
+            "firstname": "Meng",
+            "initials": "M",
+            "lastname": "Cao"
+        },
+        {
+            "affiliation": "Affiliated Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine, Nanjing, Jiangsu, China; College of Pharmacy, Nanjing University of Chinese Medicine, 138 Xianlin Rd, Nanjing, Jiangsu 210023, China; Collaborative Innovation Centre for Cancer Medicine, Nanjing Medical University, Nanjing, Jiangsu, China. Electronic address: cao_peng@njucm.edu.cn.",
+            "firstname": "Peng",
+            "initials": "P",
+            "lastname": "Cao"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "Copyright \u00a9 2021. Published by Elsevier Inc.",
+    "doi": "10.1016/j.ymthe.2021.08.028",
+    "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-28",
+    "pubmed_id": "34450250",
+    "results": null,
+    "title": "Ginseng-derived nanoparticles potentiate immune checkpoint antibody efficacy by reprogramming the cold tumor microenvironment.",
+    "xml": "<Element 'PubmedArticle' at 0x10c111720>"
+}
