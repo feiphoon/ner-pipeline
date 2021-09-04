@@ -1,5 +1,8 @@
 """
 https://github.com/gijswobben/pymed/blob/master/examples/advanced_search/main.py
+
+Run this file from this path:
+python src/pubmed-import/main.py
 """
 from datetime import datetime
 from pathlib import Path
