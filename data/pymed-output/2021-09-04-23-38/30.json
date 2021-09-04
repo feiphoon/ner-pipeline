@@ -1,0 +1,52 @@
+{
+    "abstract": "Traditional Chinese medicine (TCM), especially Chinese herbal medicines and acupuncture, has been traditionally used to treat patients with cancers in China and other East Asian countries. Numerous studies have indicated that TCM not only alleviates the symptoms (e.g., fatigue, chronic pain, anorexia/cachexia, and insomnia) of patients with cancer and improves their quality of life (QOL) but also diminishes adverse reactions and complications caused by chemotherapy, radiotherapy, or targeted-therapy. Therefore, Chinese herbal medicines and acupuncture and other alternative therapies need to be understood by TCM physicians and other health care providers. This review mainly summarizes the experimental results and conclusions from literature published since 2010, and a search of the literature as been performed in the PubMed, MEDLINE, Web of Science, Scopus, Springer, ScienceDirect, and China Hospital Knowledge Database (CHKD) databases. Some Chinese herbal medicines (e.g., Panax ginseng, Panax quinquefolius, Astragali radix, Bu-zhong-yi-qi-tang (TJ-41), Liu-jun-zi-tang (TJ-43), Shi-quan-da-bu-tang (TJ-48), and Ban-xia-xie-xin-tang (TJ-14)) and some acupuncture points (e.g., Zusanli (ST36), Zhongwan (CV12), Neiguan (PC6) and Baihui (GV20)) that are commonly used to treat cancer-related symptoms and/or to reduce the toxicity of chemotherapy, radiotherapy, or targeted-therapy are highlighted and summarized. Through a review of literature, we conclude that TCM can effectively alleviate adverse gastrointestinal reactions (including diarrhea, nausea, and vomiting) to these anti-cancer therapies, decrease the incidence of bone marrow suppression, alleviate cardiotoxicity, and protect against chemotherapy-induced peripheral neuropathy and radiation-induced pneumonitis. Moreover, TCM can alleviate epidermal growth factor receptor-tyrosine kinase inhibitor (EGFR-TKI)-related acneiform eruptions, diarrhea, and other adverse reactions. The hope is that this review can contribute to an understanding of TCM as an adjuvant therapy for cancer and that it can provide useful information for the development of more effective anti-cancer therapies. However, more rigorously designed trials involving cancer treatment must be conducted in the future, including complete quality control and standardized models at the cellular, organic, animal and clinical levels, in order to study TCM in multiple forms and at multiple levels.",
+    "authors": [
+        {
+            "affiliation": "Traditional Chinese Medicine, Shandong Provincial Hospital affiliated to Shandong First Medical University, Ji'nan, China.",
+            "firstname": "Xiaoyi",
+            "initials": "X",
+            "lastname": "Zhang"
+        },
+        {
+            "affiliation": "Gynecology, Jinan Municipal Hospital of Traditional Chinese Medicine, Ji'nan, China.",
+            "firstname": "Hua",
+            "initials": "H",
+            "lastname": "Qiu"
+        },
+        {
+            "affiliation": "Gastrointestinal Surgery, Shandong Provincial Hospital affiliated to Shandong First Medical University, Ji'nan, China.",
+            "firstname": "Chensheng",
+            "initials": "C",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Traditional Chinese Medicine, Shandong Provincial Hospital affiliated to Shandong First Medical University, Ji'nan, China.",
+            "firstname": "Pingping",
+            "initials": "P",
+            "lastname": "Cai"
+        },
+        {
+            "affiliation": "Traditional Chinese Medicine, Shandong Provincial Hospital affiliated to Shandong First Medical University, Ji'nan, China.",
+            "firstname": "Fanghua",
+            "initials": "F",
+            "lastname": "Qi"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.5582/bst.2021.01318",
+    "journal": "Bioscience trends",
+    "keywords": [
+        "Chinese herbal medicines",
+        "Traditional Chinese Medicine (TCM)",
+        "acupuncture",
+        "anti-cancer therapy-related adverse reactions and complications",
+        "cancer-related symptoms"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-24",
+    "pubmed_id": "34421064",
+    "results": null,
+    "title": "The positive role of traditional Chinese medicine as an adjunctive therapy for cancer.",
+    "xml": "<Element 'PubmedArticle' at 0x10c25d310>"
+}

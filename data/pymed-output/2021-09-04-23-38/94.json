@@ -1,0 +1,64 @@
+{
+    "abstract": "American ginseng, a valuable medicinal and food plant, is threatened by rot root, which affects its yield and quality. However, limited studies have investigated the changes in soil microbial community and physiochemical properties between healthy and rot root American ginseng. Here, high-throughput sequencing and soil physiochemical properties were used to characterize these changes. The soil physiochemical properties showed significance differences between the soil of healthy and rot root, in which the pH, available potassium, available phosphorus, soil organic carbon and soil organic matter were significantly higher in healthy root soil. Besides, fungal \u03b1-diversity was also higher in healthy root soil than that in rot root. Importantly, the dominant fungal genera differed between soils of healthy and rot root of American ginseng, and LEfSe further indicated that six fungal genera (",
+    "authors": [
+        {
+            "affiliation": "Key Research Laboratory of Traditional Chinese Medicine Resources Protection, Administration of Traditional Chinese Medicine, National Administration of Traditional Chinese Medicine, Institute of Medicinal Plant Development, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China.",
+            "firstname": "Lixia",
+            "initials": "L",
+            "lastname": "Tian"
+        },
+        {
+            "affiliation": "Tongren Municipal People's Hospital, Tongren, China.",
+            "firstname": "Jiarong",
+            "initials": "J",
+            "lastname": "Ou"
+        },
+        {
+            "affiliation": "Key Research Laboratory of Traditional Chinese Medicine Resources Protection, Administration of Traditional Chinese Medicine, National Administration of Traditional Chinese Medicine, Institute of Medicinal Plant Development, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China.",
+            "firstname": "Xiao",
+            "initials": "X",
+            "lastname": "Sun"
+        },
+        {
+            "affiliation": "Key Research Laboratory of Traditional Chinese Medicine Resources Protection, Administration of Traditional Chinese Medicine, National Administration of Traditional Chinese Medicine, Institute of Medicinal Plant Development, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China.",
+            "firstname": "Yujing",
+            "initials": "Y",
+            "lastname": "Miao"
+        },
+        {
+            "affiliation": "College of Pharmacy, Chengdu University of Traditional Chinese Medicine, Chengdu, Sichuan, China.",
+            "firstname": "Jin",
+            "initials": "J",
+            "lastname": "Pei"
+        },
+        {
+            "affiliation": "Central Medical District of Chinese PLA General Hospital, Beijing, China.",
+            "firstname": "Lei",
+            "initials": "L",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "Key Research Laboratory of Traditional Chinese Medicine Resources Protection, Administration of Traditional Chinese Medicine, National Administration of Traditional Chinese Medicine, Institute of Medicinal Plant Development, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China.",
+            "firstname": "Linfang",
+            "initials": "L",
+            "lastname": "Huang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.1080/15592324.2021.1952372",
+    "journal": "Plant signaling & behavior",
+    "keywords": [
+        "American ginseng",
+        "ITS",
+        "rot root",
+        "soil microbiome",
+        "soil physicochemical properties"
+    ],
+    "methods": null,
+    "publication_date": "2021-07-27",
+    "pubmed_id": "34304705",
+    "results": null,
+    "title": "The discovery of pivotal fungus and major determinant factor shaping soil microbial community composition associated with rot root of American ginseng.",
+    "xml": "<Element 'PubmedArticle' at 0x10c67fb80>"
+}

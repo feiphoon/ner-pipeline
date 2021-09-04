@@ -1,0 +1,116 @@
+{
+    "abstract": "Korean ginseng is one of the most valuable medicinal plants worldwide. However, our understanding of ginseng proteomics is largely limited due to difficulties in the extraction and resolution of ginseng proteins because of the presence of natural contaminants such as polysaccharides, phenols, and glycosides. Here, we compared four different protein extraction methods, namely, TCA/acetone, TCA/acetone-MeOH/chloroform, phenol-TCA/acetone, and phenol-MeOH/chloroform methods. The TCA/acetone-MeOH/chloroform method displayed the highest extraction efficiency, and thus it was used for the comparative proteome profiling of leaf, root, shoot, and fruit by a label-free quantitative proteomics approach. This approach led to the identification of 2604 significantly modulated proteins among four tissues. We could pinpoint differential pathways and proteins associated with ginsenoside biosynthesis, including the methylerythritol 4-phosphate (MEP) pathway, the mevalonate (MVA) pathway, UDP-glycosyltransferases (UGTs), and oxidoreductases (CYP450s). The current study reports an efficient and reproducible method for the isolation of proteins from a wide range of ginseng tissues and provides a detailed organ-based proteome map and a more comprehensive view of enzymatic alterations in ginsenoside biosynthesis.",
+    "authors": [
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Truong",
+            "initials": "T",
+            "lastname": "Van Nguyen"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "So-Wun",
+            "initials": "SW",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Cheol-Woo",
+            "initials": "CW",
+            "lastname": "Min"
+        },
+        {
+            "affiliation": "Department of Botany, School of Chemical and Life Science, Jamia Hamdard, New Delhi 110062, India.",
+            "firstname": "Ravi",
+            "initials": "R",
+            "lastname": "Gupta"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Gi-Hyun",
+            "initials": "GH",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Jeong-Woo",
+            "initials": "JW",
+            "lastname": "Jang"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Divya",
+            "initials": "D",
+            "lastname": "Rathi"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Hye-Won",
+            "initials": "HW",
+            "lastname": "Shin"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Ju-Young",
+            "initials": "JY",
+            "lastname": "Jung"
+        },
+        {
+            "affiliation": "Department of Herbal Crop Research, Rural Development Administration, Eumseong 27709, Korea.",
+            "firstname": "Ick-Hyun",
+            "initials": "IH",
+            "lastname": "Jo"
+        },
+        {
+            "affiliation": "Graduate School of Biotechnology and Crop Biotech Institute, Kyung Hee University, Yongin 17104, Korea.",
+            "firstname": "Woo-Jong",
+            "initials": "WJ",
+            "lastname": "Hong"
+        },
+        {
+            "affiliation": "Graduate School of Biotechnology and Crop Biotech Institute, Kyung Hee University, Yongin 17104, Korea.",
+            "firstname": "Ki-Hong",
+            "initials": "KH",
+            "lastname": "Jung"
+        },
+        {
+            "affiliation": "Department of Environmental Horticulture, University of Seoul, Seoul 02504, Korea.",
+            "firstname": "Seungill",
+            "initials": "S",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Department of Life Science and Environmental Biochemistry, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Yu-Jin",
+            "initials": "YJ",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Department of Plant Bioscience, Life and Industry Convergence Research Institute, Pusan National University, Miryang 50463, Korea.",
+            "firstname": "Sun-Tae",
+            "initials": "ST",
+            "lastname": "Kim"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.3390/plants10071409",
+    "journal": "Plants (Basel, Switzerland)",
+    "keywords": [
+        "MEP pathway",
+        "MVA pathway",
+        "Panax ginseng",
+        "TCA/acetone",
+        "UDP-glycosyltransferase",
+        "cytochrome p450",
+        "ginsenosides",
+        "label-free proteomics",
+        "methanol/chloroform"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-11",
+    "pubmed_id": "34371612\n26655864\n24395710\n15310073\n33437157\n21484331\n14753699\n28948796\n27809316\n24911789\n29649979\n27348712\n28472432\n30662303\n30557402\n30114372\n31101014\n19389052\n6731838\n30450911\n25320211\n24258243\n25780097\n28914759\n26858731\n29509695\n28078264\n28674547\n33777071\n25747290\n29905874\n30082711\n30679448\n30395289\n25788049\n25769286\n23717152\n19377485\n15652805\n26032089\n24434803\n25545850\n19849852",
+    "results": null,
+    "title": "Optimization of Protein Isolation and Label-Free Quantitative Proteomic Analysis in Four Different Tissues of Korean Ginseng.",
+    "xml": "<Element 'PubmedArticle' at 0x10c466ea0>"
+}

@@ -1,0 +1,64 @@
+{
+    "abstract": "Like humans, weight control in overweight dogs is associated with a longer life expectancy and a healthier life. Dietary supplements are one of the best strategies for controlling obesity and obesity-associated diseases. This study was conducted to assess the potential of black ginseng (BG) and silkworm (SW) as supplements for weight control in diet-induced overweight beagle dogs. To investigate the changes that occur in dogs administered the supplements, different obesity-related parameters, such as body condition score (BCS), blood fatty acid profile, transcriptome, and microbiome, were assessed in high energy diet (HD) and HD with BG\u2009+\u2009SW supplementation (HDT) groups of test animals. After 12\u00a0weeks of BG\u2009+\u2009SW supplementation, total cholesterol and triglyceride levels were reduced in the HDT group. In the transcriptome analysis, nine genes (NUGGC, EFR3B, RTP4, ACAN, HOXC4, IL17RB, SOX13, SLC18A2, and SOX4) that are known to be associated with obesity were found to be differentially expressed between the ND (normal diet) and HD groups as well as the HD and HDT groups. Significant changes in some taxa were observed between the HD and ND groups. These data suggest that the BG\u2009+\u2009SW supplement could be developed as dietary interventions against diet-induced obesity, and obesity-related differential genes could be important candidates in the mechanism of the anti-obesity effects of the BG\u2009+\u2009SW supplement.",
+    "authors": [
+        {
+            "affiliation": "Department of Food and Nutrition, College of BioNano Technology, Gachon University, 1342 Seongnam-daero, Sujeong-gu, Seongnam-si, 13120, Gyeonggi-do, Korea.",
+            "firstname": "Miey",
+            "initials": "M",
+            "lastname": "Park"
+        },
+        {
+            "affiliation": "Animal Welfare Research Team, National Institute of Animal Science, National Institute of Animal Science, Rural Development Administration, Wanju, 55365, Korea.",
+            "firstname": "Ki Hyun",
+            "initials": "KH",
+            "lastname": "Kim"
+        },
+        {
+            "affiliation": "Department of Food and Nutrition, College of BioNano Technology, Gachon University, 1342 Seongnam-daero, Sujeong-gu, Seongnam-si, 13120, Gyeonggi-do, Korea.",
+            "firstname": "Varun",
+            "initials": "V",
+            "lastname": "Jaiswal"
+        },
+        {
+            "affiliation": "Department of Food and Nutrition, College of BioNano Technology, Gachon University, 1342 Seongnam-daero, Sujeong-gu, Seongnam-si, 13120, Gyeonggi-do, Korea.",
+            "firstname": "Jihee",
+            "initials": "J",
+            "lastname": "Choi"
+        },
+        {
+            "affiliation": "Animal Welfare Research Team, National Institute of Animal Science, National Institute of Animal Science, Rural Development Administration, Wanju, 55365, Korea.",
+            "firstname": "Ju Lan",
+            "initials": "JL",
+            "lastname": "Chun"
+        },
+        {
+            "affiliation": "Animal Welfare Research Team, National Institute of Animal Science, National Institute of Animal Science, Rural Development Administration, Wanju, 55365, Korea.",
+            "firstname": "Kang Min",
+            "initials": "KM",
+            "lastname": "Seo"
+        },
+        {
+            "affiliation": "Clinical Nutritional Medicine, Veterinary Medical Teaching Hospital, Seoul National University, Gwanak-ro, Gwanak-gu, Seoul, 08826, Korea.",
+            "firstname": "Mi-Jin",
+            "initials": "MJ",
+            "lastname": "Lee"
+        },
+        {
+            "affiliation": "Department of Food and Nutrition, College of BioNano Technology, Gachon University, 1342 Seongnam-daero, Sujeong-gu, Seongnam-si, 13120, Gyeonggi-do, Korea. skysea1010@gmail.com.",
+            "firstname": "Hae-Jeung",
+            "initials": "HJ",
+            "lastname": "Lee"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021. The Author(s).",
+    "doi": "10.1038/s41598-021-95789-8",
+    "journal": "Scientific reports",
+    "keywords": [],
+    "methods": null,
+    "publication_date": "2021-08-13",
+    "pubmed_id": "34381138\n17011710\n31726767\n12020172\n16772464\n22290445\n30304860\n29489753\n25619480\n27560171\n32544907\n27547764\n25992554\n28192102\n15777190\n31513269\n31942844\n23894418\n19948243\n24198656\n27214047\n28163318\n25994840\n21291556\n27279003\n30120429\n26024298\n23301868\n23727030\n33083100\n30996144\n30502863\n31375807\n20080751\n28584296\n20128047\n22134646\n33092019\n25705109\n29697017\n33297754\n16510230\n28319853\n23671037\n23454028\n18216772\n33925122\n32143357\n21453142\n32533086\n32148418\n10871192\n28361673\n15923551\n20098690\n16495671\n27695486\n31847240\n32826948\n21961884\n24238362\n30476243\n28596111\n22972297\n21422715\n32343490\n28487859\n26154278\n21702898\n19958841\n30567491\n31091790\n27833381\n27932476\n29321561\n21823675\n30407594\n17367157\n31846761\n26820751\n19505943\n12031973\n15661851\n19377059",
+    "results": null,
+    "title": "Effect of black ginseng and silkworm supplementation on obesity, the transcriptome, and the gut microbiome of diet-induced overweight dogs.",
+    "xml": "<Element 'PubmedArticle' at 0x10c401f90>"
+}

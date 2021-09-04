@@ -1,0 +1,34 @@
+{
+    "abstract": "Endothelial dysfunction in atherosclerotic cardiovascular diseases has become one of the main characteristics in patients with diabetes mellitus, which is usually caused by abnormal inflammation and oxidative stress response. Presently, we focused on the role of Notoginsenoside R1 (NR1), a major component isolated from Panax notoginseng, in endothelial dysfunction caused by high glucose (HG). Human umbilical vein endothelial cells (HUVECs) were treated with HG and then dealt with NR1. Cell counting kit-8 assay and 5-bromo-2'-dexoyuridine assay were conducted to examine cell proliferation and viability. Flow cytometry was used to measure apoptosis. The angiogenesis of HUVECs was determined by tube formation assay. Moreover, the expressions of miR-147a, inflammatory cytokines (TNF-\u03b1, IL-6, and IL-10) and oxidative stress markers malondialdehyde, superoxide dismutase, and glutathione peroxidase were measured. The protein levels of MyD88/TRAF6/NF-\u03baB axis, Bax, Bcl2, and Caspase3 were detected by Western blot. Furthermore, gain and loss of functional assays of miR-147a were performed to verify the role of miR-147a in NR1-mediated effects. Our data confirmed that NR1 (at 10-40\u2009\u03bcM) reduces HG-induced HUVECs proliferation and viability inhibition, mitigates apoptosis, and enhances tube formation ability. Meanwhile, NR1 inhibited oxidative stress and inflammatory response and blocked the activation of the MyD88/TRAF6/NF-\u03baB pathway induced by HG. In addition, NR1 promoted the expression of miR-147a, which targeted MyD88. Overexpression of miR-147a markedly inactivated MyD88/TRAF6/NF-\u03baB pathway, while the miR-147a inhibitors reversed NR1-mediated protective effect in HG-induced HUVECs through activating MyD88/TRAF6/NF-\u03baB pathway. In conclusion, NR1 relieves HG-induced endothelial cell injury by downregulating the MyD88/TRAF6/NF-\u03baB pathway via upregulating miR-147a.",
+    "authors": [
+        {
+            "affiliation": "Department of Chinese Medicine Surgery, Beijing Hospital of Traditional Chinese Medicine, Capital Medical University, Beijing, China.",
+            "firstname": "Xiao-Qing",
+            "initials": "XQ",
+            "lastname": "Li"
+        },
+        {
+            "affiliation": "Department of Peripheral Vascular, Dongzhimen Hospital, Beijing University of Chinese Medicine, Beijing, China.",
+            "firstname": "Tian-Yi",
+            "initials": "TY",
+            "lastname": "Huang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": "\u00a9 2021 The Authors. The Kaohsiung Journal of Medical Sciences published by John Wiley & Sons Australia, Ltd on behalf of Kaohsiung Medical University.",
+    "doi": "10.1002/kjm2.12433",
+    "journal": "The Kaohsiung journal of medical sciences",
+    "keywords": [
+        "MyD88",
+        "Notoginsenoside R1",
+        "angiogenesis",
+        "endothelial cells",
+        "miR-147a"
+    ],
+    "methods": null,
+    "publication_date": "2021-08-10",
+    "pubmed_id": "34369659",
+    "results": null,
+    "title": "Notoginsenoside R1 alleviates high glucose-induced inflammation and oxidative stress in HUVECs via upregulating miR-147a.",
+    "xml": "<Element 'PubmedArticle' at 0x10c490a90>"
+}

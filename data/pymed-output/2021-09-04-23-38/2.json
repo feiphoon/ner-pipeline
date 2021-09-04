@@ -1,0 +1,70 @@
+{
+    "abstract": "The longevity mechanism of ginseng(Panax ginseng) is related to its strong meristematic ability. In this paper, this study used bioinformatic methods to identify the members of the ginseng TCP gene family in the whole genome and analyzed their sequence characteristics. Then, quantitative real-time fluorescent PCR was performed to analyze the TCP genes containing elements rela-ted to meristem expression in the taproots, fibrous roots, stems, and leaves. According to the data, this study further explored the expression specificity of TCP genes in ginseng tissues, which facilitated the dissection of the longevity mechanism of ginseng. The ginseng TCP members were identified and analyzed using PlantTFDB, ExPASy, MEME, PLANTCARE, TBtools, MEGA and DNAMAN. The results demonstrated that there were 60 TCP gene family members in ginseng, and they could be divided into two classes: Class \u2160 and Class \u2161, in which the Class \u2161 possessed two subclasses: CYC-TCP and CIN-TCP. The deduced TCP proteins in ginseng had the length of 128-793 aa, the isoelectric point of 4.49-9.84 and the relative molecular mass of 14.2-89.3 kDa. They all contained the basic helix-loop-helix(bHLH) domain. There are a variety of stress response-related cis-acting elements in the promoter regions of ginseng TCP genes, and PgTCP20-PgTCP24 contained the elements associated with meristematic expression. The transcription levels of PgTCP20-PgTCP24 were high in fibrous roots and leaves, but low in stems, indicating the tissue-specific expression of ginseng TCP genes. The Class \u2160 TCP members which contained PgTCP20-PgTCP23, may be important regulators for the growth and development of ginseng roots.",
+    "authors": [
+        {
+            "affiliation": "Aademician Workstation, Jiangxi University of Traditional Chinese Medicine Nanchang 330004, China State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Qi",
+            "initials": "Q",
+            "lastname": "Lyu"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Hong-Hong",
+            "initials": "HH",
+            "lastname": "Jiao"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Qi-Rui",
+            "initials": "QR",
+            "lastname": "Yu"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Zhong-Yi",
+            "initials": "ZY",
+            "lastname": "Hua"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Yu-Yang",
+            "initials": "YY",
+            "lastname": "Zhao"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Jun-Hui",
+            "initials": "JH",
+            "lastname": "Zhou"
+        },
+        {
+            "affiliation": "State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Yuan",
+            "initials": "Y",
+            "lastname": "Yuan"
+        },
+        {
+            "affiliation": "Aademician Workstation, Jiangxi University of Traditional Chinese Medicine Nanchang 330004, China State Key Laboratory Breeding Base of Dao-di Herbs, National Resource Center for Chinese Materia Medica, China Academy of Chinese Medical Sciences Beijing 100700, China.",
+            "firstname": "Lu-Qi",
+            "initials": "LQ",
+            "lastname": "Huang"
+        }
+    ],
+    "conclusions": null,
+    "copyrights": null,
+    "doi": "10.19540/j.cnki.cjcmm.20210523.103",
+    "journal": "Zhongguo Zhong yao za zhi = Zhongguo zhongyao zazhi = China journal of Chinese materia medica",
+    "keywords": [
+        "Panax ginseng",
+        "TCP gene",
+        "evolutionary analysis",
+        "meristem",
+        "tissue-specific expression"
+    ],
+    "methods": null,
+    "publication_date": "2021-09-03",
+    "pubmed_id": "34472257",
+    "results": null,
+    "title": "[Bioinformatics analysis and function prediction of ginseng TCP transcription factor family].",
+    "xml": "<Element 'PubmedArticle' at 0x10c048180>"
+}
