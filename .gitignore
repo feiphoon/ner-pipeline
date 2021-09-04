@@ -3,6 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Mac OS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Env and settings
+venv/
+
 # C extensions
 *.so
 
