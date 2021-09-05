@@ -1,1 +1,0 @@
-{"query": "ginseng", "num_queries": 100}
