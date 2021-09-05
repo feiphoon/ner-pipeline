@@ -2,7 +2,7 @@
 https://github.com/gijswobben/pymed/blob/master/examples/advanced_search/main.py
 
 Run this file from this path:
-python src/pubmed-import/main.py
+python src/pymed-import/main.py
 """
 import json
 from datetime import datetime
