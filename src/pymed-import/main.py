@@ -14,11 +14,15 @@ output_run = f"{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}"
 output_path = Path(f"data/pymed-output/{output_run}")
 output_path.mkdir(parents=True, exist_ok=True)
 
-pubmed = PubMed(tool="MyTool", email="my@email.address")
+pubmed = PubMed(tool="pymed", email="my@email.address")
 
 query = "ginseng"
 num_queries = 100
 query_results = pubmed.query(query, max_results=num_queries)
+
+landed_query_results = [json.loads(_.toJSON()) for _ in query_results]
+
+query_id_list = [_["pubmed_id"].split("\n")[0] for _ in landed_query_results]
 
 _filepath = Path(f"{output_path}/query.txt")
 
@@ -26,13 +30,14 @@ with _filepath.open("w", encoding="utf-8") as f:
     query_info = {}
     query_info["query"] = query
     query_info["num_queries"] = num_queries
+    query_info["query_id_list"] = query_id_list
     json.dump(query_info, f)
 
 _count = 0
 
-for r in query_results:
+for r in landed_query_results:
     _filepath = Path(f"{output_path}/{str(_count)}.json")
 
     with _filepath.open("w", encoding="utf-8") as f:
-        f.write(r.toJSON())
+        json.dump(r, f)
     _count += 1
