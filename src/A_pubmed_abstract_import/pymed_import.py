@@ -21,6 +21,7 @@ def import_pubmed_abstracts(
     pubmed_login: PubMed = PUBMED_LOGIN,
 ) -> None:
     run_filepath.mkdir(parents=True, exist_ok=True)
+
     query: str = create_graphql_query(query_terms)
     query_results = pubmed_login.query(query, max_results=num_results)
 
@@ -66,5 +67,5 @@ def create_graphql_query(list_of_keywords: List[str]) -> str:
     return query
 
 
-def check_if_has_abstract(result: dict, tolerance: int = 4000):
+def check_if_has_abstract(result: dict, tolerance: int = 100):
     return len(result["abstract"]) > tolerance
