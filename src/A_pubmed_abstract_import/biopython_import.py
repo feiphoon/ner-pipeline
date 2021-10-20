@@ -169,6 +169,7 @@ def check_if_has_abstract(result: dict, tolerance: int = 100):
 
 
 def convert_possible_date_to_str(obj: Any) -> Union[str, None]:
+    """This is to provide a hack for serialising date objects to JSON."""
     if isinstance(obj, date):
         return obj.strftime("%Y%m%d")
     else:
