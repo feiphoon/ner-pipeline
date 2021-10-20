@@ -3,11 +3,8 @@ Using the pymed library - instructions here:
 https://github.com/gijswobben/pymed/blob/master/examples/advanced_search/main.py
 """
 import json
-from datetime import datetime
 from pathlib import Path
 from pymed import PubMed
-
-from src.helpers.run_helper import Run
 
 
 PUBMED_LOGIN = PubMed(tool="pymed", email="my@email.address")
