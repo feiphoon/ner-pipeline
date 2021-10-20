@@ -28,8 +28,8 @@ def import_pubmed_abstracts(
 
     with _filepath.open("w", encoding="utf-8") as f:
         query_info = {}
-        query_info["query"] = query
-        query_info["num_queries"] = num_queries
+        query_info["query_terms"] = query_terms
+        query_info["num_results"] = num_results
         query_info["query_id_list"] = query_id_list
         json.dump(query_info, f)
 
