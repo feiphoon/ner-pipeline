@@ -17,8 +17,7 @@ def import_pubmed_abstracts(
     pubmed_login: PubMed = PUBMED_LOGIN,
 ) -> None:
     run_filepath.mkdir(parents=True, exist_ok=True)
-    pubmed = PUBMED_LOGIN
-    query_results = pubmed.query(query_terms, max_results=num_results)
+    query_results = pubmed_login.query(query_terms, max_results=num_results)
 
     landed_query_results = [json.loads(_.toJSON()) for _ in query_results]
     query_id_list = [_["pubmed_id"].split("\n")[0] for _ in landed_query_results]
