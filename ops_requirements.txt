@@ -1,4 +1,5 @@
 black==21.9b0
 flake8==4.0.1
+freezegun==1.1.0
 invoke==1.6.0
 pytest==6.2.5
