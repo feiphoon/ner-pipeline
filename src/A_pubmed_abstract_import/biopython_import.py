@@ -64,21 +64,19 @@ Entrez.tool = "biopython"
 
 def import_pubmed_abstracts(
     run_filepath: Path,
-    query_terms: List[str],
+    query_terms: str,
     num_results: int,
     pubmed_login: Entrez = Entrez,
 ) -> None:
     run_filepath.mkdir(parents=True, exist_ok=True)
 
-    query_str: str = "salvia hispanica L. chia"
-
-    query_results = search(pubmed_login, query_str, num_results)
+    query_results = search(pubmed_login, query_terms, num_results)
     query_id_list = query_results.get("IdList", [])
     _query_metadata_filepath: str = Path(f"{run_filepath}/query.json")
 
     with _query_metadata_filepath.open("w", encoding="utf-8") as f:
         query_info: dict = {}
-        query_info["query_terms"] = query_str
+        query_info["query_terms"] = query_terms
         query_info["num_results_requested"] = num_results
         query_info["query_id_list"] = query_id_list
         json.dump(query_info, f)
