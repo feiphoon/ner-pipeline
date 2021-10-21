@@ -75,11 +75,11 @@ def import_pubmed_abstracts(
     _query_metadata_filepath: str = Path(f"{run_filepath}/query.json")
 
     with _query_metadata_filepath.open("w", encoding="utf-8") as f:
-        query_info: dict = {}
-        query_info["query_terms"] = query_terms
-        query_info["num_results_requested"] = num_results
-        query_info["query_id_list"] = query_id_list
-        json.dump(query_info, f)
+        _query_metadata: dict = {}
+        _query_metadata["query_terms"] = query_terms
+        _query_metadata["num_results_requested"] = num_results
+        _query_metadata["query_id_list"] = query_id_list
+        json.dump(_query_metadata, f)
 
     _success_count: int = 0
     _reject_count: int = 0
@@ -105,6 +105,19 @@ def import_pubmed_abstracts(
 
         with _each_result_filepath.open("w", encoding="utf-8") as f:
             json.dump(pubmed_abstract_dict, f, default=convert_possible_date_to_str)
+
+    # Add query results metadata after end of retrieval
+    with _query_metadata_filepath.open("r", encoding="utf-8") as f:
+        _loaded_query_metadata: dict = json.load(f)
+
+    with _query_metadata_filepath.open("w", encoding="utf-8") as f:
+        _loaded_query_metadata["num_queries_retrieved"] = _success_count
+        _loaded_query_metadata["retrieval_report"] = {
+            "success": _success_count,
+            "reject": _reject_count,
+        }
+
+        json.dump(_loaded_query_metadata, f)
 
 
 def search(pubmed_login: Entrez, query: str, max_documents: int = 100) -> list:
