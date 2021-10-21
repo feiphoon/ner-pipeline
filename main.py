@@ -18,5 +18,6 @@ if __name__ == "__main__":
     import_pubmed_abstracts(
         run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
         query_terms="Salvia Hispanica L.",
-        num_results=1,
+        num_results=10,
+        abstract_size_tolerance=1000,
     )
