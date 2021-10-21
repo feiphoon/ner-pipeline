@@ -15,12 +15,10 @@ if __name__ == "__main__":
     # print(run.create_run_filepath(output_filepath))
 
     pubmed_abstracts_raw_filepath = "data/raw/pubmed_abstracts"
-    # NOTE: Not sure if I will have an issue later due to not supporting a
-    # list of query terms, but for what it's worth, "Salvia Hispanica L. Chia"
-    # does work quite well.
-    import_pubmed_abstracts(
-        run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
-        query_terms="Salvia Hispanica L.",
-        num_results=10,
-        abstract_size_tolerance=1000,
-    )
+    terms = ["Salvia Hispanica L.", "chia"]
+    for t in terms:
+        import_pubmed_abstracts(
+            run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
+            query_terms=t,
+            num_results=3,
+        )
