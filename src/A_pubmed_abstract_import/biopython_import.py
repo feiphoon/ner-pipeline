@@ -66,6 +66,7 @@ def import_pubmed_abstracts(
     run_filepath: Path,
     query_terms: str,
     num_results: int,
+    abstract_size_tolerance: int,
     pubmed_login: Entrez = Entrez,
 ) -> None:
     run_filepath.mkdir(parents=True, exist_ok=True)
@@ -87,7 +88,9 @@ def import_pubmed_abstracts(
     for query_id in query_id_list:
         pubmed_abstract_dict = construct_pubmed_abstract_object(query_id)
 
-        has_abstract: bool = check_if_has_abstract(result=pubmed_abstract_dict)
+        has_abstract: bool = check_if_has_abstract(
+            result=pubmed_abstract_dict, tolerance=abstract_size_tolerance
+        )
 
         if has_abstract:
             _each_result_filepath: Path = Path(
