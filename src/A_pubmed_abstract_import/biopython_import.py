@@ -6,7 +6,7 @@ More:
 https://towardsdatascience.com/write-a-document-classifier-in-less-than-30-minutes-2d96a8a8820c
 """
 import json
-
+import os
 from datetime import date
 from pathlib import Path
 from Bio import Entrez
@@ -84,9 +84,6 @@ def import_pubmed_abstracts(
     _success_count: int = 0
     _reject_count: int = 0
 
-    run_reject_filepath: Path = Path(f"{run_filepath}/rejected/")
-    run_reject_filepath.mkdir(parents=True, exist_ok=True)
-
     for query_id in query_id_list:
         pubmed_abstract_dict = construct_pubmed_abstract_object(query_id)
 
@@ -98,6 +95,9 @@ def import_pubmed_abstracts(
             )
             _success_count += 1
         else:
+            if not os.path.exists(Path(f"{run_filepath}/rejected/")):
+                run_reject_filepath: Path = Path(f"{run_filepath}/rejected/")
+                run_reject_filepath.mkdir(parents=True, exist_ok=True)
             _each_result_filepath: Path = Path(
                 f"{run_reject_filepath}/{str(_reject_count).zfill(3)}.json"
             )
