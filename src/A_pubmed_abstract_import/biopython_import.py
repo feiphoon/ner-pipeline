@@ -154,12 +154,14 @@ def construct_pubmed_abstract_object(id: str) -> dict:
     _pubmed_abstract_dict["abstract"] = pubmed_article["PubmedArticle"][0][
         "MedlineCitation"
     ]["Article"]["Abstract"]["AbstractText"][0]
-    _pubmed_abstract_dict["keywords"] = list(
-        map(
-            str,
-            pubmed_article["PubmedArticle"][0]["MedlineCitation"]["KeywordList"][0],
+
+    if "KeyWordList" in pubmed_article["PubmedArticle"][0]["MedlineCitation"].keys():
+        _pubmed_abstract_dict["keywords"] = list(
+            map(
+                str,
+                pubmed_article["PubmedArticle"][0]["MedlineCitation"]["KeywordList"][0],
+            )
         )
-    )
     _pubmed_abstract_dict["article_date"] = extract_article_date(
         pubmed_article=pubmed_article, date_struct_name="ArticleDate"
     )
