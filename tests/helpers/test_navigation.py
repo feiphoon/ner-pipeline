@@ -1,5 +1,3 @@
-import os
-from pathlib import Path, PosixPath
 from src.helpers.navigation import get_directories, get_files
 
 
