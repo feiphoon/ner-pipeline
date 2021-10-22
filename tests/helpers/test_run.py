@@ -1,7 +1,7 @@
 from pathlib import Path
 from freezegun import freeze_time
 import pytest
-from src.helpers.run_helper import Run
+from src.helpers.run import Run
 
 
 class TestRun:
