@@ -11,6 +11,8 @@ from datetime import date
 from pathlib import Path
 from typing import List, Any, Union
 
+from src.helpers.navigation import get_directories, get_files
+
 
 # The following declarations aren't used because I had trouble unpacking namedtuples
 # and dataclasses to JSON with the added complication of trying to serialise dates to string.
@@ -168,22 +170,6 @@ def process_pubmed_abstracts(
             }
 
             json.dump(_loaded_processing_metadata, f)
-
-
-def get_directories(directory: str = ".") -> List:
-    return [
-        Path(os.path.join(directory, obj))
-        for obj in os.listdir(directory)
-        if os.path.isdir(os.path.join(directory, obj))
-    ]
-
-
-def get_files(directory: str = ".") -> List:
-    return [
-        Path(os.path.join(directory, obj))
-        for obj in os.listdir(directory)
-        if not os.path.isdir(os.path.join(directory, obj))
-    ]
 
 
 def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
