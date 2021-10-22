@@ -1,4 +1,4 @@
-from src.helpers.run_helper import Run
+from src.helpers.run import Run
 
 from src.A_pubmed_abstract_import.biopython_import import import_pubmed_abstracts
 from src.B_pubmed_abstract_processing.biopython_processing import (
