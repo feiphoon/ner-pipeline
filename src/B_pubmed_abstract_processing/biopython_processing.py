@@ -9,7 +9,10 @@ import json
 import os
 from datetime import date
 from pathlib import Path
-from typing import List, Any, Union
+from typing import List
+
+from src.helpers.navigation import get_directories, get_files
+from src.helpers.datetime import convert_possible_date_to_str
 
 
 # The following declarations aren't used because I had trouble unpacking namedtuples
@@ -170,22 +173,6 @@ def process_pubmed_abstracts(
             json.dump(_loaded_processing_metadata, f)
 
 
-def get_directories(directory: str = ".") -> List:
-    return [
-        Path(os.path.join(directory, obj))
-        for obj in os.listdir(directory)
-        if os.path.isdir(os.path.join(directory, obj))
-    ]
-
-
-def get_files(directory: str = ".") -> List:
-    return [
-        Path(os.path.join(directory, obj))
-        for obj in os.listdir(directory)
-        if not os.path.isdir(os.path.join(directory, obj))
-    ]
-
-
 def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
     _pubmed_abstract_dict: dict = {}
 
@@ -240,14 +227,6 @@ def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
 
 def check_if_has_abstract(result: dict, tolerance: int = 100):
     return len(result.get("abstract", "")) > tolerance
-
-
-def convert_possible_date_to_str(obj: Any) -> Union[str, None]:
-    """This is to provide a hack for serialising date objects to JSON."""
-    if isinstance(obj, date):
-        return obj.strftime("%Y%m%d")
-    else:
-        return obj
 
 
 def extract_article_date(pubmed_article: dict, date_struct_name: str) -> date:

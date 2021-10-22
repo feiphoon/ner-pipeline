@@ -1,5 +1,5 @@
 import pytest
-from src.helpers.preprocessing_helper import snakify_text
+from src.helpers.preprocessing import snakify_text
 
 
 class TestSnakifyText:
