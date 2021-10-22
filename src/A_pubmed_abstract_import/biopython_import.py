@@ -8,6 +8,7 @@ https://towardsdatascience.com/write-a-document-classifier-in-less-than-30-minut
 import json
 from pathlib import Path
 from Bio import Entrez
+from typing import List
 
 from src.helpers.preprocessing_helper import snakify_text
 
@@ -23,13 +24,12 @@ def import_pubmed_abstracts(
     pubmed_login: Entrez = Entrez,
 ) -> None:
     run_filepath.mkdir(parents=True, exist_ok=True)
-    run_filepath_per_query_term = Path(f"{run_filepath}/{snakify_text(query_terms)}")
+    run_filepath_per_query_term: Path = Path(f"{run_filepath}/{snakify_text(query_terms)}")
     run_filepath_per_query_term.mkdir(parents=True, exist_ok=True)
-    print(run_filepath_per_query_term)
 
     query_results = search(pubmed_login, query_terms, num_results)
-    query_id_list = query_results.get("IdList", [])
-    _query_metadata_filepath: str = Path(
+    query_id_list: List = query_results.get("IdList", [])
+    _query_metadata_filepath: Path = Path(
         f"{run_filepath_per_query_term}/query_metadata.json"
     )
 
