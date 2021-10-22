@@ -74,11 +74,14 @@ To lint:
 inv lint
 ```
 
-### VSCode setup:
+### VSCode settings:
 
-Create `.vscode/settings.json` in the root project folder, with the following contents (replacing the `pythonPath`):
+Create a `.vscode` folder and put the following into a `settings.json` file inside it.
+
+Make sure this path is added to `.gitignore` (replace with the direct directory for `pythonPath`).
 ```json
 {
+    "python.pythonPath": "/Users/fei/.pyenv/versions/ner-pipeline",
     "python.analysis.extraPaths": [
         "src",
         "tests"
