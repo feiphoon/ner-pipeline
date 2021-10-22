@@ -10,7 +10,7 @@ from pathlib import Path
 from Bio import Entrez
 from typing import List
 
-from src.helpers.preprocessing_helper import snakify_text
+from src.helpers.preprocessing import snakify_text
 
 
 Entrez.email = "my@email.address"
