@@ -1,5 +1,9 @@
 # ner-pipeline
 
+This part of the work is to produce abstracts for the NER pipeline. This pipeline can be run as a one-off, presumably if we end up with the right amount of abstracts, but it is designed in a way that it can be re-run, and any output can be tracked to its origins (a Run object is created for each run and a timestamp is attached to each consequent output). This is really important because while I chose the most stable method available (`biopython`) to retrieve the PubMed abstracts, the results are returned by order or decreasing relevance at the time, and it cannot be guaranteed that the exact same set of results will be returned in future, _if more relevant items are added to PubMed_.
+
+The results in this pipeline at some point tap into the static output of the `mons-pipeline` repo - these results will have been manually copied over here and made available.
+
 
 ## Setup
 
