@@ -179,29 +179,36 @@ def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
     _pubmed_abstract_dict["pmid"] = str(
         pubmed_article["PubmedArticle"][0]["MedlineCitation"]["PMID"]
     )
-    _pubmed_abstract_dict["doi"] = str(
-        pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"]["ELocationID"][
-            0
-        ]
-    )
-    _pubmed_abstract_dict["language"] = list(
-        map(
-            str,
-            pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"][
-                "Language"
-            ],
+    if (
+        "ELocationID"
+        in pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"].keys()
+    ):
+        _pubmed_abstract_dict["doi"] = list(
+            map(
+                str,
+                pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"][
+                    "ELocationID"
+                ],
+            )
         )
-    )
-    # _pubmed_abstract_dict["language"] = str(
-    #     pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"]["Language"]
-    # )
+    if (
+        "Language"
+        in pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"].keys()
+    ):
+        _pubmed_abstract_dict["language"] = list(
+            map(
+                str,
+                pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"][
+                    "Language"
+                ],
+            )
+        )
     _pubmed_abstract_dict["title"] = str(
         pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"]["ArticleTitle"]
     )
     _pubmed_abstract_dict["abstract"] = pubmed_article["PubmedArticle"][0][
         "MedlineCitation"
     ]["Article"]["Abstract"]["AbstractText"][0]
-
     if "KeyWordList" in pubmed_article["PubmedArticle"][0]["MedlineCitation"].keys():
         _pubmed_abstract_dict["keywords"] = list(
             map(
@@ -209,16 +216,28 @@ def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
                 pubmed_article["PubmedArticle"][0]["MedlineCitation"]["KeywordList"][0],
             )
         )
-    _pubmed_abstract_dict["article_date"] = extract_article_date(
-        pubmed_article=pubmed_article, date_struct_name="ArticleDate"
-    )
+    if (
+        "ArticleDate"
+        in pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"].keys()
+    ) & (
+        len(
+            pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"][
+                "ArticleDate"
+            ]
+        )
+        > 1
+    ):
+        _pubmed_abstract_dict["article_date"] = extract_article_date(
+            pubmed_article=pubmed_article, date_struct_name="ArticleDate"
+        )
     if "DateCompleted" in pubmed_article["PubmedArticle"][0]["MedlineCitation"].keys():
         _pubmed_abstract_dict["date_completed"] = extract_other_date(
             pubmed_article=pubmed_article, date_struct_name="DateCompleted"
         )
-    _pubmed_abstract_dict["date_revised"] = extract_other_date(
-        pubmed_article=pubmed_article, date_struct_name="DateRevised"
-    )
+    if "DateRevised" in pubmed_article["PubmedArticle"][0]["MedlineCitation"].keys():
+        _pubmed_abstract_dict["date_revised"] = extract_other_date(
+            pubmed_article=pubmed_article, date_struct_name="DateRevised"
+        )
 
     # pubmed_abstract_object = PubmedAbstractObject(**_pubmed_abstract_dict)
     # return pubmed_abstract_object
