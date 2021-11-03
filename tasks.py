@@ -31,7 +31,13 @@ ps = Collection("ps")
 ps.add_task(build)
 ps.add_task(build_no_cache)
 ps.add_task(pyspark_run, name="run")
+
 ns.add_collection(ps)
+
+
+@task
+def import_process_abstracts(c):
+    c.run("python main.py", pty=True)
 
 
 @task
@@ -46,5 +52,6 @@ def lint(c):
     c.run("python -m black --check .", pty=True)
 
 
+ns.add_task(import_process_abstracts)
 ns.add_task(test)
 ns.add_task(lint)
