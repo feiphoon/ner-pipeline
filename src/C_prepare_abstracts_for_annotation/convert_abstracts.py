@@ -6,8 +6,8 @@ from pyspark.sql.dataframe import DataFrame
 from schemas import INPUT_SCHEMA, OUTPUT_SCHEMA
 
 
-def prepare_abstracts_for_annotation(
-    spark, run_input_filepath: Path, run_output_filepath: Path
+def convert_abstracts(
+    spark: SparkSession, run_input_filepath: Path, run_output_filepath: Path
 ) -> None:
     run_input_filepath_without_metadata: Path = Path(f"{run_input_filepath}/*/[0-9]*")
 
