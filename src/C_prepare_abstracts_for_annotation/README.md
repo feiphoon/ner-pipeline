@@ -1,4 +1,4 @@
-# C: Create JSONL for annotation
+# C: Prepare abstracts for annotation
 
 At this stage, we extract the information we need for annotation from each abstract, and pack all the entries into one JSONL file which can be uploaded into Doccano.
 
