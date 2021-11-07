@@ -18,9 +18,12 @@ def build_no_cache(c):
 
 
 @task
-def pyspark_run(c):
+def pyspark_get_abstracts(c):
     c.run(
-        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 /main.py --name 'ner-pipeline-container'",
+        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 main.py \
+            --name 'ner-pipeline-container'\
+                ;CONTAINER_ID=$(docker ps -lq)\
+                    ;docker cp `echo $CONTAINER_ID`:/data .",
         pty=True,
     )
 
@@ -30,7 +33,7 @@ ps = Collection("ps")
 
 ps.add_task(build)
 ps.add_task(build_no_cache)
-ps.add_task(pyspark_run, name="run")
+ps.add_task(pyspark_get_abstracts, name="get_abstracts")
 
 ns.add_collection(ps)
 
@@ -47,6 +50,7 @@ def test(c):
 
 @task
 def lint(c):
+    c.run("python -m flake8 main.py", pty=True)
     c.run("python -m flake8 src/.", pty=True)
     c.run("python -m flake8 tests/.", pty=True)
     c.run("python -m black --check .", pty=True)
