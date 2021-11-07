@@ -3,7 +3,7 @@ from pathlib import Path
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
 
-from schemas import INPUT_SCHEMA, OUTPUT_SCHEMA
+from src.C_prepare_abstracts_for_annotation.schemas import INPUT_SCHEMA, OUTPUT_SCHEMA
 
 
 def convert_abstracts(
@@ -12,7 +12,7 @@ def convert_abstracts(
     run_input_filepath_without_metadata: Path = Path(f"{run_input_filepath}/*/[0-9]*")
 
     df: DataFrame = spark.read.json(
-        run_input_filepath_without_metadata,
+        str(run_input_filepath_without_metadata),
         schema=INPUT_SCHEMA,
     )
 
@@ -25,7 +25,6 @@ def convert_abstracts(
     # Repartition to ballpark of 5 parquet files for real data
     df.coalesce(1).write.format("json").mode("overwrite").option(
         "schema", OUTPUT_SCHEMA
-    ).save(run_output_filepath)
 
 
 # def prepare_abstracts_for_annotation(
@@ -54,3 +53,4 @@ def convert_abstracts(
 #                 result = json.load(f)
 
 #                 result[]
+    ).save(str(run_output_filepath))
