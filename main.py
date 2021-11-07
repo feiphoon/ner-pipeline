@@ -1,3 +1,4 @@
+from pathlib import Path
 from pyspark.sql import SparkSession
 from src.helpers.run import Run
 
@@ -12,7 +13,7 @@ if __name__ == "__main__":
     spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
     run = Run()
 
-    pubmed_abstracts_raw_filepath = "data/raw/pubmed_abstracts"
+    pubmed_abstracts_raw_filepath: str = "data/raw/pubmed_abstracts"
     terms = ["Bellis perennis L.", "daisy"]
     for t in terms:
         import_pubmed_abstracts(
@@ -21,7 +22,7 @@ if __name__ == "__main__":
             num_results=3,
         )
 
-    pubmed_abstracts_processed_filepath = "data/processed/pubmed_abstracts"
+    pubmed_abstracts_processed_filepath: str = "data/processed/pubmed_abstracts"
     process_pubmed_abstracts(
         run_input_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
         run_output_filepath=run.create_run_filepath(
@@ -30,9 +31,21 @@ if __name__ == "__main__":
         abstract_size_tolerance=100,
     )
 
-    abstracts_for_annotation_filepath = "data/processed/abstracts_for_annotation"
+    abstracts_for_annotation_filepath: str = "data/processed/abstracts_for_annotation"
     convert_abstracts(
         spark=spark,
         run_input_filepath=run.create_run_filepath(pubmed_abstracts_processed_filepath),
         run_output_filepath=run.create_run_filepath(abstracts_for_annotation_filepath),
     )
+
+    # Prepare folder for annotated_abstracts - the next step needs to know this.
+    # I manually export the annotated data from Doccano and copy it into the latest prepared folder here.
+    annotated_abstracts_filepath_location: str = "data/processed/annotated_abstracts"
+
+    annotated_abstracts_filepath: Path = run.create_run_filepath(
+        annotated_abstracts_filepath_location
+    )
+
+    annotated_abstracts_filepath.mkdir(parents=True, exist_ok=True)
+
+    # The next step needs to unzip the annotated abstracts to use it.
