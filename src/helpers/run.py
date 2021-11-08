@@ -18,3 +18,10 @@ class Run:
             return Path(f"{self.start_datetime}")
         else:
             return Path(f"{filepath}/{self.start_datetime}")
+
+    def record_last_run_timestamp(self) -> None:
+        artifacts_filepath: Path = Path(ARTIFACTS_FILEPATH)
+        artifacts_filepath.mkdir(parents=True, exist_ok=True)
+
+        with Path(f"{artifacts_filepath}/{LAST_RUN_FILE}").open("w") as f:
+            f.write(self.start_datetime)
