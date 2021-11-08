@@ -49,3 +49,5 @@ if __name__ == "__main__":
     annotated_abstracts_filepath.mkdir(parents=True, exist_ok=True)
 
     # The next step needs to unzip the annotated abstracts to use it.
+    # Record last run id for next stages to use
+    run.record_last_run_timestamp()
