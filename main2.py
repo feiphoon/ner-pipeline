@@ -1,4 +1,3 @@
-from pathlib import Path
 from pyspark.sql import SparkSession
 from src.helpers.run import Run, get_last_run_timestamp
 
