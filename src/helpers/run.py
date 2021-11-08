@@ -2,6 +2,10 @@ from datetime import datetime
 from pathlib import Path, PosixPath
 
 
+ARTIFACTS_FILEPATH = "data/run_artifacts/"
+LAST_RUN_FILE = "last_run.txt"
+
+
 class Run:
     def __init__(self):
         self.start_datetime = self.create_run_timestamp()
