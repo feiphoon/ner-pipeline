@@ -27,7 +27,7 @@ def split_annotated_abstracts(
     seed: int = 42,
     annotator: str = "admin",
 ) -> None:
-    check_valid_split(train_validation_test_split)
+    check_valid_split(train_val_test_split)
 
     # Extract the contents of the donloaded zip
     run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
