@@ -2,10 +2,8 @@ from pathlib import Path
 from glob import glob
 from zipfile import ZipFile
 
-from pyspark.sql import SparkSession, functions as f
+from pyspark.sql import SparkSession
 from pyspark.sql.dataframe import DataFrame
-
-from typing import Tuple
 
 from dataclasses import dataclass
 
