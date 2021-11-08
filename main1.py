@@ -8,7 +8,7 @@ from src.B_pubmed_abstract_processing.biopython_processing import (
 )
 from src.C_prepare_abstracts_for_annotation.convert_abstracts import convert_abstracts
 
-if __name__ == "__main__":
+if __name__ == "__main1__":
     spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
     run = Run()
 

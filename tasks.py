@@ -20,7 +20,7 @@ def build_no_cache(c):
 @task
 def pyspark_get_abstracts(c):
     c.run(
-        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 main.py \
+        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 main1.py \
             --name 'ner-pipeline-container'\
                 ;CONTAINER_ID=$(docker ps -lq)\
                     ;docker cp `echo $CONTAINER_ID`:/data .",
