@@ -62,6 +62,8 @@ def split_annotated_abstracts(
     )
 
     # Write dfs to files
+    run_output_filepath.mkdir(parents=True, exist_ok=True)
+
     train_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}/train"))
     )
