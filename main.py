@@ -8,9 +8,8 @@ from src.B_pubmed_abstract_processing.biopython_processing import (
 )
 from src.C_prepare_abstracts_for_annotation.convert_abstracts import convert_abstracts
 
-
 if __name__ == "__main__":
-    spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
+    spark = SparkSession.builder.appName("run_ner_pipeline_1").getOrCreate()
     run = Run()
 
     pubmed_abstracts_raw_filepath: str = "data/raw/pubmed_abstracts"
@@ -41,11 +40,10 @@ if __name__ == "__main__":
     # Prepare folder for annotated_abstracts - the next step needs to know this.
     # I manually export the annotated data from Doccano and copy it into the latest prepared folder here.
     annotated_abstracts_filepath_location: str = "data/processed/annotated_abstracts"
-
     annotated_abstracts_filepath: Path = run.create_run_filepath(
         annotated_abstracts_filepath_location
     )
-
     annotated_abstracts_filepath.mkdir(parents=True, exist_ok=True)
 
-    # The next step needs to unzip the annotated abstracts to use it.
+    # Record last run id for next stages to use
+    run.record_last_run_timestamp()
