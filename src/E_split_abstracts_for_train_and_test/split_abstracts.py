@@ -38,7 +38,7 @@ def split_annotated_abstracts(
 
     # Spark read has glob support built in, so we switch to that.
     # We assume that there will be a master annotation file that has agreement from all parties.
-    annotations_df: DataFrame = spark.read.parquet(
+    annotations_df: DataFrame = spark.read.json(
         str(Path(f"{run_input_filepath}/{annotator}.jsonl"))
     )
 
