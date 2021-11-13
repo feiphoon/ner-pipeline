@@ -29,7 +29,7 @@ def split_annotated_abstracts(
 ) -> None:
     check_valid_split(train_val_test_split)
 
-    # Extract the contents of the donloaded zip
+    # Extract the contents of the downloaded zip
     run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
     run_input_filepath_zip_glob = glob(f"{run_input_filepath_glob[0]}/*.zip")
 
