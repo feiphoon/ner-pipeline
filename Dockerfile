@@ -8,5 +8,5 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt
 
-COPY main1.py .
+COPY main.py .
 COPY src src
