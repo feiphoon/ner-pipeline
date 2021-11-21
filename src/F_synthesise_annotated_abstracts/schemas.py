@@ -13,7 +13,7 @@ ANNOTATED_ABSTRACTS_INPUT_SCHEMA = StructType(
         StructField("id", StringType(), True),
         StructField("pmid", StringType(), True),
         StructField(
-            "labels",
+            "label",
             ArrayType(
                 StructType(
                     [
