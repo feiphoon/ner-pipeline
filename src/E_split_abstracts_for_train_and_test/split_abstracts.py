@@ -5,18 +5,7 @@ from zipfile import ZipFile
 from pyspark.sql import SparkSession
 from pyspark.sql.dataframe import DataFrame
 
-from dataclasses import dataclass
-
-
-@dataclass
-class TrainValTestSplit:
-    train: float
-    val: float
-    test: float
-
-
-class InvalidSplitError(Exception):
-    pass
+from src.helpers.train_val_test_split import TrainValTestSplit, check_valid_split
 
 
 def split_annotated_abstracts(
@@ -75,8 +64,3 @@ def split_annotated_abstracts(
     test_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}/test"))
     )
-
-
-def check_valid_split(split_config: TrainValTestSplit) -> bool:
-    if (split_config.train + split_config.val + split_config.test) != 1:
-        raise InvalidSplitError("Split config must add up to 1.")
