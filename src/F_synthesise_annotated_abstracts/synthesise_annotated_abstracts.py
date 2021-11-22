@@ -64,6 +64,10 @@ def synthesise_annotated_abstracts(
         )
     )
 
+    print(stratified_name_mappings_df.count())
+
+    # TODO: I think I need to do the stratification of name mappings separately so that I can split them between Train and Val.
+
     # if split_subset_type == "train":
 
 
