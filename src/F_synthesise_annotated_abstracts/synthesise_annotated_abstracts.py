@@ -24,7 +24,6 @@ def synthesise_annotated_abstracts(
     name_mappings_filepath: Path,
     run_output_filepath: Path,
     train_val_test_split: TrainValTestSplit,
-    split_subset_type: str = "train",
     seed: int = 42,
 ) -> None:
     check_valid_split(train_val_test_split)
@@ -66,9 +65,7 @@ def synthesise_annotated_abstracts(
 
     print(stratified_name_mappings_df.count())
 
-    # TODO: I think I need to do the stratification of name mappings separately so that I can split them between Train and Val.
-
-    # if split_subset_type == "train":
+    # TODO: Do the stratification of name mappings here with the provided TrainValTestSplit value.
 
 
 def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
