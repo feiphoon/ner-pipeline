@@ -34,12 +34,11 @@ def synthesise_annotated_abstracts(
 
     name_mappings_df = name_mappings_df.transform(filter_out_empty_name_mappings)
 
-    # NOTE: This should not load train AND val - validation needs to be on an
-    # unseen pattern to see how well this generalises.
-    # It's the name mappings which need to change.
-    # TODO: Train and val only. Train only for now, I'll improve this later.
+    # NOTE: This is perfect that this loads only train. It's the name mappings
+    # which need to be split between train and val.
     annotated_abstracts_df: DataFrame = spark.read.json(
-        str(Path(f"{run_input_filepath}/train/"))
+        str(Path(f"{run_input_filepath}/train/")),
+        schema=ANNOTATED_ABSTRACTS_INPUT_SCHEMA,
     )
 
     annotated_abstracts_df = annotated_abstracts_df.withColumn(
