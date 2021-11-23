@@ -61,7 +61,7 @@ Check that the necessary images were created. The repositories and tags we want 
 docker image ls
 ```
 
-To create a docker volumen and run a file on it:
+To create a docker volume and run a file on it:
 ```bash
 inv ps.run
 ```
