@@ -15,13 +15,7 @@ ANNOTATED_ABSTRACTS_INPUT_SCHEMA = StructType(
         StructField(
             "label",
             ArrayType(
-                StructType(
-                    [
-                        StructField("label_start_pos", IntegerType(), False),
-                        StructField("label_end_pos", IntegerType(), False),
-                        StructField("label_type", StringType(), False),
-                    ]
-                ),
+                StringType(),
                 False,
             ),
             False,
