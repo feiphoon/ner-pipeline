@@ -65,7 +65,22 @@ def synthesise_annotated_abstracts(
 
     print(stratified_name_mappings_df.count())
 
-    # TODO: Do the stratification of name mappings here with the provided TrainValTestSplit value.
+    # TODO: Actually I can do a train val split here on name mappings
+    train_and_val_split = train_val_test_split.train + train_val_test_split.val
+
+    (
+        stratified_name_mappings_train_df,
+        stratified_name_mappings_val_df,
+    ) = stratified_name_mappings_df.randomSplit(
+        weights=[
+            train_val_test_split.train / train_and_val_split,
+            train_val_test_split.val / train_and_val_split,
+        ],
+        seed=seed,
+    )
+
+    # Now for each name_mappings_df, we should run through all the abstracts
+    # and replace the entities with new entities.
 
 
 def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
