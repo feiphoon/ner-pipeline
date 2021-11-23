@@ -87,7 +87,7 @@ def perform_deterministic_shuffle(df: DataFrame, seed: int) -> DataFrame:
     Hacky method of doing a shuffle with deterministic results.
     """
     return (
-        df.orderBy(f.col("pmid").asc())
+        df.orderBy(f.col("mapping_id").asc())
         .withColumn("order", f.rand(seed=seed))
         .orderBy(f.col("order").asc())
         .drop("order")
@@ -106,15 +106,15 @@ def stratify_name_mappings(df: DataFrame, seed: int) -> DataFrame:
     # a deterministic shuffle so that this processing is reproducible.
     name_mappings_synonym_df: DataFrame = df.filter(
         f.col("scientific_name_type") == "synonym"
-    ).transform(perform_deterministic_shuffle(seed))
+    ).transform(lambda df: perform_deterministic_shuffle(df, seed))
 
     name_mappings_sci_cited_medicinal_df: DataFrame = df.filter(
         f.col("scientific_name_type") == "sci_cited_medicinal"
-    ).transform(perform_deterministic_shuffle(seed))
+    ).transform(lambda df: perform_deterministic_shuffle(df, seed))
 
     name_mappings_plant_df: DataFrame = df.filter(
         f.col("scientific_name_type") == "plant"
-    ).transform(perform_deterministic_shuffle(seed))
+    ).transform(lambda df: perform_deterministic_shuffle(df, seed))
 
     # Take counts of rows in all three dataframe slices.
     name_mappings_synonym_count: int = name_mappings_synonym_df.count()
