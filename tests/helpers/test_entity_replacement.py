@@ -1,5 +1,5 @@
 import pytest
-from src.annotation_creation_spike.main import (
+from src.helpers.entity_replacement import (
     PhraseLocation,
     check_corpus_provided,
     check_phraselocation_valid,
