@@ -66,6 +66,7 @@ def synthesise_annotated_abstracts(
     print(stratified_name_mappings_df.count())
 
     # TODO: Actually I can do a train val split here on name mappings
+    # But double check that the split calculation is correct!
     train_and_val_split = train_val_test_split.train + train_val_test_split.val
 
     (
