@@ -66,9 +66,8 @@ def synthesise_annotated_abstracts(
 
     print(stratified_name_mappings_df.count())
 
-    # TODO: I think I need to do the stratification of name mappings separately so that I can split them between Train and Val.
-
-    # if split_subset_type == "train":
+    # Now for each name_mappings_df, we should run through all the abstracts
+    # and replace the entities with new entities.
 
 
 def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
