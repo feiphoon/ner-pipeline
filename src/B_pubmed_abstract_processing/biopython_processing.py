@@ -206,9 +206,14 @@ def construct_pubmed_abstract_object(pubmed_article: dict) -> dict:
     _pubmed_abstract_dict["title"] = str(
         pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"]["ArticleTitle"]
     )
-    _pubmed_abstract_dict["abstract"] = pubmed_article["PubmedArticle"][0][
-        "MedlineCitation"
-    ]["Article"]["Abstract"]["AbstractText"][0]
+
+    if (
+        "Abstract"
+        in pubmed_article["PubmedArticle"][0]["MedlineCitation"]["Article"].keys()
+    ):
+        _pubmed_abstract_dict["abstract"] = pubmed_article["PubmedArticle"][0][
+            "MedlineCitation"
+        ]["Article"]["Abstract"]["AbstractText"][0]
     if "KeyWordList" in pubmed_article["PubmedArticle"][0]["MedlineCitation"].keys():
         _pubmed_abstract_dict["keywords"] = list(
             map(
