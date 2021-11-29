@@ -1,8 +1,16 @@
 from pathlib import Path
 from functools import reduce
+from typing import List, Any, Tuple
 
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
+from pyspark.sql.types import (
+    ArrayType,
+    StringType,
+    StructType,
+    StructField,
+    IntegerType,
+)
 
 from src.helpers.train_test_split import TrainTestSplit, check_valid_split
 from src.F_synthesise_annotated_abstracts.schemas import (
@@ -68,6 +76,73 @@ def synthesise_annotated_abstracts(
 
     # Now for each name_mappings_df, we should run through all the abstracts
     # and replace the entities with new entities.
+    # For each abstract, we want to replace the entities with a new set from name mappings.
+    # There may be an issue with not enough names from a certain label being present in the mapping.
+    annotated_abstracts_df_with_stats: DataFrame = annotated_abstracts_df.withColumn(
+        "name_stats",
+    )
+    stratified_name_mappings_train_df
+
+    # def create_tuple_of_name_counts(lst: List[Any]) -> Tuple[int]:
+    #     """Scientific count is hardcoded to 1 - because scientific names will just be repeated."""
+    #     alpha_lst = [el for el in lst if str(el).isalpha()]
+    #     return tuple(
+    #         list(
+    #             map(
+    #                 str,
+    #                 [
+    #                     alpha_lst.count("scientific"),
+    #                     alpha_lst.count("common"),
+    #                     alpha_lst.count("pharmaceutical"),
+    #                 ],
+    #             )
+    #         )
+    #     )
+
+    # create_tuple_of_name_counts_udf = f.udf(
+    #     create_tuple_of_name_counts,
+    #     StructType(
+    #         [
+    #             StructField("sci", IntegerType(), False),
+    #             StructField("com", IntegerType(), False),
+    #             StructField("pha", IntegerType(), False),
+    #         ]
+    #     ),
+    # )
+
+    # abstracts_df = spark.read.json(
+    #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_annotated_abstract.json"
+    # )
+    # abstracts_df = abstracts_df.withColumn(
+    #     "ab_sci_com_pha", f.flatten(f.col("label"))
+    # ).withColumn("ab_sci_com_pha", create_tuple_of_name_counts_udf(f.col("ab_sci_com_pha")))
+
+    # name_mappings_df = spark.read.json(
+    #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_name_mappings.json"
+    # )
+
+    # name_mappings_df = name_mappings_df.withColumn(
+    #     "nm_sci_com_pha",
+    #     f.struct(
+    #         f.lit(1).alias("sci"),
+    #         f.col("common_name_count").cast(IntegerType()).alias("com"),
+    #         f.col("pharmaceutical_name_count").cast(IntegerType()).alias("pha"),
+    #     ),
+    # )
+
+    # monster_df = name_mappings_df.crossJoin(abstracts_df)
+
+    # # Check which rows are "mappable". This means that there's enough counts of every type of label
+    # # In each mapping, to match that found in the
+    # monster_df.withColumn(
+    #     "mappable",
+    #     f.when(f.col("nm_sci_com_pha") >= f.col("ab_sci_com_pha"), True).otherwise(False),
+    # )
+
+    # # Filter out the unmappable ones
+    # mappable_combinations_df = monster_df.filter(f.col("mappable"))
+    # # Filter out abstracts that don't have a scientific name - they must have at least one.
+    # # TODO: Do this upstream, so this is not really a TODO for here.
 
 
 def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
@@ -101,7 +176,7 @@ def stratify_name_mappings(df: DataFrame, seed: int) -> DataFrame:
     in the name mappings resulting after a filter for minimum entity counts.
     We perform a deterministic shuffle (for reproducibility) and we grab enough
     items of each so that we have as many of each group as possible while
-    maintaining equal representation.
+    maintaining EQUAL representation.
     """
     # Slice up our dataframes into the three types to be stratified and perform
     # a deterministic shuffle so that this processing is reproducible.
