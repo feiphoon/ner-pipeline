@@ -13,7 +13,7 @@ if __name__ == "__main__":
     run = Run()
 
     pubmed_abstracts_raw_filepath: str = "data/raw/pubmed_abstracts"
-    terms = ["Thymus quinquecostatus Celak.", "Thymus serpyllum subsp. quinquecostatus (Celak.) Kitam.", "thyme", "thymi herba", "Thymus quinquecostatus Celakovski"]
+    terms = ["Quercus serrata Murray", "Quercus glandulifera var. stellatopilosa W.H.Zhang", "ボクソク", "quercus bark", "quercus cortex", "Quercus serrata Murray", ]
     for t in terms:
         import_pubmed_abstracts(
             run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
