@@ -20,6 +20,7 @@ def convert_abstracts(
         df.select("pmid", "title", "abstract")
         .withColumn("text", f.concat_ws(" ", "title", "abstract"))
         .drop("title", "abstract")
+        .drop_duplicates()
     )
 
     # Repartition to ballpark of 5 parquet files for real data

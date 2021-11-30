@@ -13,12 +13,28 @@ if __name__ == "__main__":
     run = Run()
 
     pubmed_abstracts_raw_filepath: str = "data/raw/pubmed_abstracts"
-    terms = ["Bellis perennis L.", "daisy"]
+    # _daisy_terms = ["Bellis perennis L.", "daisy"]
+    # _chia_terms = ["Salvia hispanica L.", "chia"]
+    # _thyme_terms = ["Thymus quinquecostatus Celak.", "thyme", "thymi herba", "Thymus quinquecostatus Celakovski"]
+    _st_johns_wort_terms = [
+        "Hypericum perforatum L.",
+        "st. john's wort",
+        "herba hyperici",
+    ]  # plant_id: wcs516286
+    _pennywort_terms = [
+        "Centella asiatica (L.) Urb.",
+        "asiatic pennywort",
+        "indian pennywort",
+        "centellae asiaticae herba",
+        "centellae folium",
+        "centellae herba",
+    ]  # plant_id: wcsCmp708815
+    terms = _pennywort_terms + _st_johns_wort_terms
     for t in terms:
         import_pubmed_abstracts(
             run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
             query_terms=t,
-            num_results=3,
+            num_results=15,
         )
 
     pubmed_abstracts_processed_filepath: str = "data/processed/pubmed_abstracts"
@@ -27,7 +43,7 @@ if __name__ == "__main__":
         run_output_filepath=run.create_run_filepath(
             pubmed_abstracts_processed_filepath
         ),
-        abstract_size_tolerance=100,
+        abstract_size_tolerance=10,
     )
 
     abstracts_for_annotation_filepath: str = "data/processed/abstracts_for_annotation"
