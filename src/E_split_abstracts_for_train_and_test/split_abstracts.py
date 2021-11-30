@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from glob import glob
 from zipfile import ZipFile
@@ -18,9 +19,13 @@ def split_annotated_abstracts(
 ) -> None:
     check_valid_split(train_val_test_split)
 
+    print(os.listdir(run_input_filepath))
+
     # Extract the contents of the downloaded zip
-    run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
+    run_input_filepath_glob = glob(f"{run_input_filepath}/")
+    print(run_input_filepath_glob)
     run_input_filepath_zip_glob = glob(f"{run_input_filepath_glob[0]}/*.zip")
+    print(run_input_filepath_zip_glob[0])
 
     with ZipFile(run_input_filepath_zip_glob[0], "r") as zip_f:
         zip_f.extractall(run_input_filepath_glob[0])
