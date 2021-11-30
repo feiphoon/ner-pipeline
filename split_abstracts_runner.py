@@ -16,5 +16,5 @@ split_annotated_abstracts(
     spark=spark,
     run_input_filepath=run.create_run_filepath(annotated_abstracts_filepath),
     run_output_filepath=run.create_run_filepath(split_annotated_abstracts_filepath),
-    train_val_test_split=TrainValTestSplit(0.8, 0, 0.2),
+    train_val_test_split=TrainValTestSplit(0.5, 0, 0.5),
 )
