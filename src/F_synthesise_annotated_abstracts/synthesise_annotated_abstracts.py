@@ -3,7 +3,7 @@ from pathlib import Path
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
 
-from src.helpers.train_val_test_split import TrainValTestSplit, check_valid_split
+from src.helpers.train_test_split import TrainTestSplit, check_valid_split
 from src.F_synthesise_annotated_abstracts.schemas import (
     ANNOTATED_ABSTRACTS_INPUT_SCHEMA,
 )
@@ -22,11 +22,11 @@ def synthesise_annotated_abstracts(
     run_input_filepath: Path,
     name_mappings_filepath: Path,
     run_output_filepath: Path,
-    train_val_test_split: TrainValTestSplit,
+    train_test_split: TrainTestSplit,
     split_subset_type: str = "train",
     seed: int = 42,
 ) -> None:
-    check_valid_split(train_val_test_split)
+    check_valid_split(train_test_split)
 
     name_mappings_df: DataFrame = spark.read.option(
         "basePath", f"{name_mappings_filepath}"

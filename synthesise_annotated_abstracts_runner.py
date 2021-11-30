@@ -5,10 +5,10 @@ from src.helpers.run import Run, get_last_run_timestamp
 from src.F_synthesise_annotated_abstracts.synthesise_annotated_abstracts import (
     synthesise_annotated_abstracts,
 )
-from src.helpers.train_val_test_split import TrainValTestSplit
+from src.helpers.train_test_split import TrainTestSplit
 
 
-TRAIN_VAL_TEST_SPLIT = TrainValTestSplit(0.8, 0, 0.2)
+TRAIN_TEST_SPLIT = TrainTestSplit(0.8, 0, 0.2)
 
 spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
 run = Run(last_run_timestamp=get_last_run_timestamp())
@@ -25,7 +25,7 @@ synthesise_annotated_abstracts(
     run_output_filepath=run.create_run_filepath(
         synthesised_annotated_abstracts_filepath
     ),
-    train_val_test_split=TRAIN_VAL_TEST_SPLIT,
+    train_test_split=TRAIN_TEST_SPLIT,
     split_subset_type="train",
     seed=1,
 )
