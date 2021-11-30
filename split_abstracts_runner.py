@@ -3,8 +3,8 @@ from src.helpers.run import Run, get_last_run_timestamp
 
 from src.E_split_abstracts_for_train_and_test.split_abstracts import (
     split_annotated_abstracts,
-    TrainTestSplit,
 )
+from src.helpers.train_test_split import TrainTestSplit
 
 
 spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
