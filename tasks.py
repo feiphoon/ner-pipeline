@@ -35,7 +35,7 @@ def pyspark_split_abstracts(c):
             --name 'ner-pipeline-container'\
                 ;CONTAINER_ID=$(docker ps -lq)\
                     ;docker cp `echo $CONTAINER_ID`:data/processed/split_annotated_abstracts \
-                        data/processed/split_annotated_abstracts",
+                        data/processed/",
         pty=True,
     )
 
