@@ -13,7 +13,12 @@ if __name__ == "__main__":
     run = Run()
 
     pubmed_abstracts_raw_filepath: str = "data/raw/pubmed_abstracts"
-    terms = ["Quercus serrata Murray", "Quercus glandulifera var. stellatopilosa W.H.Zhang", "ボクソク", "quercus bark", "quercus cortex", "Quercus serrata Murray", ]
+    _thyme_terms = ["Thymus quinquecostatus Celak.", "thyme", "thymi herba", "Thymus quinquecostatus Celakovski"]
+    _daisy_terms = ["Bellis perennis L.", "daisy"]
+    _chia_terms = ["Salvia hispanica L.", "chia"]
+    _st_johns_wort_terms = ["Hypericum perforatum L.", "st. john's wort", "herba hyperici"]
+    _pennywort_terms = ["Centella asiatica (L.) Urb.", "asiatic pennywort", "indian pennywort", "centellae asiaticae herba", "centellae folium", "centellae herba"]
+    terms = _pennywort_terms + _st_johns_wort_terms + _thyme_terms
     for t in terms:
         import_pubmed_abstracts(
             run_filepath=run.create_run_filepath(pubmed_abstracts_raw_filepath),
