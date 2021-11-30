@@ -2,16 +2,16 @@ from pathlib import Path
 from glob import glob
 from zipfile import ZipFile
 
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
+from pyspark.sql.window import Window
 
 from dataclasses import dataclass
 
 
 @dataclass
-class TrainValTestSplit:
+class TrainTestSplit:
     train: float
-    val: float
     test: float
 
 
@@ -23,11 +23,11 @@ def split_annotated_abstracts(
     spark: SparkSession,
     run_input_filepath: Path,
     run_output_filepath: Path,
-    train_val_test_split: TrainValTestSplit,
+    train_test_split: TrainTestSplit,
     seed: int = 42,
     annotator: str = "admin",
 ) -> None:
-    check_valid_split(train_val_test_split)
+    check_valid_split(train_test_split)
 
     # Extract the contents of the downloaded zip
     run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
@@ -42,24 +42,12 @@ def split_annotated_abstracts(
         str(Path(f"{run_input_filepath}/{annotator}.jsonl"))
     )
 
-    # Perform splits
-    train_and_val_split = train_val_test_split.train + train_val_test_split.val
+    annotations_df = annotations_df.transform(
+        lambda df: perform_deterministic_shuffle(df, seed)
+    ).transform(lambda df: assign_train_flag(df, train_test_split.train))
 
-    int_train_df, test_df = annotations_df.randomSplit(
-        weights=[
-            train_and_val_split,
-            train_val_test_split.test,
-        ],
-        seed=seed,
-    )
-
-    train_df, val_df = int_train_df.randomSplit(
-        weights=[
-            train_val_test_split.train / train_and_val_split,
-            train_val_test_split.val / train_and_val_split,
-        ],
-        seed=seed,
-    )
+    train_df: DataFrame = annotations_df.filter(f.col("is_train")).drop("is_train")
+    test_df: DataFrame = annotations_df.filter(~f.col("is_train")).drop("is_train")
 
     # Write dfs to files
     run_output_filepath.mkdir(parents=True, exist_ok=True)
@@ -68,15 +56,36 @@ def split_annotated_abstracts(
         str(Path(f"{run_output_filepath}/train"))
     )
 
-    val_df.coalesce(1).write.format("json").mode("overwrite").save(
-        str(Path(f"{run_output_filepath}/val"))
-    )
-
     test_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}/test"))
     )
 
 
-def check_valid_split(split_config: TrainValTestSplit) -> bool:
-    if (split_config.train + split_config.val + split_config.test) != 1:
+def check_valid_split(split_config: TrainTestSplit) -> bool:
+    if (split_config.train + split_config.test) != 1:
         raise InvalidSplitError("Split config must add up to 1.")
+
+
+def perform_deterministic_shuffle(df: DataFrame, seed: int) -> DataFrame:
+    """
+    Hacky method of doing a shuffle with deterministic results.
+    Use the pmid metadata included with the abstracts as an anchor.
+    """
+    return (
+        df.orderBy(f.col("pmid").asc())
+        .withColumn("order", f.rand(seed=seed))
+        .orderBy(f.col("order").asc())
+    )
+
+
+def assign_train_flag(df: DataFrame, train_split: float) -> DataFrame:
+    total_rows: int = df.count()
+    return (
+        df.withColumn("id", f.row_number().over(Window.orderBy("order")))
+        .withColumn("id_split", (f.col("id") / f.lit(total_rows)))
+        .withColumn(
+            "is_train",
+            f.when(f.col("id_split") < f.lit(train_split), True).otherwise(False),
+        )
+        .drop("order", "id_split")
+    )
