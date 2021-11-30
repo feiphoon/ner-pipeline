@@ -16,8 +16,19 @@ if __name__ == "__main__":
     # _daisy_terms = ["Bellis perennis L.", "daisy"]
     # _chia_terms = ["Salvia hispanica L.", "chia"]
     # _thyme_terms = ["Thymus quinquecostatus Celak.", "thyme", "thymi herba", "Thymus quinquecostatus Celakovski"]
-    _st_johns_wort_terms = ["Hypericum perforatum L.", "st. john's wort", "herba hyperici"]
-    _pennywort_terms = ["Centella asiatica (L.) Urb.", "asiatic pennywort", "indian pennywort", "centellae asiaticae herba", "centellae folium", "centellae herba"]
+    _st_johns_wort_terms = [
+        "Hypericum perforatum L.",
+        "st. john's wort",
+        "herba hyperici",
+    ]  # plant_id: wcs516286
+    _pennywort_terms = [
+        "Centella asiatica (L.) Urb.",
+        "asiatic pennywort",
+        "indian pennywort",
+        "centellae asiaticae herba",
+        "centellae folium",
+        "centellae herba",
+    ]  # plant_id: wcsCmp708815
     terms = _pennywort_terms + _st_johns_wort_terms
     for t in terms:
         import_pubmed_abstracts(
