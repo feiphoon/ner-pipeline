@@ -26,7 +26,7 @@ def transform(self, f):
 DataFrame.transform = transform
 
 
-def synthesise_annotated_abstracts(
+def prepare_annotated_abstracts(
     spark: SparkSession,
     run_input_filepath: Path,
     name_mappings_filepath: Path,
@@ -35,7 +35,6 @@ def synthesise_annotated_abstracts(
     split_subset_type: str = "train",
     exclude_scientific_name_ids: List[str] = None,
     seed: int = 42,
-    sample_run: bool = True,
 ) -> None:
     check_valid_split(train_test_split)
 
@@ -144,18 +143,6 @@ def synthesise_annotated_abstracts(
     mappable_combinations_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}"))
     )
-
-    # Now for each name_mapping, we should run through all the abstracts
-    # and replace the entities with new entities.
-    # For each abstract, we want to replace the entities with a new set from name mappings.
-
-    # abstracts_df = spark.read.json(
-    #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_annotated_abstract.json"
-    # )
-
-    # name_mappings_df = spark.read.json(
-    #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_name_mappings.json"
-    # )
 
 
 def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
