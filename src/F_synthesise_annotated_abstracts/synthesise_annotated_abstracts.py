@@ -5,8 +5,6 @@ from typing import List, Any, Tuple
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
 from pyspark.sql.types import (
-    ArrayType,
-    StringType,
     StructType,
     StructField,
     IntegerType,
