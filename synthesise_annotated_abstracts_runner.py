@@ -2,7 +2,7 @@ from pathlib import Path
 from pyspark.sql import SparkSession
 
 from src.helpers.run import Run, get_last_run_timestamp
-from F_synthesise_annotated_abstracts.prepare_annotated_abstracts_for_entity_replacement import (
+from src.F_synthesise_annotated_abstracts.prepare_annotated_abstracts_for_entity_replacement import (
     prepare_annotated_abstracts,
 )
 from src.helpers.train_test_split import TrainTestSplit
