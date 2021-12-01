@@ -33,6 +33,7 @@ def synthesise_annotated_abstracts(
     run_output_filepath: Path,
     train_test_split: TrainTestSplit,
     split_subset_type: str = "train",
+    exclude_scientific_name_ids: List[str] = None,
     seed: int = 42,
 ) -> None:
     check_valid_split(train_test_split)
@@ -41,7 +42,13 @@ def synthesise_annotated_abstracts(
         "basePath", f"{name_mappings_filepath}"
     ).load(f"{name_mappings_filepath}/scientific_name_type=*/")
 
-    name_mappings_df = name_mappings_df.transform(filter_out_empty_name_mappings)
+    name_mappings_df = name_mappings_df.transform(
+        filter_out_empty_name_mappings
+    ).transform(
+        lambda df: filter_out_plant_ids_from_name_mappings(
+            df, exclude_scientific_name_ids
+        )
+    )
 
     # NOTE: This is perfect that this loads only train. It's the name mappings
     # which need to be split between train and val.
@@ -156,6 +163,17 @@ def filter_out_empty_name_mappings(df: DataFrame) -> DataFrame:
     return df.filter(
         (f.col("common_name_count") != 0) & (f.col("pharmaceutical_name_count") != 0)
     )
+
+
+def filter_out_plant_ids_from_name_mappings(
+    df: DataFrame, exclude_scientific_name_ids: List[str]
+) -> DataFrame:
+    if not exclude_scientific_name_ids:
+        return df
+
+    for _id in exclude_scientific_name_ids:
+        df = df.filter(~f.col("scientific_name_id") == _id)
+    return df
 
 
 def perform_deterministic_shuffle(df: DataFrame, seed: int) -> DataFrame:

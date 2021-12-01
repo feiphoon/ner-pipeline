@@ -27,6 +27,7 @@ synthesise_annotated_abstracts(
     ),
     train_test_split=TRAIN_TEST_SPLIT,
     split_subset_type="train",
+    exclude_scientific_name_ids=["wcs516286", "wcsCmp708815"],
     seed=1,
 )
 
