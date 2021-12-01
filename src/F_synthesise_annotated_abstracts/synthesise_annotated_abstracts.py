@@ -50,10 +50,8 @@ def synthesise_annotated_abstracts(
         )
     )
 
-    # NOTE: This is perfect that this loads only train. It's the name mappings
-    # which need to be split between train and val.
     annotated_abstracts_df: DataFrame = spark.read.json(
-        str(Path(f"{run_input_filepath}/train/")),
+        str(Path(f"{run_input_filepath}/{split_subset_type}/")),
         schema=ANNOTATED_ABSTRACTS_INPUT_SCHEMA,
     )
 
