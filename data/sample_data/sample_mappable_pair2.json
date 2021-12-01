@@ -1,0 +1,197 @@
+{
+    "scientific_name_id": "wcsCmp920630",
+    "scientific_name": "Salix purpurea L.",
+    "scientific_name_length": 17,
+    "common_names": [
+        {
+            "non_scientific_name": "basket willow",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 13
+        },
+        {
+            "non_scientific_name": "bidsorkh",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 8
+        },
+        {
+            "non_scientific_name": "hong pi liu",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 11
+        },
+        {
+            "non_scientific_name": "morvár",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 6
+        },
+        {
+            "non_scientific_name": "osier rouge",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 11
+        },
+        {
+            "non_scientific_name": "pupurweide",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 10
+        },
+        {
+            "non_scientific_name": "purple osier",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 12
+        },
+        {
+            "non_scientific_name": "purple willow",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 13
+        },
+        {
+            "non_scientific_name": "purpur pil",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 10
+        },
+        {
+            "non_scientific_name": "rödvide",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 7
+        },
+        {
+            "non_scientific_name": "salcio da vimini",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 16
+        },
+        {
+            "non_scientific_name": "salcio rosso",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 12
+        },
+        {
+            "non_scientific_name": "salgueiro-de-casca-roxa",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 23
+        },
+        {
+            "non_scientific_name": "salix",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 5
+        },
+        {
+            "non_scientific_name": "salix purpurea",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 14
+        },
+        {
+            "non_scientific_name": "sargatillo",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 10
+        },
+        {
+            "non_scientific_name": "sauce colorado",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 14
+        },
+        {
+            "non_scientific_name": "saule",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 5
+        },
+        {
+            "non_scientific_name": "saule pourpre",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 13
+        },
+        {
+            "non_scientific_name": "shui yang gen",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 13
+        },
+        {
+            "non_scientific_name": "shui yang zhi ye",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 16
+        },
+        {
+            "non_scientific_name": "sorkhbid",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 8
+        },
+        {
+            "non_scientific_name": "stein-weide",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 11
+        },
+        {
+            "non_scientific_name": "weidenrinde",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 11
+        },
+        {
+            "non_scientific_name": "wierzba purpurowa",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 17
+        },
+        {
+            "non_scientific_name": "willow",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 6
+        },
+        {
+            "non_scientific_name": "willow bark",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 11
+        }
+    ],
+    "pharmaceutical_names": [
+        {
+            "non_scientific_name": "cortex salicis",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 14
+        },
+        {
+            "non_scientific_name": "salicis cortex",
+            "non_scientific_name_id": "wcsCmp920630",
+            "non_scientific_name_length": 14
+        }
+    ],
+    "common_name_count": 27,
+    "pharmaceutical_name_count": 2,
+    "non_scientific_name_count": 29,
+    "mapping_id": 290362,
+    "scientific_name_type": "plant",
+    "data": "Effect of St.John's wort (Hypericum perforatum) oily extract for the care and treatment of pressure sores; a case report. Topical formulations such as oily extracts or ointments prepared with the flowering aerial parts of St. John's wort (Hypericum perforatum L., Hypericaceae) have been used in the management of a wide range dermatological problems including superficial wounds and burns, bruises, contusions and many others in the worldwide traditional medicines.",
+    "id": "23",
+    "pmid": "28011162",
+    "label": [
+        [
+            "26",
+            "46",
+            "common"
+        ],
+        [
+            "10",
+            "24",
+            "common"
+        ],
+        [
+            "222",
+            "237",
+            "common"
+        ],
+        [
+            "239",
+            "262",
+            "scientific"
+        ]
+    ],
+    "ab_com_pha": {
+        "com": 3,
+        "pha": 0
+    },
+    "scientific_entities": [
+        "[239, 262, scientific]"
+    ],
+    "common_entities": [
+        "[26, 46, common]",
+        "[10, 24, common]",
+        "[222, 237, common]"
+    ],
+    "pharmaceutical_entities": []
+}

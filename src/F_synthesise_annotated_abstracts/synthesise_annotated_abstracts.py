@@ -111,11 +111,27 @@ def synthesise_annotated_abstracts(
     # print(monster_df.count())  # 11799
     # print(monster_df.show(10, truncate=False))
 
-    # # Filter out the unmappable ones
-    mappable_combinations_df: DataFrame = monster_df.filter(f.col("mappable")).drop("mappable", "nm_com_pha", "entities_count")
+    # Filter out the unmappable ones
+    # Then retire some unneeded columns
 
     # print(mappable_combinations_df.count())  # 11799
 
+    # # Then create a replacement_entities field.
+    # mappable_combinations_df.withColumn("replacement_entities")
+
+    # Separate labels out into different columns
+    mappable_combinations_df = (
+        mappable_combinations_df.withColumn(
+            "scientific_entities",
+            extract_labels_of_type_udf(f.col("label"), f.lit("scientific")),
+        )
+        .withColumn(
+            "common_entities",
+            extract_labels_of_type_udf(f.col("label"), f.lit("common")),
+        )
+        .withColumn(
+            "pharmaceutical_entities",
+            extract_labels_of_type_udf(f.col("label"), f.lit("pharmaceutical")),
     mappable_combinations_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}"))
     )
@@ -254,3 +270,14 @@ create_tuple_of_name_counts_udf = f.udf(
         ]
     ),
 )
+
+
+def extract_labels_of_type(
+    lst_of_labels: List[List[str]], label_type: str
+) -> List[str]:
+    return list(filter(lambda x: x[2] == label_type, lst_of_labels))
+
+
+extract_labels_of_type_udf = f.udf(
+    extract_labels_of_type,
+    ArrayType(
