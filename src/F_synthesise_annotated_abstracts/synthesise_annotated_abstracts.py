@@ -116,6 +116,10 @@ def synthesise_annotated_abstracts(
 
     # print(mappable_combinations_df.count())  # 11799
 
+    mappable_combinations_df.coalesce(1).write.format("json").mode("overwrite").save(
+        str(Path(f"{run_output_filepath}/test"))
+    )
+
     # Now for each name_mapping, we should run through all the abstracts
     # and replace the entities with new entities.
     # For each abstract, we want to replace the entities with a new set from name mappings.
