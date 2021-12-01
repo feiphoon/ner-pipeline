@@ -102,4 +102,3 @@ def replace_phrase_at_location(
         ),
         "".join(corpus),
     )
-

@@ -81,4 +81,3 @@ for _ in all_annotations:
         # Dump annotation as JSONL
         f.write(json.dumps(new_annotation_dict))
         f.write("\n")
-
