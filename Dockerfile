@@ -22,4 +22,6 @@ COPY data/processed/annotated_abstracts data/processed/annotated_abstracts
 COPY synthesise_annotated_abstracts_runner.py .
 COPY data/processed/split_annotated_abstracts data/processed/split_annotated_abstracts
 COPY data/reference/mpns_v8/mpns_name_mappings/ data/reference/mpns_v8/mpns_name_mappings/
-COPY data/sample_data/ data/sample_data/
+
+# Only enable for a sample run of the synthesis stage.
+# COPY data/sample_data/ data/sample_data/
