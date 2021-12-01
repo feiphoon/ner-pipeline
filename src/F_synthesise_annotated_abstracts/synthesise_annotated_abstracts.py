@@ -204,11 +204,11 @@ def stratify_name_mappings(df: DataFrame, seed: int) -> DataFrame:
     )
 
     # Grab the minimum count of items from each group.
-    name_mappings_synonym_df = name_mappings_synonym_df.head(name_mappings_min_count)
-    name_mappings_sci_cited_medicinal_df = name_mappings_sci_cited_medicinal_df.head(
+    name_mappings_synonym_df = name_mappings_synonym_df.limit(name_mappings_min_count)
+    name_mappings_sci_cited_medicinal_df = name_mappings_sci_cited_medicinal_df.limit(
         name_mappings_min_count
     )
-    name_mappings_plant_df = name_mappings_plant_df.head(name_mappings_min_count)
+    name_mappings_plant_df = name_mappings_plant_df.limit(name_mappings_min_count)
 
     # Join all three name mapping groups for everything
     _dfs_to_union: list = [
