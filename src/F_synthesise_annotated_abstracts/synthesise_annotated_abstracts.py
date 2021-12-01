@@ -35,6 +35,7 @@ def synthesise_annotated_abstracts(
     split_subset_type: str = "train",
     exclude_scientific_name_ids: List[str] = None,
     seed: int = 42,
+    sample_run: bool = True,
 ) -> None:
     check_valid_split(train_test_split)
 
