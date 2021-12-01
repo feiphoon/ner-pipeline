@@ -19,7 +19,6 @@ class SimpleLabel:
 @dataclass
 class ReplacementEntity:
     text: str
-    text_length: int
     entity_label: str
 
 
@@ -38,8 +37,8 @@ class DoccanoAnnotationObject:
 
 random.seed(42)
 
-INPUTFILEPATH = "../../../data/sample_data/sample_mappable_pair3.json"
-OUTPUTFILEPATH = "../../../data/sample_data/sample_mapped_pair3.json"
+INPUTFILEPATH = "../../../data/sample_data/sample_mappable_pair2.json"
+OUTPUTFILEPATH = "../../../data/sample_data/sample_mapped_pair2.json"
 # ENTITY_TYPE_TO_REPLACE = "scientific"
 ENTITY_TYPE_TO_REPLACE = "common"
 
@@ -47,32 +46,17 @@ with open(INPUTFILEPATH, "r") as f:
     all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
 
-# Get the right replacement entity
-# if ENTITY_TYPE_TO_REPLACE == "scientific":
-#     replacement_entity = ReplacementEntity(
-#         text=_mappable_pair["scientific_name"],
-#         text_length=_mappable_pair["scientific_name_length"],
-#         entity_label="scientific",
-#     )
-# elif ENTITY_TYPE_TO_REPLACE == "common":
-#     _selection = random.choice(_mappable_pair["common_names"])
-
-#     replacement_entity = ReplacementEntity(
-#         text=_selection["non_scientific_name"],
-#         text_length=_selection["non_scientific_name_length"],
-#         entity_label="common",
-#     )
-# elif ENTITY_TYPE_TO_REPLACE == "pharmaceutical":
-#     _selection = random.choice(_mappable_pair["pharmaceutical_names"])
-
-#     replacement_entity = ReplacementEntity(
-#         text=_selection["non_scientific_name"],
-#         text_length=_selection["non_scientific_name_length"],
-#         entity_label="pharmaceutical",
-#     )
-
 if ENTITY_TYPE_TO_REPLACE == "scientific":
     for _mappable_pair in all_mappable_pairs:
+        # If mappable entities are empty, e.g. common_names = [],
+        # just move on to the next mappable_pair.
+        if len(_mappable_pair[ENTITY_TYPE_TO_REPLACE + "_entities"]) == 0:
+            with open(OUTPUTFILEPATH, "a+") as f:
+                # Dump updated mappable pair as JSONL
+                f.write(json.dumps(_mappable_pair))
+                f.write("\n")
+            continue
+
         # Hack to fix lists being chewed up by JSON
         fixed_mappable_entities = [
             [
@@ -105,7 +89,6 @@ if ENTITY_TYPE_TO_REPLACE == "scientific":
             # Get the right replacement entity
             replacement_entity = ReplacementEntity(
                 text=_mappable_pair["scientific_name"],
-                text_length=_mappable_pair["scientific_name_length"],
                 entity_label="scientific",
             )
             # Get location of current label. The corpus_offset is a running count
@@ -135,6 +118,15 @@ if ENTITY_TYPE_TO_REPLACE == "scientific":
 
 else:
     for _mappable_pair in all_mappable_pairs:
+        # If mappable entities are empty, e.g. common_names = [],
+        # just move on to the next mappable_pair.
+        if len(_mappable_pair[ENTITY_TYPE_TO_REPLACE + "_entities"]) == 0:
+            with open(OUTPUTFILEPATH, "a+") as f:
+                # Dump updated mappable pair as JSONL
+                f.write(json.dumps(_mappable_pair))
+                f.write("\n")
+            continue
+
         # Hack to fix lists being chewed up by JSON
         fixed_mappable_entities = [
             [
@@ -171,7 +163,6 @@ else:
             # Get the right replacement entity
             replacement_entity = ReplacementEntity(
                 text=_selection["non_scientific_name"],
-                text_length=_selection["non_scientific_name_length"],
                 entity_label=ENTITY_TYPE_TO_REPLACE,
             )
             # Get location of current label. The corpus_offset is a running count
