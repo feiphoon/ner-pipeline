@@ -114,6 +114,7 @@ def prepare_annotated_abstracts(
 
     # Filter out the unmappable ones
     # Then retire some unneeded columns
+    # TODO: Retire more of these completely in future, we don't need them.
     mappable_combinations_df: DataFrame = monster_df.filter(f.col("mappable")).drop(
         "mappable",
         "nm_com_pha",
