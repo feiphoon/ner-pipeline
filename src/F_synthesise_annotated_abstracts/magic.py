@@ -1,10 +1,12 @@
 from pathlib import Path
+from glob import glob
+import os
 import json
 import random
 from dataclasses import dataclass
 from typing import List
 
-from functions import (
+from src.helpers.entity_replacement.functions import (
     PhraseLocation,
     replace_phrase_at_location,
 )
@@ -36,30 +38,40 @@ class DoccanoAnnotationObject:
     label: List[SimpleLabel]
 
 
-# INPUTFILEPATH = "../../../data/sample_data/sample_mappable_pair2.json"
-# OUTPUTFILEPATH = "../../../data/sample_data/sample_mapped_pair2.json"
-# # ENTITY_TYPE_TO_REPLACE = "scientific"
-# ENTITY_TYPE_TO_REPLACE = "common"
-
-
 def perform_entity_replacement(
-    input_filepath: Path,
-    output_filepath: Path,
+    run_input_filepath: Path,
+    run_output_filepath: Path,
     entity_type_to_replace: str,
     seed: int = 42,
+    sample_run: bool = False,
 ) -> None:
 
     random.seed(seed)
 
-    with open(input_filepath, "r") as f:
-        all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
+    # Make sure the output filepath exists
+    run_output_filepath.mkdir(parents=True, exist_ok=True)
+
+    if sample_run:
+        run_input_filepath = "../../data/sample_data/sample_mappable_pair3.json"
+
+        with open(run_input_filepath, "r") as f:
+            all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
+
+    else:
+        run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
+        run_input_filepath_json_glob = glob(f"{run_input_filepath_glob[0]}/*.json")
+
+        with open(run_input_filepath_json_glob, "r") as f:
+            all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
     if entity_type_to_replace == "scientific":
         for _mappable_pair in all_mappable_pairs:
             # If mappable entities are empty, e.g. common_names = [],
             # just move on to the next mappable_pair.
             if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(output_filepath, "a+") as f:
+                with open(
+                    os.path.join("run_output_filepath", "output.json"), "a+"
+                ) as f:
                     # Dump updated mappable pair as JSONL
                     f.write(json.dumps(_mappable_pair))
                     f.write("\n")
@@ -118,7 +130,7 @@ def perform_entity_replacement(
 
             # corpus is now final corpus after looping through all the labels
 
-            with open(output_filepath, "a+") as f:
+            with open(os.path.join("run_output_filepath", "output.json"), "a+") as f:
                 _mappable_pair[
                     "new_" + entity_type_to_replace + "_entities"
                 ] = new_labels
@@ -133,7 +145,9 @@ def perform_entity_replacement(
             # If mappable entities are empty, e.g. common_names = [],
             # just move on to the next mappable_pair.
             if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(output_filepath, "a+") as f:
+                with open(
+                    os.path.join("run_output_filepath", "output.json"), "a+"
+                ) as f:
                     # Dump updated mappable pair as JSONL
                     f.write(json.dumps(_mappable_pair))
                     f.write("\n")
@@ -196,7 +210,7 @@ def perform_entity_replacement(
 
             # corpus is now final corpus after looping through all the labels
 
-            with open(output_filepath, "a+") as f:
+            with open(os.path.join("run_output_filepath", "output.json"), "a+") as f:
                 _mappable_pair[
                     "new_" + entity_type_to_replace + "_entities"
                 ] = new_labels
