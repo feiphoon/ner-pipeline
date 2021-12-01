@@ -115,7 +115,14 @@ def prepare_annotated_abstracts(
     # Filter out the unmappable ones
     # Then retire some unneeded columns
     mappable_combinations_df: DataFrame = monster_df.filter(f.col("mappable")).drop(
-        "mappable", "nm_com_pha", "entities_count"
+        "mappable",
+        "nm_com_pha",
+        "ab_com_pha",
+        "entities_count",
+        "common_name_count",
+        "pharmaceutical_name_count",
+        "non_scientific_name_count",
+        "scientific_name_length",
     )
 
     # print(mappable_combinations_df.count())  # 11799
