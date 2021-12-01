@@ -22,7 +22,7 @@ run = Run(last_run_timestamp=get_last_run_timestamp())
 split_annotated_abstracts_filepath: str = "data/processed/split_annotated_abstracts"
 name_mappings_filepath: str = "data/reference/mpns_v8/mpns_name_mappings/v5-sample"
 prepared_annotated_abstracts_filepath: str = (
-    "data/processed/synthesised_annotated_abstracts/prepared/test"
+    "data/processed/synthesised_annotated_abstracts/A_prepared/test"
 )
 prepare_annotated_abstracts(
     spark=spark,
@@ -39,7 +39,7 @@ prepare_annotated_abstracts(
 # split_annotated_abstracts_filepath: str = "data/processed/split_annotated_abstracts"
 # name_mappings_filepath: str = "data/reference/mpns_v8/mpns_name_mappings/v5"
 # prepared_annotated_abstracts_filepath: str = (
-#     "data/processed/synthesised_annotated_abstracts/prepared"
+#     "data/processed/synthesised_annotated_abstracts/A_prepared"
 # )
 # prepare_annotated_abstracts(
 #     spark=spark,
@@ -89,10 +89,10 @@ interim_pharmaceutical_names_replaced_abstracts_filepath: str = (
     "data/processed/synthesised_annotated_abstracts/D_pharmaceutical_replaced"
 )
 perform_entity_replacement(
-    input_filepath=run.create_run_filepath(
+    run_input_filepath=run.create_run_filepath(
         interim_common_names_replaced_abstracts_filepath
     ),
-    output_filepath=run.create_run_filepath(
+    run_output_filepath=run.create_run_filepath(
         interim_pharmaceutical_names_replaced_abstracts_filepath
     ),
     entity_type_to_replace="pharmaceutical",

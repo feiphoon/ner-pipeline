@@ -52,7 +52,7 @@ def perform_entity_replacement(
     run_output_filepath.mkdir(parents=True, exist_ok=True)
 
     if sample_run:
-        run_input_filepath = "../../data/sample_data/sample_mappable_pair3.json"
+        run_input_filepath = "data/sample_data/sample_mappable_pair3.json"
 
         with open(run_input_filepath, "r") as f:
             all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
@@ -61,7 +61,7 @@ def perform_entity_replacement(
         run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
         run_input_filepath_json_glob = glob(f"{run_input_filepath_glob[0]}/*.json")
 
-        with open(run_input_filepath_json_glob, "r") as f:
+        with open(run_input_filepath_json_glob[0], "r") as f:
             all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
     if entity_type_to_replace == "scientific":
@@ -69,9 +69,7 @@ def perform_entity_replacement(
             # If mappable entities are empty, e.g. common_names = [],
             # just move on to the next mappable_pair.
             if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(
-                    os.path.join("run_output_filepath", "output.json"), "a+"
-                ) as f:
+                with open(os.path.join(run_output_filepath, "output.json"), "a+") as f:
                     # Dump updated mappable pair as JSONL
                     f.write(json.dumps(_mappable_pair))
                     f.write("\n")
@@ -130,7 +128,7 @@ def perform_entity_replacement(
 
             # corpus is now final corpus after looping through all the labels
 
-            with open(os.path.join("run_output_filepath", "output.json"), "a+") as f:
+            with open(os.path.join(run_output_filepath, "output.json"), "a+") as f:
                 _mappable_pair[
                     "new_" + entity_type_to_replace + "_entities"
                 ] = new_labels
@@ -145,9 +143,7 @@ def perform_entity_replacement(
             # If mappable entities are empty, e.g. common_names = [],
             # just move on to the next mappable_pair.
             if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(
-                    os.path.join("run_output_filepath", "output.json"), "a+"
-                ) as f:
+                with open(os.path.join(run_output_filepath, "output.json"), "a+") as f:
                     # Dump updated mappable pair as JSONL
                     f.write(json.dumps(_mappable_pair))
                     f.write("\n")
@@ -210,7 +206,7 @@ def perform_entity_replacement(
 
             # corpus is now final corpus after looping through all the labels
 
-            with open(os.path.join("run_output_filepath", "output.json"), "a+") as f:
+            with open(os.path.join(run_output_filepath, "output.json"), "a+") as f:
                 _mappable_pair[
                     "new_" + entity_type_to_replace + "_entities"
                 ] = new_labels
