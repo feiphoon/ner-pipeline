@@ -47,7 +47,7 @@ def pyspark_synthesise_annotations(c):
             --name 'ner-pipeline-container'\
                 ;CONTAINER_ID=$(docker ps -lq)\
                     ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts \
-                        data/processed/synthesised_annotated_abstracts",
+                        data/processed/",
         pty=True,
     )
 
