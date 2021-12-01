@@ -14,7 +14,7 @@ spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
 run = Run(last_run_timestamp=get_last_run_timestamp())
 
 split_annotated_abstracts_filepath: str = "data/processed/split_annotated_abstracts"
-name_mappings_filepath: str = "data/reference/mpns_v8/mpns_name_mappings/v3"
+name_mappings_filepath: str = "data/reference/mpns_v8/mpns_name_mappings/v5"
 synthesised_annotated_abstracts_filepath: str = (
     "data/processed/synthesised_annotated_abstracts"
 )
