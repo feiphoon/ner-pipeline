@@ -1,6 +1,6 @@
 from pathlib import Path
 from functools import reduce
-from typing import List, Any, Tuple
+from typing import AnyStr, List, Any, Tuple
 
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
@@ -8,6 +8,8 @@ from pyspark.sql.types import (
     StructType,
     StructField,
     IntegerType,
+    ArrayType,
+    StringType,
 )
 
 from src.helpers.train_test_split import TrainTestSplit, check_valid_split
@@ -113,6 +115,9 @@ def synthesise_annotated_abstracts(
 
     # Filter out the unmappable ones
     # Then retire some unneeded columns
+    mappable_combinations_df: DataFrame = monster_df.filter(f.col("mappable")).drop(
+        "mappable", "nm_com_pha", "entities_count"
+    )
 
     # print(mappable_combinations_df.count())  # 11799
 
@@ -132,6 +137,10 @@ def synthesise_annotated_abstracts(
         .withColumn(
             "pharmaceutical_entities",
             extract_labels_of_type_udf(f.col("label"), f.lit("pharmaceutical")),
+        )
+    )
+
+    # Write out file
     mappable_combinations_df.coalesce(1).write.format("json").mode("overwrite").save(
         str(Path(f"{run_output_filepath}"))
     )
@@ -139,7 +148,6 @@ def synthesise_annotated_abstracts(
     # Now for each name_mapping, we should run through all the abstracts
     # and replace the entities with new entities.
     # For each abstract, we want to replace the entities with a new set from name mappings.
-
 
     # abstracts_df = spark.read.json(
     #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_annotated_abstract.json"
@@ -281,3 +289,7 @@ def extract_labels_of_type(
 extract_labels_of_type_udf = f.udf(
     extract_labels_of_type,
     ArrayType(
+        StringType(),
+        False,
+    ),
+)
