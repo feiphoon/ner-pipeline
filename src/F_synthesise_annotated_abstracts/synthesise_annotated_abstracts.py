@@ -149,7 +149,7 @@ def filter_out_plant_ids_from_name_mappings(
         return df
 
     for _id in exclude_scientific_name_ids:
-        df = df.filter(~f.col("scientific_name_id") == _id)
+        df = df.filter(f.col("scientific_name_id") != _id)
     return df
 
 
