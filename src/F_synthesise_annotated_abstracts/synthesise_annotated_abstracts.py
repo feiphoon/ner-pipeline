@@ -99,23 +99,24 @@ def synthesise_annotated_abstracts(
         ),
     )
 
-    monster_df = stratified_name_mappings_df.crossJoin(annotated_abstracts_df)
-
-    # print(monster_df.count())  # 11799
-    # print(monster_df.show(10, truncate=False))
-
-    # # Check which rows are "mappable". This means that there's enough counts of every type of label
-    # # in each mapping, to match or exceed that found in the annotated abstracts.
-    # # So we want combinations where the name mappings can meet the composition of labelled entities.
-    monster_df = monster_df.withColumn(
+    # Perform a cross-join or a Cartesian join of the two datasets, so that this a possible combination to combine.
+    # Check which rows are "mappable". This means that there's enough counts of every type of label
+    # in each mapping, to match or exceed that found in the annotated abstracts.
+    # So we want combinations where the name mappings can meet the composition of labelled entities.
+    monster_df = stratified_name_mappings_df.crossJoin(
+        annotated_abstracts_df
+    ).withColumn(
         "mappable",
         f.when(f.col("nm_com_pha") >= f.col("ab_com_pha"), True).otherwise(False),
     )
 
+    # print(monster_df.count())  # 11799
+    # print(monster_df.show(10, truncate=False))
+
     # # Filter out the unmappable ones
     mappable_combinations_df = monster_df.filter(f.col("mappable"))
 
-    print(mappable_combinations_df.count())  # 11799
+    # print(mappable_combinations_df.count())  # 11799
 
     # Now for each name_mapping, we should run through all the abstracts
     # and replace the entities with new entities.
