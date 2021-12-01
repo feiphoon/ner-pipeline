@@ -101,7 +101,7 @@ def synthesise_annotated_abstracts(
     # Check which rows are "mappable". This means that there's enough counts of every type of label
     # in each mapping, to match or exceed that found in the annotated abstracts.
     # So we want combinations where the name mappings can meet the composition of labelled entities.
-    monster_df = stratified_name_mappings_df.crossJoin(
+    monster_df: DataFrame = stratified_name_mappings_df.crossJoin(
         annotated_abstracts_df
     ).withColumn(
         "mappable",
@@ -112,17 +112,18 @@ def synthesise_annotated_abstracts(
     # print(monster_df.show(10, truncate=False))
 
     # # Filter out the unmappable ones
-    mappable_combinations_df = monster_df.filter(f.col("mappable"))
+    mappable_combinations_df: DataFrame = monster_df.filter(f.col("mappable")).drop("mappable", "nm_com_pha", "entities_count")
 
     # print(mappable_combinations_df.count())  # 11799
 
     mappable_combinations_df.coalesce(1).write.format("json").mode("overwrite").save(
-        str(Path(f"{run_output_filepath}/test"))
+        str(Path(f"{run_output_filepath}"))
     )
 
     # Now for each name_mapping, we should run through all the abstracts
     # and replace the entities with new entities.
     # For each abstract, we want to replace the entities with a new set from name mappings.
+
 
     # abstracts_df = spark.read.json(
     #     "/Users/fei/projects/inm363-individual-project/ner-pipeline/data/sample_data/sample_annotated_abstract.json"
