@@ -8,7 +8,7 @@ from src.F_synthesise_annotated_abstracts.synthesise_annotated_abstracts import 
 from src.helpers.train_test_split import TrainTestSplit
 
 
-TRAIN_TEST_SPLIT = TrainTestSplit(0.8, 0, 0.2)
+TRAIN_TEST_SPLIT = TrainTestSplit(0.5, 0.5)
 
 spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
 run = Run(last_run_timestamp=get_last_run_timestamp())
