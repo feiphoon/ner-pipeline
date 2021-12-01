@@ -58,10 +58,29 @@ def perform_entity_replacement(
             all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
     else:
-        run_input_filepath_glob = glob(f"../../{run_input_filepath}/")
-        run_input_filepath_json_glob = glob(f"{run_input_filepath_glob[0]}/*.json")
+        # BUG: I have some issue where I can't get this file location right via glob.
+        # As a consequence this stage has to be run in two parts. That's ok for now.
+        # TODO: Log this as an issue and move on for now.
 
-        with open(run_input_filepath_json_glob[0], "r") as f:
+        # run_input_filepath_glob = glob(f"{run_input_filepath}/")
+        # run_input_filepath_json_glob = glob(f"{run_input_filepath_glob[0]}/*.json")
+
+        # with open(run_input_filepath_json_glob[0], "r") as f:
+        #     # for i, line in enumerate(f):
+        #     #     try:
+        #     #         d = json.loads(line)
+        #     #     except json.decoder.JSONDecodeError:
+        #     #         print("Error on line", i + 1, ":\n", repr(line))
+        #     all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
+
+        if entity_type_to_replace == "scientific":
+            json_file_name: str = (
+                "part-00000-78841aa7-70b6-4d62-8c5e-fe503aa13acc-c000.json"
+            )
+        else:
+            json_file_name: str = "output.json"
+
+        with open(os.path.join(run_input_filepath, json_file_name), "r") as f:
             all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
     if entity_type_to_replace == "scientific":
