@@ -124,21 +124,13 @@ if ENTITY_TYPE_TO_REPLACE == "scientific":
             corpus = new_corpus
 
         # corpus is now final corpus after looping through all the labels
-        new_doccano_annotation = DoccanoAnnotationObject(
-            id=original_doccano_annotation.id,
-            data=corpus,
-            label=new_labels,
-        )
 
         with open(OUTPUTFILEPATH, "a+") as f:
-            # Convert Doccano Annotation to dict
-            new_annotation_dict = {
-                "id": new_doccano_annotation.id,
-                "data": new_doccano_annotation.data,
-                "label": new_doccano_annotation.label,
-            }
-            # Dump annotation as JSONL
-            f.write(json.dumps(new_annotation_dict))
+            _mappable_pair["new_" + ENTITY_TYPE_TO_REPLACE + "_entities"] = new_labels
+            _mappable_pair["data"] = corpus
+
+            # Dump updated mappable pair as JSONL
+            f.write(json.dumps(_mappable_pair))
             f.write("\n")
 
 else:
@@ -198,19 +190,11 @@ else:
             corpus = new_corpus
 
         # corpus is now final corpus after looping through all the labels
-        new_doccano_annotation = DoccanoAnnotationObject(
-            id=original_doccano_annotation.id,
-            data=corpus,
-            label=new_labels,
-        )
 
         with open(OUTPUTFILEPATH, "a+") as f:
-            # Convert Doccano Annotation to dict
-            new_annotation_dict = {
-                "id": new_doccano_annotation.id,
-                "data": new_doccano_annotation.data,
-                "label": new_doccano_annotation.label,
-            }
-            # Dump annotation as JSONL
-            f.write(json.dumps(new_annotation_dict))
+            _mappable_pair["new_" + ENTITY_TYPE_TO_REPLACE + "_entities"] = new_labels
+            _mappable_pair["data"] = corpus
+
+            # Dump updated mappable pair as JSONL
+            f.write(json.dumps(_mappable_pair))
             f.write("\n")
