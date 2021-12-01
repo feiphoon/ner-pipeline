@@ -60,17 +60,19 @@ def synthesise_annotated_abstracts(
         "entities_count", f.size(f.col("label"))
     )
 
-    # print(annotated_abstracts_df.show(2))
+    # print(annotated_abstracts_df.show(2, truncate=False))
 
     max_entities_in_annotated_abstracts: int = annotated_abstracts_df.agg(
         {"entities_count": "max"}
     ).collect()[0][0]
 
-    # print(max_entities_in_annotated_abstracts)
+    # print(max_entities_in_annotated_abstracts)  # 13
 
     name_mappings_df_with_min_non_scientific_names: DataFrame = name_mappings_df.filter(
         f.col("non_scientific_name_count") >= max_entities_in_annotated_abstracts
     )
+
+    # print(name_mappings_df_with_min_non_scientific_names.show(10, truncate=False))
 
     stratified_name_mappings_df: DataFrame = (
         name_mappings_df_with_min_non_scientific_names.transform(
@@ -78,7 +80,7 @@ def synthesise_annotated_abstracts(
         )
     )
 
-    print(stratified_name_mappings_df.count())
+    print(stratified_name_mappings_df.count())  # 513
 
     # There may be an issue with not enough names from a certain label being present in the mapping.
     # So we produce a column in both dataframes to describe what entities need mapping, vs how many names
@@ -187,6 +189,10 @@ def stratify_name_mappings(df: DataFrame, seed: int) -> DataFrame:
         f.col("scientific_name_type") == "plant"
     ).transform(lambda df: perform_deterministic_shuffle(df, seed))
 
+    # print(name_mappings_synonym_df.show(1, truncate=False))
+    # print(name_mappings_sci_cited_medicinal_df.show(1, truncate=False))
+    # print(name_mappings_plant_df.show(1, truncate=False))
+
     # Take counts of rows in all three dataframe slices.
     name_mappings_synonym_count: int = name_mappings_synonym_df.count()
     name_mappings_sci_cited_medicinal_count: int = (
@@ -202,6 +208,11 @@ def stratify_name_mappings(df: DataFrame, seed: int) -> DataFrame:
             name_mappings_plant_count,
         ]
     )
+
+    # print(name_mappings_synonym_count)  # 3859
+    # print(name_mappings_sci_cited_medicinal_count)  # 777
+    # print(name_mappings_plant_count)  # 171
+    # print(name_mappings_min_count)  # 171
 
     # Grab the minimum count of items from each group.
     name_mappings_synonym_df = name_mappings_synonym_df.limit(name_mappings_min_count)
