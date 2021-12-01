@@ -1,6 +1,6 @@
 from pathlib import Path
 from functools import reduce
-from typing import AnyStr, List, Any, Tuple
+from typing import List, Any, Tuple
 
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
@@ -295,18 +295,18 @@ extract_labels_of_type_udf = f.udf(
 )
 
 
-# TODO: Write a Pyspark function that will concatenate several label columns into one new label array column.
-df = df.withColumn(
-    f.concat(
-        f.col("scientific_labels"),
-        f.col("common_labels"),
-        f.col("pharmaceutical_columns"),
-    )
-)
+# # TODO: Write a Pyspark function that will concatenate several label columns into one new label array column.
+# df = df.withColumn(
+#     f.concat(
+#         f.col("scientific_labels"),
+#         f.col("common_labels"),
+#         f.col("pharmaceutical_columns"),
+#     )
+# )
 
-# Then sort the items in that array
-def sort_array_of_arrays(lst: list) -> list:
-    return lst.sort(key=lambda x: x[0])
+# # Then sort the items in that array
+# def sort_array_of_arrays(lst: list) -> list:
+#     return lst.sort(key=lambda x: x[0])
 
 
-sort_array_of_arrays_udf = f.udf(sort_array_of_arrays)
+# sort_array_of_arrays_udf = f.udf(sort_array_of_arrays)
