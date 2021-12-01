@@ -4,7 +4,7 @@ from invoke import task, Collection
 @task
 def build(c):
     c.run(
-        "docker build -t punchy/ner-pipeline:0.1.0 -t punchy/ner-pipeline:latest .",
+        "DOCKER_BUILDKIT=1 docker build -t punchy/ner-pipeline:0.1.0 .",
         pty=True,
     )
 
@@ -12,7 +12,7 @@ def build(c):
 @task
 def build_no_cache(c):
     c.run(
-        "docker build --no-cache -t punchy/ner-pipeline:0.1.0 -t punchy/ner-pipeline:latest .",
+        "DOCKER_BUILDKIT=1 docker build --no-cache -t punchy/ner-pipeline:0.1.0 .",
         pty=True,
     )
 
@@ -40,6 +40,18 @@ def pyspark_split_abstracts(c):
     )
 
 
+@task
+def pyspark_synthesise_annotations(c):
+    c.run(
+        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 synthesise_annotated_abstracts_runner.py \
+            --name 'ner-pipeline-container'\
+                ;CONTAINER_ID=$(docker ps -lq)\
+                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts \
+                        data/processed/",
+        pty=True,
+    )
+
+
 ns = Collection()
 ps = Collection("ps")
 
@@ -47,6 +59,7 @@ ps.add_task(build)
 ps.add_task(build_no_cache)
 ps.add_task(pyspark_get_abstracts, name="get_abstracts")
 ps.add_task(pyspark_split_abstracts, name="split_abstracts")
+ps.add_task(pyspark_synthesise_annotations, name="synthesise_annotations")
 
 ns.add_collection(ps)
 

@@ -8,6 +8,7 @@ from src.helpers.train_test_split import TrainTestSplit
 
 
 spark = SparkSession.builder.appName("run_ner_pipeline").getOrCreate()
+spark.sparkContext.setLogLevel("ERROR")
 run = Run(last_run_timestamp=get_last_run_timestamp())
 
 annotated_abstracts_filepath: str = "data/processed/annotated_abstracts"
