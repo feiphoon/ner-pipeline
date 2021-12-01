@@ -4,7 +4,7 @@ from invoke import task, Collection
 @task
 def build(c):
     c.run(
-        "docker build -t punchy/ner-pipeline:0.1.0 -t punchy/ner-pipeline:latest .",
+        "DOCKER_BUILDKIT=1 docker build -t punchy/ner-pipeline:0.1.0 .",
         pty=True,
     )
 
@@ -12,7 +12,7 @@ def build(c):
 @task
 def build_no_cache(c):
     c.run(
-        "docker build --no-cache -t punchy/ner-pipeline:0.1.0 -t punchy/ner-pipeline:latest .",
+        "DOCKER_BUILDKIT=1 docker build --no-cache -t punchy/ner-pipeline:0.1.0 .",
         pty=True,
     )
 
