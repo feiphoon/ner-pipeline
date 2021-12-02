@@ -120,4 +120,4 @@ SYNTHESISED_ABSTRACTS_INPUT_SCHEMA = StructType(
 #  |-- scientific_name_type: string (nullable = True)
 
 
-# NER_ABSTRACTS_OUTPUT_SCHEMA = StructType([StructField("")])
+NER_ABSTRACTS_OUTPUT_SCHEMA = StructType([StructField("")])
