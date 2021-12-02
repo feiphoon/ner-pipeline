@@ -65,11 +65,6 @@ ns.add_collection(ps)
 
 
 @task
-def import_process_abstracts(c):
-    c.run("python main.py", pty=True)
-
-
-@task
 def test(c):
     c.run("python -m pytest -vv", pty=True)
 
@@ -82,6 +77,5 @@ def lint(c):
     c.run("python -m black --check .", pty=True)
 
 
-ns.add_task(import_process_abstracts)
 ns.add_task(test)
 ns.add_task(lint)
