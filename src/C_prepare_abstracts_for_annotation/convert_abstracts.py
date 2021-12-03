@@ -1,7 +1,9 @@
 from pathlib import Path
+import re
 
 from pyspark.sql import SparkSession, functions as f
 from pyspark.sql.dataframe import DataFrame
+from pyspark.sql.types import StringType
 
 from src.C_prepare_abstracts_for_annotation.schemas import INPUT_SCHEMA, OUTPUT_SCHEMA
 
@@ -19,6 +21,7 @@ def convert_abstracts(
     df: DataFrame = (
         df.select("pmid", "title", "abstract")
         .withColumn("text", f.concat_ws(" ", "title", "abstract"))
+        .withColumn("text", strip_html_udf(f.col("text")))
         .drop("title", "abstract")
         .drop_duplicates()
     )
@@ -27,3 +30,11 @@ def convert_abstracts(
     df.coalesce(1).write.format("json").mode("overwrite").option(
         "schema", OUTPUT_SCHEMA
     ).save(str(run_output_filepath))
+
+
+def strip_html(text: str) -> str:
+    pattern = re.compile(r"<.*?>")
+    return pattern.sub("", text)
+
+
+strip_html_udf = f.udf(strip_html, StringType())
