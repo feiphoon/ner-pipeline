@@ -75,7 +75,7 @@ def perform_entity_replacement(
 
         if entity_type_to_replace == "scientific":
             json_file_name: str = (
-                "part-00000-78841aa7-70b6-4d62-8c5e-fe503aa13acc-c000.json"
+                "part-00000-e9764264-8bec-44b2-9778-7213d0bc06d8-c000.json"
             )
         else:
             json_file_name: str = "output.json"
