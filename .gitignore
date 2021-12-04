@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Temporarily ignore some large files
+data/processed/synthesised_annotated_abstracts/A_prepared/2021-11-30-12-09-58/*
+data/processed/synthesised_annotated_abstracts/B_scientific_replaced/*
+data/processed/synthesised_annotated_abstracts/C_common_replaced/*
+data/processed/synthesised_annotated_abstracts/D_pharmaceutical_replaced/*
+
 # Mac OS
 .DS_Store
 
