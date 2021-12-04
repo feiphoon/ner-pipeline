@@ -52,6 +52,26 @@ def pyspark_synthesise_annotations(c):
     )
 
 
+@task
+def pyspark_prepare_annotations_for_ner(c):
+    c.run(
+        "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 prepare_synthetic_annotations_for_ner_runner.py \
+            --name 'ner-pipeline-container'\
+                ;CONTAINER_ID=$(docker ps -lq)\
+                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts/E_final \
+                        data/processed/synthesised_annotated_abstracts/",
+        pty=True,
+    )
+
+
+@task
+def split_annotations_for_train_and_val(c):
+    c.run(
+        "python split_synthesised_data_for_train_and_val_runner.py",
+        pty=True,
+    )
+
+
 ns = Collection()
 ps = Collection("ps")
 
@@ -60,6 +80,8 @@ ps.add_task(build_no_cache)
 ps.add_task(pyspark_get_abstracts, name="get_abstracts")
 ps.add_task(pyspark_split_abstracts, name="split_abstracts")
 ps.add_task(pyspark_synthesise_annotations, name="synthesise_annotations")
+ps.add_task(pyspark_prepare_annotations_for_ner, name="prepare_annotations_for_ner")
+
 
 ns.add_collection(ps)
 
@@ -83,5 +105,8 @@ def lint(c):
 
 
 ns.add_task(import_process_abstracts)
+ns.add_task(
+    split_annotations_for_train_and_val, name="split_annotations_for_train_and_val"
+)
 ns.add_task(test)
 ns.add_task(lint)
