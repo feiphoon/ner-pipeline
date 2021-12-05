@@ -41,13 +41,13 @@ def split_for_train_and_val(
     run_output_filepath_val.mkdir(parents=True, exist_ok=True)
 
     # Then write split data
+    _train_json_str = json.dumps([obj for obj in train_data])
     with open(Path(f"{run_output_filepath_train}/train.json"), "w+") as f:
-        f.write(json.dumps(train_data))
-        f.write("\n")
+        f.write(_train_json_str)
 
+    _val_json_str = json.dumps([obj for obj in val_data])
     with open(Path(f"{run_output_filepath_val}/dev.json"), "w+") as f:
-        f.write(json.dumps(val_data))
-        f.write("\n")
+        f.write(_val_json_str)
 
     _metadata: dict = {
         "source_line_count": _num_rows,
