@@ -8,7 +8,9 @@ from src.F_synthesise_annotated_abstracts.prepare_annotated_abstracts_for_entity
     prepare_annotated_abstracts,
 )
 
-from src.F_synthesise_annotated_abstracts.magic import perform_entity_replacement
+from F_synthesise_annotated_abstracts.entity_replacement import (
+    perform_entity_replacement,
+)
 
 
 TRAIN_TEST_SPLIT = TrainTestSplit(0.5, 0.5)
