@@ -18,7 +18,7 @@ def split_for_train_and_val(
     # TODO: Included the filename here as a hack, glob not working
     with open(
         Path(
-            f"{run_input_filepath}/part-00000-88912f79-07bd-4a96-89d6-013fe0fe394c-c000.json"
+            f"{run_input_filepath}/part-00000-fd71892e-68cb-4141-a679-b15fbf744845-c000.json"
         ),
         "rb",
     ) as f:
