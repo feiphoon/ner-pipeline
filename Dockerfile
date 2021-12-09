@@ -35,4 +35,3 @@ COPY data/sample_data/ data/sample_data/
 # Not ideal, but this is needed for prepare_synthetic_annotations_for_ner_runner.py
 COPY prepare_synthetic_annotations_for_ner_runner.py .
 COPY data/processed/synthesised_annotated_abstracts/D_pharmaceutical_replaced/ data/processed/synthesised_annotated_abstracts/D_pharmaceutical_replaced/
-
