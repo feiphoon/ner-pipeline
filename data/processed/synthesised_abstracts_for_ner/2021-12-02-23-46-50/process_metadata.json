@@ -1,1 +1,5 @@
-{"source_line_count": 51383, "train_line_count": 42648, "val_line_count": 8735}
+{
+    "source_line_count": 52352,
+    "train_line_count": 43453,
+    "val_line_count": 8899
+}
