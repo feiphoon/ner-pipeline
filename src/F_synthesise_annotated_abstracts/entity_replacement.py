@@ -81,15 +81,6 @@ def perform_entity_replacement(
             all_mappable_pairs: list = [json.loads(json_line) for json_line in list(f)]
 
     for _mappable_pair in all_mappable_pairs:
-        # Hack to fix lists being chewed up by JSON
-        # fixed_mappable_entities = [
-        #     [
-        #         int(_.split(",")[0].strip("[")),
-        #         int(_.split(",")[1].strip()),
-        #         _.split(",")[2].strip("]").strip(),
-        #     ]
-        #     for _ in _mappable_pair["label"]
-        # ]
         fixed_mappable_entities: list = _mappable_pair["label"]
 
         # Transform each mappable item in the mappable pairs JSONL into a DoccanoAnnotationObject.
