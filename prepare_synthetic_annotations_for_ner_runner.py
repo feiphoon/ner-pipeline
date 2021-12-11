@@ -12,9 +12,9 @@ spark.sparkContext.setLogLevel("ERROR")
 run = Run(last_run_timestamp=get_last_run_timestamp())
 
 run_input_filepath: str = (
-    "data/processed/synthesised_annotated_abstracts/D_pharmaceutical_replaced"
+    "data/processed/synthesised_annotated_abstracts/B_entities_replaced"
 )
-run_output_filepath: str = "data/processed/synthesised_annotated_abstracts/E_final"
+run_output_filepath: str = "data/processed/synthesised_annotated_abstracts/C_final"
 
 prepare_synthesised_abstracts_for_ner(
     spark=spark,

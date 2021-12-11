@@ -12,17 +12,7 @@ SYNTHESISED_ANNOTATIONS_INPUT_SCHEMA = StructType(
         StructField("id", StringType(), False),
         StructField("pmid", StringType(), False),
         StructField(
-            "new_common_entities", ArrayType(ArrayType(StringType(), True), True), False
-        ),
-        StructField(
-            "new_scientific_entities",
-            ArrayType(ArrayType(StringType(), True), True),
-            False,
-        ),
-        StructField(
-            "new_pharmaceutical_entities",
-            ArrayType(ArrayType(StringType(), True), True),
-            False,
+            "label", ArrayType(ArrayType(StringType(), True), True), False
         ),
         StructField("scientific_name", StringType(), False),
         StructField("scientific_name_id", StringType(), False),

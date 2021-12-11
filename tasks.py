@@ -58,7 +58,7 @@ def pyspark_prepare_annotations_for_ner(c):
         "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 prepare_synthetic_annotations_for_ner_runner.py \
             --name 'ner-pipeline-container'\
                 ;CONTAINER_ID=$(docker ps -lq)\
-                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts/E_final \
+                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts/C_final \
                         data/processed/synthesised_annotated_abstracts/",
         pty=True,
     )

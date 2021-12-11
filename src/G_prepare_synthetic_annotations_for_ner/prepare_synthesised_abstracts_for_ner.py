@@ -27,26 +27,15 @@ def prepare_synthesised_abstracts_for_ner(
         "scientific_name_id",
         "scientific_name",
         "scientific_name_type",
-        "new_scientific_entities",
-        "new_common_entities",
-        "new_pharmaceutical_entities",
+        "label",
     )
 
     # print(synthesised_abstracts_df.show(5, truncate=False))
     # print(synthesised_abstracts_df.printSchema())
 
     # Aggregrate the new entities columns to replace the old labels column
-    synthesised_abstracts_df: DataFrame = synthesised_abstracts_df.withColumn(
-        "entities",
-        f.concat(
-            f.coalesce(f.col("new_scientific_entities"), f.array()),
-            f.coalesce(f.col("new_common_entities"), f.array()),
-            f.coalesce(f.col("new_pharmaceutical_entities"), f.array()),
-        ),
-    ).drop(
-        "new_scientific_entities",
-        "new_common_entities",
-        "new_pharmaceutical_entities",
+    synthesised_abstracts_df: DataFrame = synthesised_abstracts_df.withColumnRenamed(
+        "label", "entities"
     )
 
     # Then write cleaned_data
