@@ -42,7 +42,6 @@ class DoccanoAnnotationObject:
 def perform_entity_replacement(
     run_input_filepath: Path,
     run_output_filepath: Path,
-    entity_type_to_replace: str,
     seed: int = 42,
     sample_run: bool = False,
 ) -> None:
@@ -74,176 +73,99 @@ def perform_entity_replacement(
         #     #         print("Error on line", i + 1, ":\n", repr(line))
         #     all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
 
-        if entity_type_to_replace == "scientific":
-            json_file_name: str = (
-                "part-00000-24b08f98-9b6a-47c6-b2d7-0c965db89c3b-c000.json"
-            )
-        else:
-            json_file_name: str = "output.json"
+        json_file_name: str = (
+            "part-00000-0a031b52-3143-4994-8d6f-b264cd2469a4-c000.json"
+        )
 
         with open(os.path.join(run_input_filepath, json_file_name), "r") as f:
-            all_mappable_pairs = [json.loads(json_line) for json_line in list(f)]
+            all_mappable_pairs: list = [json.loads(json_line) for json_line in list(f)]
 
-    if entity_type_to_replace == "scientific":
-        for _mappable_pair in all_mappable_pairs:
-            # If mappable entities are empty, e.g. common_names = [],
-            # just move on to the next mappable_pair.
-            if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(
-                    os.path.join(run_output_filepath, "output.json"),
-                    "a+",
-                    encoding="utf8",
-                ) as f:
-                    # Dump updated mappable pair as JSONL
-                    f.write(json.dumps(_mappable_pair, ensure_ascii=False))
-                    f.write("\n")
-                continue
+    for _mappable_pair in all_mappable_pairs:
+        # Hack to fix lists being chewed up by JSON
+        # fixed_mappable_entities = [
+        #     [
+        #         int(_.split(",")[0].strip("[")),
+        #         int(_.split(",")[1].strip()),
+        #         _.split(",")[2].strip("]").strip(),
+        #     ]
+        #     for _ in _mappable_pair["label"]
+        # ]
+        fixed_mappable_entities: list = _mappable_pair["label"]
 
-            # Hack to fix lists being chewed up by JSON
-            fixed_mappable_entities = [
-                [
-                    int(_.split(",")[0].strip("[")),
-                    int(_.split(",")[1].strip()),
-                    _.split(",")[2].strip("]").strip(),
-                ]
-                for _ in _mappable_pair["scientific_entities"]
-            ]
-            # Transform each mappable item in the mappable pairs JSONL into a DoccanoAnnotationObject.
-            original_doccano_annotation = DoccanoAnnotationObject(
-                id=_mappable_pair["id"],
-                data=_mappable_pair["data"],
-                label=fixed_mappable_entities,
+        # Transform each mappable item in the mappable pairs JSONL into a DoccanoAnnotationObject.
+        original_doccano_annotation: DoccanoAnnotationObject = DoccanoAnnotationObject(
+            id=_mappable_pair["id"],
+            data=_mappable_pair["data"],
+            label=fixed_mappable_entities,
+        )
+        # The following is needed because the labels cannot be
+        # relied on to be supplied in order of appearance.
+        # Labels here accepts either Lists or Tuples.
+        typed_labels: list = [
+            SimpleLabel(int(lb[0]), int(lb[1]), lb[2]) for lb in original_doccano_annotation.label
+        ]
+        typed_labels.sort(key=lambda x: x.start)
+
+        new_labels: list = []
+
+        # This is needed to keep a record of all the changes
+        # in character positions in the text as entities are replaced.
+        corpus_offset: int = 0
+        corpus: str = original_doccano_annotation.data
+
+        for lb in typed_labels:
+            # For each entity in the labels, we want to replace them from the
+            # right source, and then keep carrying forward the offset.
+            # The original bug was due to me not doing the replacement all at
+            # one go.
+
+            # Get location of current label. The corpus_offset is a running count
+            # of what it's cost us to move words around so far.
+            loc: PhraseLocation = PhraseLocation(
+                int(lb.start) + corpus_offset, int(lb.end) + corpus_offset
             )
-            # The following is needed because the labels cannot be
-            # relied on to be supplied in order of appearance.
-            # Labels here accepts either Lists or Tuples.
-            typed_labels = [
-                SimpleLabel(*lb) for lb in original_doccano_annotation.label
-            ]
-            typed_labels.sort(key=lambda x: x.start)
 
-            new_labels = []
+            # Check what kind of entity it is that has to be replaced.
+            # Then get the replacement from the appropriate source.
 
-            # This is needed to keep a record of all the changes
-            # in character positions in the text as entities are replaced.
-            corpus_offset = 0
-            corpus = original_doccano_annotation.data
-
-            for lb in typed_labels:
-                # Get the right replacement entity
+            if lb.entity_label == "scientific":
                 replacement_entity = ReplacementEntity(
                     text=_mappable_pair["scientific_name"],
                     entity_label="scientific",
                 )
-                # Get location of current label. The corpus_offset is a running count
-                # of what it's cost us to move words around so far.
-                loc = PhraseLocation(lb.start + corpus_offset, lb.end + corpus_offset)
+            elif lb.entity_label == "common":
+                _selection = random.choice(_mappable_pair["common_names"])
 
-                (new_phrase, new_loc), new_corpus, _ = (  # noqa: F841
-                    *replace_phrase_at_location(loc, corpus, replacement_entity.text),
-                    "",
-                )
-
-                new_labels.append(
-                    [new_loc.start, new_loc.end, replacement_entity.entity_label]
-                )
-                corpus_offset += new_loc.end - loc.end
-                corpus = new_corpus
-
-            # corpus is now final corpus after looping through all the labels
-
-            with open(
-                os.path.join(run_output_filepath, "output.json"), "a+", encoding="utf8"
-            ) as f:
-                _mappable_pair[
-                    "new_" + entity_type_to_replace + "_entities"
-                ] = new_labels
-                _mappable_pair["data"] = corpus
-
-                # Dump updated mappable pair as JSONL
-                f.write(json.dumps(_mappable_pair, ensure_ascii=False))
-                f.write("\n")
-
-    else:
-        for _mappable_pair in all_mappable_pairs:
-            # If mappable entities are empty, e.g. common_names = [],
-            # just move on to the next mappable_pair.
-            if len(_mappable_pair[entity_type_to_replace + "_entities"]) == 0:
-                with open(
-                    os.path.join(run_output_filepath, "output.json"),
-                    "a+",
-                    encoding="utf8",
-                ) as f:
-                    # Dump updated mappable pair as JSONL
-                    f.write(json.dumps(_mappable_pair, ensure_ascii=False))
-                    f.write("\n")
-                continue
-
-            # Hack to fix lists being chewed up by JSON
-            fixed_mappable_entities = [
-                [
-                    int(_.split(",")[0].strip("[")),
-                    int(_.split(",")[1].strip()),
-                    _.split(",")[2].strip("]").strip(),
-                ]
-                for _ in _mappable_pair[entity_type_to_replace + "_entities"]
-            ]
-            # Transform each mappable item in the mappable pairs JSONL into a DoccanoAnnotationObject.
-            original_doccano_annotation = DoccanoAnnotationObject(
-                id=_mappable_pair["id"],
-                data=_mappable_pair["data"],
-                label=fixed_mappable_entities,
-            )
-            # The following is needed because the labels cannot be
-            # relied on to be supplied in order of appearance.
-            # Labels here accepts either Lists or Tuples.
-            typed_labels = [
-                SimpleLabel(*lb) for lb in original_doccano_annotation.label
-            ]
-            typed_labels.sort(key=lambda x: x.start)
-
-            new_labels = []
-
-            # This is needed to keep a record of all the changes
-            # in character positions in the text as entities are replaced.
-            corpus_offset = 0
-            corpus = original_doccano_annotation.data
-
-            for lb in typed_labels:
-                _selection = random.choice(
-                    _mappable_pair[entity_type_to_replace + "_names"]
-                )
-
-                # Get the right replacement entity
                 replacement_entity = ReplacementEntity(
                     text=_selection["non_scientific_name"],
-                    entity_label=entity_type_to_replace,
+                    entity_label="common",
                 )
-                # Get location of current label. The corpus_offset is a running count
-                # of what it's cost us to move words around so far.
-                loc = PhraseLocation(lb.start + corpus_offset, lb.end + corpus_offset)
+            elif lb.entity_label == "pharmaceutical":
+                _selection = random.choice(_mappable_pair["pharmaceutical_names"])
 
-                (new_phrase, new_loc), new_corpus, _ = (  # noqa: F841
-                    *replace_phrase_at_location(loc, corpus, replacement_entity.text),
-                    "",
+                replacement_entity: ReplacementEntity = ReplacementEntity(
+                    text=_selection["non_scientific_name"],
+                    entity_label="pharmaceutical",
                 )
 
-                new_labels.append(
-                    [new_loc.start, new_loc.end, replacement_entity.entity_label]
-                )
-                corpus_offset += new_loc.end - loc.end
-                corpus = new_corpus
+            (new_phrase, new_loc), new_corpus, _ = (  # noqa: F841
+                *replace_phrase_at_location(loc, corpus, replacement_entity.text),
+                "",
+            )
 
-            # corpus is now final corpus after looping through all the labels
+            new_labels.append(
+                [new_loc.start, new_loc.end, replacement_entity.entity_label]
+            )
+            corpus_offset += new_loc.end - loc.end
+            corpus = new_corpus
 
-            with open(
-                os.path.join(run_output_filepath, "output.json"), "a+", encoding="utf8"
-            ) as f:
-                _mappable_pair[
-                    "new_" + entity_type_to_replace + "_entities"
-                ] = new_labels
-                _mappable_pair["data"] = corpus
+        # corpus is now final corpus after looping through all the labels
+        with open(
+            os.path.join(run_output_filepath, "output.json"), "a+", encoding="utf8"
+        ) as f:
+            _mappable_pair["label"] = new_labels
+            _mappable_pair["data"] = corpus
 
-                # Dump updated mappable pair as JSONL
-                f.write(json.dumps(_mappable_pair, ensure_ascii=False))
-                f.write("\n")
+            # Dump updated mappable pair as JSONL
+            f.write(json.dumps(_mappable_pair, ensure_ascii=False))
+            f.write("\n")
