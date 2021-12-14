@@ -15,7 +15,7 @@ SEED = 1
 
 run = Run(last_run_timestamp=get_last_run_timestamp())
 
-run_input_filepath: str = "data/processed/synthesised_annotated_abstracts/E_final"
+run_input_filepath: str = "data/processed/synthesised_annotated_abstracts/C_final"
 run_output_filepath: str = "data/processed/synthesised_abstracts_for_ner"
 
 split_for_train_and_val(
