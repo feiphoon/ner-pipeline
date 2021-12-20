@@ -72,6 +72,14 @@ def split_annotations_for_train_and_val(c):
     )
 
 
+@task
+def convert_json_to_spacy_format(c):
+    c.run(
+        "python src/H_train_test_ner_models/convert_json_to_spacy_format.py",
+        pty=True,
+    )
+
+
 ns = Collection()
 ps = Collection("ps")
 
@@ -99,8 +107,7 @@ def lint(c):
     c.run("python -m black --check .", pty=True)
 
 
-ns.add_task(
-    split_annotations_for_train_and_val, name="split_annotations_for_train_and_val"
-)
+ns.add_task(split_annotations_for_train_and_val)
+ns.add_task(convert_json_to_spacy_format)
 ns.add_task(test)
 ns.add_task(lint)

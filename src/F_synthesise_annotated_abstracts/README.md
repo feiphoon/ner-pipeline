@@ -1,11 +1,11 @@
 # F: Synthesise annotated abstracts
 
-- What:
-    - Train and validation sets in
-    - Name mappings in
-    - Name mappings stratified to give a good base and balance of scientific to non-scientific name type mappings. The previous stage produced over 3 million name mappings to work with.
-    - The volume of abstracts multiplied given a bunch of name mappings, out.
-    - Replace the labels in the annotated data with new entities.
+What:
+- Train and validation sets at `data/processed/synthesised_abstracts_for_ner/2021-12-02-23-46-50`
+- Name mappings at `data/reference/mpns_v8/mpns_name_mappings/v5`
+- Name mappings are stratified to give a good base and balance of types of scientific names (i.e. Plants, Synonyms and Sci-cited Medicinal names). The previous stage produced over 3 million name mappings to work with.
+- The volume of abstracts multiplied given a bunch of name mappings, out.
+- Replace the labels in the annotated data with new entities.
 
 
 
@@ -43,4 +43,4 @@ The name mappings are filtered for mappings with a minimum number of entities (b
 entities (by type) in the abstracts. This is so that we don't run into a problem of trying to do entity replacement in
 an abstract which may have 5 common entities to replace, and a name mapping which has only 4 common entities to swap out.
 
-This also to ensure as many Non-Scientific Names as possible are presented in the training data.
+This also to ensure as many Non-Scientific Names as possible are placed in the training data.
