@@ -58,7 +58,7 @@ def pyspark_prepare_annotations_for_ner(c):
         "docker run -v $(pwd):/job punchy/ner-pipeline:0.1.0 prepare_synthetic_annotations_for_ner_runner.py \
             --name 'ner-pipeline-container'\
                 ;CONTAINER_ID=$(docker ps -lq)\
-                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts/E_final \
+                    ;docker cp `echo $CONTAINER_ID`:data/processed/synthesised_annotated_abstracts/C_final \
                         data/processed/synthesised_annotated_abstracts/",
         pty=True,
     )
@@ -68,6 +68,14 @@ def pyspark_prepare_annotations_for_ner(c):
 def split_annotations_for_train_and_val(c):
     c.run(
         "python split_synthesised_data_for_train_and_val_runner.py",
+        pty=True,
+    )
+
+
+@task
+def convert_json_to_spacy_format(c):
+    c.run(
+        "python src/H_train_test_ner_models/convert_json_to_spacy_format.py",
         pty=True,
     )
 
@@ -99,8 +107,7 @@ def lint(c):
     c.run("python -m black --check .", pty=True)
 
 
-ns.add_task(
-    split_annotations_for_train_and_val, name="split_annotations_for_train_and_val"
-)
+ns.add_task(split_annotations_for_train_and_val)
+ns.add_task(convert_json_to_spacy_format)
 ns.add_task(test)
 ns.add_task(lint)

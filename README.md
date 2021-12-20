@@ -4,6 +4,60 @@ This part of the work is to produce abstracts for the NER pipeline. This pipelin
 
 The results in this pipeline at some point tap into the static output of the `mons-pipeline` repo - these results will have been manually copied over here and made available.
 
+## About the code and data
+
+The code stages in this repo:
+- [A_pubmed_abstract_import](src/A_pubmed_abstract_import/README.md)
+- [B_pubmed_abstract_processing](src/B_pubmed_abstract_processing/README.md)
+- [C_prepare_abstracts_for_annotation](src/C_prepare_abstracts_for_annotation/README.md)
+- [D_hand_annotation](src/D_hand_annotation/README.md)
+- [E_split_abstracts_for_train_and_test](src/E_split_abstracts_for_train_and_test/README.md)
+- [F_synthesise_annotated_abstracts](src/F_synthesise_annotated_abstracts/README.md)
+- [G_prepare_synthetic_annotations_for_ner](src/G_prepare_synthetic_annotations_for_ner/README.md)
+- [H_train_test_ner_models](src/H_train_test_ner_models/README.md)
+
+
+The data stages in this repo:
+- **A_pubmed_abstract_import & B_pubmed_abstract_processing:** PubMed abstracts are retrieved, landed as raw in `data/raw/pubmed_abstracts`, and processed/filtered to `data/processed/pubmed_abstracts`
+- **C_prepare_abstracts_for_annotation:** The abstracts are restructured to go into Doccano for annotation. The output is at `data/processed/abstracts_for_annotation`
+- **D_hand_annotation:** The annotated abstracts are downloaded to `data/processed/annotated_abstracts`
+- **E_split_abstracts_for_train_and_test:** The annotated abstracts are split for train and test - output at `data/processed/split_annotated_abstracts`
+- **F_synthesise_annotated_abstracts:** This part had to be run in a few separate steps.
+    - The training set of annotated abstracts are prepared for entity replacement here: `data/processed/synthesised_annotated_abstracts/A_prepared`.
+    - The result of data augmentation or entity replacement is here: `data/processed/synthesised_annotated_abstracts/B_entities_replaced`
+    - Finally some fields which were used to calculate entity replacement are cleaned up, to give a final output here: `data/processed/synthesised_annotated_abstracts/C_final`
+- **G_prepare_synthetic_annotations_for_ner:** Pulls required fields for NER training, then shuffles and splits the original training data to train and test: `data/processed/synthesised_abstracts_for_ner`
+- **H_train_test_ner_models:**
+    - The train, validation and test JSON files are converted to `*.spacy` format:
+        - Train data: `data/processed/converted_train_test_data_for_ner/train`
+        - Validation data: `data/processed/converted_train_test_data_for_ner/dev`
+        - Test data: `data/processed/converted_train_test_data_for_ner/test`
+    - Then using the training config files `data/processed/converted_train_test_data_for_ner/training_config`, the models are trained and evaluated by `model_runner.ipynb`
+    - The final results and metrics outputs of all trained and tested models are at: `data/processed/converted_train_test_data_for_ner/output` and `data/processed/converted_train_test_data_for_ner/results`
+
+
+## To run each stage in this repo
+
+To run the above stages, start a virtual environment (see Setup) and install all packages as recommended, and log in to Docker.
+
+- **A_pubmed_abstract_import & B_pubmed_abstract_processing & C_prepare_abstracts_for_annotation:**
+    - `inv ps.build;inv ps.get-abstracts`
+- **D_hand_annotation:**
+    - (No code - see `src/D_hand_annotation/README.md` to run Doccano environment)
+- **E_split_abstracts_for_train_and_test:**
+    - `inv ps.build;ps.split-abstracts`
+- **F_synthesise_annotated_abstracts:**
+    - `inv ps.build;ps.synthesise-annotations` (This has to be run in a couple of stages; see files at `synthesise_annotated_abstracts_runner.py` and `Dockerfile` for instructions)
+- **G_prepare_synthetic_annotations_for_ner:**
+    - `inv ps.build`
+    - `inv ps.prepare-annotations-for-ner`
+    - `inv split-annotations-for-train-and-val`
+- **H_train_test_ner_models:**
+    - `inv convert-json-to-spacy-format`
+    - (Run the `model_runner.ipynb` notebook)
+
+
+---
 
 ## Setup
 
@@ -44,7 +98,7 @@ pyenv deactivate ner-pipeline
 
 ### Docker run
 
-he base image is from: <https://hub.docker.com/r/godatadriven/pyspark>.
+The base image is from: <https://hub.docker.com/r/godatadriven/pyspark>.
 
 Login to Docker and build the docker image from the Dockerfile. This command is run through `invoke`:
 ```bash
